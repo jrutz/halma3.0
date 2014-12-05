@@ -12,6 +12,9 @@ battlefield::battlefield(QWidget *parent) :
     QIcon blank = QIcon("/images/empty.png");
     QColor fuck = QColor(8, 36, 0);
 
+    red = QColor(255, 0, 0);
+    black = QColor(8, 36, 0);
+
     int row = 18;
     int column = 18;
 
@@ -92,12 +95,12 @@ void battlefield:: setBaseValues()
     ui->moveNumTwo->setText("0");
 }
 
-void battlefield::on_battleTable_cellPressed(int row, int column)
-{
 
-}
 
+//Ask if this is a valid move
 void battlefield::on_battleTable_currentCellChanged(int currentRow, int currentColumn, int previousRow, int previousColumn)
 {
-
+    ui->battleTable->item(currentRow, currentColumn)->setBackgroundColor(red);
+    //Function making the request
+    //boardManager.
 }

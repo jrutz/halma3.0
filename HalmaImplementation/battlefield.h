@@ -1,6 +1,6 @@
 #ifndef BATTLEFIELD_H
 #define BATTLEFIELD_H
-
+#include <cellmanager.h>
 #include <QString>
 #include <QWidget>
 #include <QTableWidget>
@@ -28,6 +28,9 @@ public:
     void setTeamTwoType(bool type);
     void setBaseValues();
     void setTeams();
+    QColor red;
+    QColor black;
+    cellManager boardManager;
 
 
 
@@ -37,8 +40,6 @@ protected slots:
 
 
 private slots:
-    void on_battleTable_cellPressed(int row, int column);
-
     void on_battleTable_currentCellChanged(int currentRow, int currentColumn, int previousRow, int previousColumn);
 
 private:
