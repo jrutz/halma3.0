@@ -3,6 +3,9 @@
 
 #include <QString>
 #include <QWidget>
+#include <QTableWidget>
+#include <QTableWidgetItem>
+#include <QIcon>
 
 
 
@@ -22,6 +25,9 @@ public:
     void setTeamOneType(bool type);
     void setTeamTwoType(bool type);
     void setBaseValues();
+    void setTeams();
+
+
 
     ~battlefield();
 

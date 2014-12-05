@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/images">
+        <file alias="piece1">piece1.png</file>
+        <file>piece1Correct.png</file>
+        <file>piece1Selected.png</file>
+        <file>empty.png</file>
+        <file>piece2Correct.png</file>
+        <file>piece2Selected.png</file>
+        <file>piece2.png</file>
+        <file>empty</file>
+    </qresource>
+</RCC>

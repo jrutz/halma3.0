@@ -48,12 +48,14 @@ OBJECTS_DIR   = ./
 SOURCES       = main.cpp \
 		mainwindow.cpp \
 		battlefield.cpp \
-		remoteai.cpp moc_mainwindow.cpp \
+		remoteai.cpp qrc_images.cpp \
+		moc_mainwindow.cpp \
 		moc_battlefield.cpp
 OBJECTS       = main.o \
 		mainwindow.o \
 		battlefield.o \
 		remoteai.o \
+		qrc_images.o \
 		moc_mainwindow.o \
 		moc_battlefield.o
 DIST          = ../../../Qt/5.3/clang_64/mkspecs/features/spec_pre.prf \
@@ -151,6 +153,7 @@ DIST          = ../../../Qt/5.3/clang_64/mkspecs/features/spec_pre.prf \
 		../../../Qt/5.3/clang_64/mkspecs/features/qt_config.prf \
 		../../../Qt/5.3/clang_64/mkspecs/macx-clang/qmake.conf \
 		../../../Qt/5.3/clang_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		../../../Qt/5.3/clang_64/mkspecs/features/exclusive_builds.prf \
 		../../../Qt/5.3/clang_64/mkspecs/features/default_pre.prf \
 		../../../Qt/5.3/clang_64/mkspecs/features/mac/default_pre.prf \
@@ -313,6 +316,7 @@ Makefile: fuckingHalma.pro ../../../Qt/5.3/clang_64/mkspecs/macx-clang/qmake.con
 		../../../Qt/5.3/clang_64/mkspecs/features/qt_config.prf \
 		../../../Qt/5.3/clang_64/mkspecs/macx-clang/qmake.conf \
 		../../../Qt/5.3/clang_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		../../../Qt/5.3/clang_64/mkspecs/features/exclusive_builds.prf \
 		../../../Qt/5.3/clang_64/mkspecs/features/default_pre.prf \
 		../../../Qt/5.3/clang_64/mkspecs/features/mac/default_pre.prf \
@@ -334,6 +338,7 @@ Makefile: fuckingHalma.pro ../../../Qt/5.3/clang_64/mkspecs/macx-clang/qmake.con
 		../../../Qt/5.3/clang_64/mkspecs/features/yacc.prf \
 		../../../Qt/5.3/clang_64/mkspecs/features/lex.prf \
 		fuckingHalma.pro \
+		images.qrc \
 		/Users/Johna/Qt/5.3/clang_64/lib/QtWidgets.framework/QtWidgets.prl \
 		/Users/Johna/Qt/5.3/clang_64/lib/QtGui.framework/QtGui.prl \
 		/Users/Johna/Qt/5.3/clang_64/lib/QtCore.framework/QtCore.prl \
@@ -434,6 +439,7 @@ Makefile: fuckingHalma.pro ../../../Qt/5.3/clang_64/mkspecs/macx-clang/qmake.con
 ../../../Qt/5.3/clang_64/mkspecs/features/qt_config.prf:
 ../../../Qt/5.3/clang_64/mkspecs/macx-clang/qmake.conf:
 ../../../Qt/5.3/clang_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 ../../../Qt/5.3/clang_64/mkspecs/features/exclusive_builds.prf:
 ../../../Qt/5.3/clang_64/mkspecs/features/default_pre.prf:
 ../../../Qt/5.3/clang_64/mkspecs/features/mac/default_pre.prf:
@@ -455,6 +461,7 @@ Makefile: fuckingHalma.pro ../../../Qt/5.3/clang_64/mkspecs/macx-clang/qmake.con
 ../../../Qt/5.3/clang_64/mkspecs/features/yacc.prf:
 ../../../Qt/5.3/clang_64/mkspecs/features/lex.prf:
 fuckingHalma.pro:
+images.qrc:
 /Users/Johna/Qt/5.3/clang_64/lib/QtWidgets.framework/QtWidgets.prl:
 /Users/Johna/Qt/5.3/clang_64/lib/QtGui.framework/QtGui.prl:
 /Users/Johna/Qt/5.3/clang_64/lib/QtCore.framework/QtCore.prl:
@@ -478,7 +485,7 @@ fuckingHalma.app/Contents/Info.plist:
 	@sed -e "s,@SHORT_VERSION@,1.0,g" -e "s,@TYPEINFO@,????,g" -e "s,@ICON@,,g" -e "s,@BUNDLEIDENTIFIER@,edu.smu.lyle.fuckingHalma,g" -e "s,@EXECUTABLE@,fuckingHalma,g" -e "s,@TYPEINFO@,????,g" ../../../Qt/5.3/clang_64/mkspecs/macx-clang/Info.plist.app >fuckingHalma.app/Contents/Info.plist
 dist: 
 	@test -d .tmp/fuckingHalma1.0.0 || mkdir -p .tmp/fuckingHalma1.0.0
-	$(COPY_FILE) --parents $(DIST) .tmp/fuckingHalma1.0.0/ && $(COPY_FILE) --parents mainwindow.h battlefield.h remoteai.h .tmp/fuckingHalma1.0.0/ && $(COPY_FILE) --parents main.cpp mainwindow.cpp battlefield.cpp remoteai.cpp .tmp/fuckingHalma1.0.0/ && $(COPY_FILE) --parents mainwindow.ui battlefield.ui .tmp/fuckingHalma1.0.0/ && (cd `dirname .tmp/fuckingHalma1.0.0` && $(TAR) fuckingHalma1.0.0.tar fuckingHalma1.0.0 && $(COMPRESS) fuckingHalma1.0.0.tar) && $(MOVE) `dirname .tmp/fuckingHalma1.0.0`/fuckingHalma1.0.0.tar.gz . && $(DEL_FILE) -r .tmp/fuckingHalma1.0.0
+	$(COPY_FILE) --parents $(DIST) .tmp/fuckingHalma1.0.0/ && $(COPY_FILE) --parents images.qrc .tmp/fuckingHalma1.0.0/ && $(COPY_FILE) --parents mainwindow.h battlefield.h remoteai.h .tmp/fuckingHalma1.0.0/ && $(COPY_FILE) --parents main.cpp mainwindow.cpp battlefield.cpp remoteai.cpp .tmp/fuckingHalma1.0.0/ && $(COPY_FILE) --parents mainwindow.ui battlefield.ui .tmp/fuckingHalma1.0.0/ && (cd `dirname .tmp/fuckingHalma1.0.0` && $(TAR) fuckingHalma1.0.0.tar fuckingHalma1.0.0 && $(COMPRESS) fuckingHalma1.0.0.tar) && $(MOVE) `dirname .tmp/fuckingHalma1.0.0`/fuckingHalma1.0.0.tar.gz . && $(DEL_FILE) -r .tmp/fuckingHalma1.0.0
 
 
 clean:compiler_clean 
@@ -501,8 +508,20 @@ check: first
 
 compiler_objective_c_make_all:
 compiler_objective_c_clean:
-compiler_rcc_make_all:
+compiler_rcc_make_all: qrc_images.cpp
 compiler_rcc_clean:
+	-$(DEL_FILE) qrc_images.cpp
+qrc_images.cpp: images.qrc \
+		piece1Selected.png \
+		empty \
+		piece2.png \
+		piece1.png \
+		empty.png \
+		piece1Correct.png \
+		piece2Correct.png \
+		piece2Selected.png
+	/Users/Johna/Qt/5.3/clang_64/bin/rcc -name images images.qrc -o qrc_images.cpp
+
 compiler_moc_header_make_all: moc_mainwindow.cpp moc_battlefield.cpp
 compiler_moc_header_clean:
 	-$(DEL_FILE) moc_mainwindow.cpp moc_battlefield.cpp
@@ -544,7 +563,7 @@ compiler_yacc_impl_make_all:
 compiler_yacc_impl_clean:
 compiler_lex_make_all:
 compiler_lex_clean:
-compiler_clean: compiler_moc_header_clean compiler_uic_clean 
+compiler_clean: compiler_rcc_clean compiler_moc_header_clean compiler_uic_clean 
 
 ####### Compile
 
@@ -589,6 +608,9 @@ remoteai.o: remoteai.cpp remoteai.h \
 		../../../Qt/5.3/clang_64/lib/QtNetwork.framework/Versions/5/Headers/QNetworkAccessManager \
 		../../../Qt/5.3/clang_64/lib/QtNetwork.framework/Versions/5/Headers/qnetworkaccessmanager.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o remoteai.o remoteai.cpp
+
+qrc_images.o: qrc_images.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qrc_images.o qrc_images.cpp
 
 moc_mainwindow.o: moc_mainwindow.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_mainwindow.o moc_mainwindow.cpp

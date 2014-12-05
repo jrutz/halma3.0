@@ -25,3 +25,8 @@ HEADERS  += mainwindow.h \
 
 FORMS    += mainwindow.ui \
     battlefield.ui
+
+OTHER_FILES +=
+
+RESOURCES += \
+    images.qrc
