@@ -534,6 +534,15 @@ moc_mainwindow.cpp: ../../../Qt/5.3/clang_64/lib/QtWidgets.framework/Versions/5/
 		../../../Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qstring.h \
 		../../../Qt/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QWidget \
 		../../../Qt/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qwidget.h \
+		../../../Qt/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QTableWidget \
+		../../../Qt/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qtablewidget.h \
+		../../../Qt/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QTableWidgetItem \
+		../../../Qt/5.3/clang_64/lib/QtGui.framework/Versions/5/Headers/QIcon \
+		../../../Qt/5.3/clang_64/lib/QtGui.framework/Versions/5/Headers/qicon.h \
+		../../../Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QList \
+		../../../Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qlist.h \
+		../../../Qt/5.3/clang_64/lib/QtGui.framework/Versions/5/Headers/QColor \
+		../../../Qt/5.3/clang_64/lib/QtGui.framework/Versions/5/Headers/qcolor.h \
 		mainwindow.h
 	/Users/Johna/Qt/5.3/clang_64/bin/moc $(DEFINES) -D__APPLE__ -D__GNUC__=4 -I/Users/Johna/Qt/5.3/clang_64/mkspecs/macx-clang -I/Users/Johna/Desktop/halma3.0/HalmaImplementation -I/Users/Johna/Qt/5.3/clang_64/lib/QtWidgets.framework/Headers -I/Users/Johna/Qt/5.3/clang_64/lib/QtNetwork.framework/Headers -I/Users/Johna/Qt/5.3/clang_64/lib/QtGui.framework/Headers -I/Users/Johna/Qt/5.3/clang_64/lib/QtCore.framework/Headers -F/Users/Johna/Qt/5.3/clang_64/lib mainwindow.h -o moc_mainwindow.cpp
 
@@ -541,6 +550,15 @@ moc_battlefield.cpp: ../../../Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/He
 		../../../Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qstring.h \
 		../../../Qt/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QWidget \
 		../../../Qt/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qwidget.h \
+		../../../Qt/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QTableWidget \
+		../../../Qt/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qtablewidget.h \
+		../../../Qt/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QTableWidgetItem \
+		../../../Qt/5.3/clang_64/lib/QtGui.framework/Versions/5/Headers/QIcon \
+		../../../Qt/5.3/clang_64/lib/QtGui.framework/Versions/5/Headers/qicon.h \
+		../../../Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QList \
+		../../../Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qlist.h \
+		../../../Qt/5.3/clang_64/lib/QtGui.framework/Versions/5/Headers/QColor \
+		../../../Qt/5.3/clang_64/lib/QtGui.framework/Versions/5/Headers/qcolor.h \
 		battlefield.h
 	/Users/Johna/Qt/5.3/clang_64/bin/moc $(DEFINES) -D__APPLE__ -D__GNUC__=4 -I/Users/Johna/Qt/5.3/clang_64/mkspecs/macx-clang -I/Users/Johna/Desktop/halma3.0/HalmaImplementation -I/Users/Johna/Qt/5.3/clang_64/lib/QtWidgets.framework/Headers -I/Users/Johna/Qt/5.3/clang_64/lib/QtNetwork.framework/Headers -I/Users/Johna/Qt/5.3/clang_64/lib/QtGui.framework/Headers -I/Users/Johna/Qt/5.3/clang_64/lib/QtCore.framework/Headers -F/Users/Johna/Qt/5.3/clang_64/lib battlefield.h -o moc_battlefield.cpp
 
@@ -577,6 +595,15 @@ main.o: main.cpp mainwindow.h \
 		../../../Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qstring.h \
 		../../../Qt/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QWidget \
 		../../../Qt/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qwidget.h \
+		../../../Qt/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QTableWidget \
+		../../../Qt/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qtablewidget.h \
+		../../../Qt/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QTableWidgetItem \
+		../../../Qt/5.3/clang_64/lib/QtGui.framework/Versions/5/Headers/QIcon \
+		../../../Qt/5.3/clang_64/lib/QtGui.framework/Versions/5/Headers/qicon.h \
+		../../../Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QList \
+		../../../Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qlist.h \
+		../../../Qt/5.3/clang_64/lib/QtGui.framework/Versions/5/Headers/QColor \
+		../../../Qt/5.3/clang_64/lib/QtGui.framework/Versions/5/Headers/qcolor.h \
 		../../../Qt/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QApplication \
 		../../../Qt/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qapplication.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o main.cpp
@@ -591,6 +618,15 @@ mainwindow.o: mainwindow.cpp mainwindow.h \
 		../../../Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qstring.h \
 		../../../Qt/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QWidget \
 		../../../Qt/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qwidget.h \
+		../../../Qt/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QTableWidget \
+		../../../Qt/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qtablewidget.h \
+		../../../Qt/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QTableWidgetItem \
+		../../../Qt/5.3/clang_64/lib/QtGui.framework/Versions/5/Headers/QIcon \
+		../../../Qt/5.3/clang_64/lib/QtGui.framework/Versions/5/Headers/qicon.h \
+		../../../Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QList \
+		../../../Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qlist.h \
+		../../../Qt/5.3/clang_64/lib/QtGui.framework/Versions/5/Headers/QColor \
+		../../../Qt/5.3/clang_64/lib/QtGui.framework/Versions/5/Headers/qcolor.h \
 		ui_mainwindow.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o mainwindow.cpp
 
@@ -599,14 +635,45 @@ battlefield.o: battlefield.cpp battlefield.h \
 		../../../Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qstring.h \
 		../../../Qt/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QWidget \
 		../../../Qt/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qwidget.h \
+		../../../Qt/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QTableWidget \
+		../../../Qt/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qtablewidget.h \
+		../../../Qt/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QTableWidgetItem \
+		../../../Qt/5.3/clang_64/lib/QtGui.framework/Versions/5/Headers/QIcon \
+		../../../Qt/5.3/clang_64/lib/QtGui.framework/Versions/5/Headers/qicon.h \
+		../../../Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QList \
+		../../../Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qlist.h \
+		../../../Qt/5.3/clang_64/lib/QtGui.framework/Versions/5/Headers/QColor \
+		../../../Qt/5.3/clang_64/lib/QtGui.framework/Versions/5/Headers/qcolor.h \
 		ui_battlefield.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o battlefield.o battlefield.cpp
 
 remoteai.o: remoteai.cpp remoteai.h \
+		../../../Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QCoreApplication \
+		../../../Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qcoreapplication.h \
+		../../../Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QDebug \
+		../../../Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qdebug.h \
 		../../../Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QString \
 		../../../Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qstring.h \
+		../../../Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QByteArray \
+		../../../Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qbytearray.h \
 		../../../Qt/5.3/clang_64/lib/QtNetwork.framework/Versions/5/Headers/QNetworkAccessManager \
-		../../../Qt/5.3/clang_64/lib/QtNetwork.framework/Versions/5/Headers/qnetworkaccessmanager.h
+		../../../Qt/5.3/clang_64/lib/QtNetwork.framework/Versions/5/Headers/qnetworkaccessmanager.h \
+		../../../Qt/5.3/clang_64/lib/QtNetwork.framework/Versions/5/Headers/QNetworkRequest \
+		../../../Qt/5.3/clang_64/lib/QtNetwork.framework/Versions/5/Headers/qnetworkrequest.h \
+		../../../Qt/5.3/clang_64/lib/QtNetwork.framework/Versions/5/Headers/QNetworkReply \
+		../../../Qt/5.3/clang_64/lib/QtNetwork.framework/Versions/5/Headers/qnetworkreply.h \
+		../../../Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QUrl \
+		../../../Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qurl.h \
+		../../../Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QUrlQuery \
+		../../../Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qurlquery.h \
+		../../../Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QJsonValue \
+		../../../Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qjsonvalue.h \
+		../../../Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QJsonDocument \
+		../../../Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qjsondocument.h \
+		../../../Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QJsonObject \
+		../../../Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qjsonobject.h \
+		../../../Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QJsonArray \
+		../../../Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qjsonarray.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o remoteai.o remoteai.cpp
 
 qrc_images.o: qrc_images.cpp 

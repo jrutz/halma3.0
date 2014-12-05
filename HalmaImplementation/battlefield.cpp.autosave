@@ -35,8 +35,8 @@ battlefield::~battlefield()
 }
 
 void battlefield :: setTeams()
-{
-    ui->battleTable->item(4,4)->data();
+{[]
+    ui->battleTable->item(4,4)->setData();
 
 }
 

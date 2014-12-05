@@ -17,11 +17,15 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp \
     battlefield.cpp \
-    remoteai.cpp
+    remoteai.cpp \
+    cellmanager.cpp \
+    cell.cpp
 
 HEADERS  += mainwindow.h \
     battlefield.h \
-    remoteai.h
+    remoteai.h \
+    cellmanager.h \
+    cell.h
 
 FORMS    += mainwindow.ui \
     battlefield.ui

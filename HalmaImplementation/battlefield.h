@@ -6,6 +6,8 @@
 #include <QTableWidget>
 #include <QTableWidgetItem>
 #include <QIcon>
+#include <QList>
+#include <QColor>
 
 
 

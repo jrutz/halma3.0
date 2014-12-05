@@ -53,7 +53,6 @@ public:
     QLabel *oneType;
     QLabel *twoType;
     QFrame *line;
-    QFrame *gameFrame;
     QWidget *gridLayoutWidget_2;
     QGridLayout *gameGrid;
     QPushButton *y17x8;
@@ -553,18 +552,6 @@ public:
         line->setGeometry(QRect(20, 50, 611, 16));
         line->setFrameShape(QFrame::HLine);
         line->setFrameShadow(QFrame::Sunken);
-        gameFrame = new QFrame(battlefield);
-        gameFrame->setObjectName(QStringLiteral("gameFrame"));
-        gameFrame->setGeometry(QRect(30, 80, 771, 891));
-        QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
-        sizePolicy.setHorizontalStretch(0);
-        sizePolicy.setVerticalStretch(0);
-        sizePolicy.setHeightForWidth(gameFrame->sizePolicy().hasHeightForWidth());
-        gameFrame->setSizePolicy(sizePolicy);
-        gameFrame->setAutoFillBackground(true);
-        gameFrame->setFrameShape(QFrame::NoFrame);
-        gameFrame->setFrameShadow(QFrame::Plain);
-        gameFrame->setLineWidth(0);
         gridLayoutWidget_2 = new QWidget(battlefield);
         gridLayoutWidget_2->setObjectName(QStringLiteral("gridLayoutWidget_2"));
         gridLayoutWidget_2->setGeometry(QRect(-10, 600, 741, 782));
@@ -575,11 +562,11 @@ public:
         gameGrid->setContentsMargins(0, 0, 0, 0);
         y17x8 = new QPushButton(gridLayoutWidget_2);
         y17x8->setObjectName(QStringLiteral("y17x8"));
-        QSizePolicy sizePolicy1(QSizePolicy::Fixed, QSizePolicy::Fixed);
-        sizePolicy1.setHorizontalStretch(1);
-        sizePolicy1.setVerticalStretch(0);
-        sizePolicy1.setHeightForWidth(y17x8->sizePolicy().hasHeightForWidth());
-        y17x8->setSizePolicy(sizePolicy1);
+        QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
+        sizePolicy.setHorizontalStretch(1);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(y17x8->sizePolicy().hasHeightForWidth());
+        y17x8->setSizePolicy(sizePolicy);
         y17x8->setMinimumSize(QSize(39, 39));
         y17x8->setMaximumSize(QSize(39, 39));
         QFont font6;
@@ -595,8 +582,8 @@ public:
 
         y3x1 = new QPushButton(gridLayoutWidget_2);
         y3x1->setObjectName(QStringLiteral("y3x1"));
-        sizePolicy1.setHeightForWidth(y3x1->sizePolicy().hasHeightForWidth());
-        y3x1->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y3x1->sizePolicy().hasHeightForWidth());
+        y3x1->setSizePolicy(sizePolicy);
         y3x1->setMinimumSize(QSize(39, 39));
         y3x1->setMaximumSize(QSize(39, 39));
         y3x1->setFont(font6);
@@ -608,8 +595,8 @@ public:
 
         y2x2 = new QPushButton(gridLayoutWidget_2);
         y2x2->setObjectName(QStringLiteral("y2x2"));
-        sizePolicy1.setHeightForWidth(y2x2->sizePolicy().hasHeightForWidth());
-        y2x2->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y2x2->sizePolicy().hasHeightForWidth());
+        y2x2->setSizePolicy(sizePolicy);
         y2x2->setMinimumSize(QSize(39, 39));
         y2x2->setMaximumSize(QSize(39, 39));
         y2x2->setFont(font6);
@@ -621,8 +608,8 @@ public:
 
         y7x11 = new QPushButton(gridLayoutWidget_2);
         y7x11->setObjectName(QStringLiteral("y7x11"));
-        sizePolicy1.setHeightForWidth(y7x11->sizePolicy().hasHeightForWidth());
-        y7x11->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y7x11->sizePolicy().hasHeightForWidth());
+        y7x11->setSizePolicy(sizePolicy);
         y7x11->setMinimumSize(QSize(39, 39));
         y7x11->setMaximumSize(QSize(39, 39));
         y7x11->setFont(font6);
@@ -634,8 +621,8 @@ public:
 
         y8x8 = new QPushButton(gridLayoutWidget_2);
         y8x8->setObjectName(QStringLiteral("y8x8"));
-        sizePolicy1.setHeightForWidth(y8x8->sizePolicy().hasHeightForWidth());
-        y8x8->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y8x8->sizePolicy().hasHeightForWidth());
+        y8x8->setSizePolicy(sizePolicy);
         y8x8->setMinimumSize(QSize(39, 39));
         y8x8->setMaximumSize(QSize(39, 39));
         y8x8->setFont(font6);
@@ -647,8 +634,8 @@ public:
 
         y1x8 = new QPushButton(gridLayoutWidget_2);
         y1x8->setObjectName(QStringLiteral("y1x8"));
-        sizePolicy1.setHeightForWidth(y1x8->sizePolicy().hasHeightForWidth());
-        y1x8->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y1x8->sizePolicy().hasHeightForWidth());
+        y1x8->setSizePolicy(sizePolicy);
         y1x8->setMinimumSize(QSize(39, 39));
         y1x8->setMaximumSize(QSize(39, 39));
         y1x8->setFont(font6);
@@ -660,8 +647,8 @@ public:
 
         y10x1 = new QPushButton(gridLayoutWidget_2);
         y10x1->setObjectName(QStringLiteral("y10x1"));
-        sizePolicy1.setHeightForWidth(y10x1->sizePolicy().hasHeightForWidth());
-        y10x1->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y10x1->sizePolicy().hasHeightForWidth());
+        y10x1->setSizePolicy(sizePolicy);
         y10x1->setMinimumSize(QSize(39, 39));
         y10x1->setMaximumSize(QSize(39, 39));
         y10x1->setFont(font6);
@@ -673,8 +660,8 @@ public:
 
         y13x5 = new QPushButton(gridLayoutWidget_2);
         y13x5->setObjectName(QStringLiteral("y13x5"));
-        sizePolicy1.setHeightForWidth(y13x5->sizePolicy().hasHeightForWidth());
-        y13x5->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y13x5->sizePolicy().hasHeightForWidth());
+        y13x5->setSizePolicy(sizePolicy);
         y13x5->setMinimumSize(QSize(39, 39));
         y13x5->setMaximumSize(QSize(39, 39));
         y13x5->setFont(font6);
@@ -686,8 +673,8 @@ public:
 
         y2x12 = new QPushButton(gridLayoutWidget_2);
         y2x12->setObjectName(QStringLiteral("y2x12"));
-        sizePolicy1.setHeightForWidth(y2x12->sizePolicy().hasHeightForWidth());
-        y2x12->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y2x12->sizePolicy().hasHeightForWidth());
+        y2x12->setSizePolicy(sizePolicy);
         y2x12->setMinimumSize(QSize(39, 39));
         y2x12->setMaximumSize(QSize(39, 39));
         y2x12->setFont(font6);
@@ -699,8 +686,8 @@ public:
 
         y5x10 = new QPushButton(gridLayoutWidget_2);
         y5x10->setObjectName(QStringLiteral("y5x10"));
-        sizePolicy1.setHeightForWidth(y5x10->sizePolicy().hasHeightForWidth());
-        y5x10->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y5x10->sizePolicy().hasHeightForWidth());
+        y5x10->setSizePolicy(sizePolicy);
         y5x10->setMinimumSize(QSize(39, 39));
         y5x10->setMaximumSize(QSize(39, 39));
         y5x10->setFont(font6);
@@ -712,8 +699,8 @@ public:
 
         y1x9 = new QPushButton(gridLayoutWidget_2);
         y1x9->setObjectName(QStringLiteral("y1x9"));
-        sizePolicy1.setHeightForWidth(y1x9->sizePolicy().hasHeightForWidth());
-        y1x9->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y1x9->sizePolicy().hasHeightForWidth());
+        y1x9->setSizePolicy(sizePolicy);
         y1x9->setMinimumSize(QSize(39, 39));
         y1x9->setMaximumSize(QSize(39, 39));
         y1x9->setFont(font6);
@@ -725,8 +712,8 @@ public:
 
         y3x3 = new QPushButton(gridLayoutWidget_2);
         y3x3->setObjectName(QStringLiteral("y3x3"));
-        sizePolicy1.setHeightForWidth(y3x3->sizePolicy().hasHeightForWidth());
-        y3x3->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y3x3->sizePolicy().hasHeightForWidth());
+        y3x3->setSizePolicy(sizePolicy);
         y3x3->setMinimumSize(QSize(39, 39));
         y3x3->setMaximumSize(QSize(39, 39));
         y3x3->setFont(font6);
@@ -738,8 +725,8 @@ public:
 
         y11x12 = new QPushButton(gridLayoutWidget_2);
         y11x12->setObjectName(QStringLiteral("y11x12"));
-        sizePolicy1.setHeightForWidth(y11x12->sizePolicy().hasHeightForWidth());
-        y11x12->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y11x12->sizePolicy().hasHeightForWidth());
+        y11x12->setSizePolicy(sizePolicy);
         y11x12->setMinimumSize(QSize(39, 39));
         y11x12->setMaximumSize(QSize(39, 39));
         y11x12->setFont(font6);
@@ -751,8 +738,8 @@ public:
 
         y7x6 = new QPushButton(gridLayoutWidget_2);
         y7x6->setObjectName(QStringLiteral("y7x6"));
-        sizePolicy1.setHeightForWidth(y7x6->sizePolicy().hasHeightForWidth());
-        y7x6->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y7x6->sizePolicy().hasHeightForWidth());
+        y7x6->setSizePolicy(sizePolicy);
         y7x6->setMinimumSize(QSize(39, 39));
         y7x6->setMaximumSize(QSize(39, 39));
         y7x6->setFont(font6);
@@ -764,8 +751,8 @@ public:
 
         y8x14 = new QPushButton(gridLayoutWidget_2);
         y8x14->setObjectName(QStringLiteral("y8x14"));
-        sizePolicy1.setHeightForWidth(y8x14->sizePolicy().hasHeightForWidth());
-        y8x14->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y8x14->sizePolicy().hasHeightForWidth());
+        y8x14->setSizePolicy(sizePolicy);
         y8x14->setMinimumSize(QSize(39, 39));
         y8x14->setMaximumSize(QSize(39, 39));
         y8x14->setFont(font6);
@@ -777,8 +764,8 @@ public:
 
         y13x14 = new QPushButton(gridLayoutWidget_2);
         y13x14->setObjectName(QStringLiteral("y13x14"));
-        sizePolicy1.setHeightForWidth(y13x14->sizePolicy().hasHeightForWidth());
-        y13x14->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y13x14->sizePolicy().hasHeightForWidth());
+        y13x14->setSizePolicy(sizePolicy);
         y13x14->setMinimumSize(QSize(39, 39));
         y13x14->setMaximumSize(QSize(39, 39));
         y13x14->setFont(font6);
@@ -790,8 +777,8 @@ public:
 
         y12x4 = new QPushButton(gridLayoutWidget_2);
         y12x4->setObjectName(QStringLiteral("y12x4"));
-        sizePolicy1.setHeightForWidth(y12x4->sizePolicy().hasHeightForWidth());
-        y12x4->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y12x4->sizePolicy().hasHeightForWidth());
+        y12x4->setSizePolicy(sizePolicy);
         y12x4->setMinimumSize(QSize(39, 39));
         y12x4->setMaximumSize(QSize(39, 39));
         y12x4->setFont(font6);
@@ -803,8 +790,8 @@ public:
 
         y8x5 = new QPushButton(gridLayoutWidget_2);
         y8x5->setObjectName(QStringLiteral("y8x5"));
-        sizePolicy1.setHeightForWidth(y8x5->sizePolicy().hasHeightForWidth());
-        y8x5->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y8x5->sizePolicy().hasHeightForWidth());
+        y8x5->setSizePolicy(sizePolicy);
         y8x5->setMinimumSize(QSize(39, 39));
         y8x5->setMaximumSize(QSize(39, 39));
         y8x5->setFont(font6);
@@ -816,8 +803,8 @@ public:
 
         y5x11 = new QPushButton(gridLayoutWidget_2);
         y5x11->setObjectName(QStringLiteral("y5x11"));
-        sizePolicy1.setHeightForWidth(y5x11->sizePolicy().hasHeightForWidth());
-        y5x11->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y5x11->sizePolicy().hasHeightForWidth());
+        y5x11->setSizePolicy(sizePolicy);
         y5x11->setMinimumSize(QSize(39, 39));
         y5x11->setMaximumSize(QSize(39, 39));
         y5x11->setFont(font6);
@@ -829,8 +816,8 @@ public:
 
         y12x8 = new QPushButton(gridLayoutWidget_2);
         y12x8->setObjectName(QStringLiteral("y12x8"));
-        sizePolicy1.setHeightForWidth(y12x8->sizePolicy().hasHeightForWidth());
-        y12x8->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y12x8->sizePolicy().hasHeightForWidth());
+        y12x8->setSizePolicy(sizePolicy);
         y12x8->setMinimumSize(QSize(39, 39));
         y12x8->setMaximumSize(QSize(39, 39));
         y12x8->setFont(font6);
@@ -842,8 +829,8 @@ public:
 
         y2x10 = new QPushButton(gridLayoutWidget_2);
         y2x10->setObjectName(QStringLiteral("y2x10"));
-        sizePolicy1.setHeightForWidth(y2x10->sizePolicy().hasHeightForWidth());
-        y2x10->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y2x10->sizePolicy().hasHeightForWidth());
+        y2x10->setSizePolicy(sizePolicy);
         y2x10->setMinimumSize(QSize(39, 39));
         y2x10->setMaximumSize(QSize(39, 39));
         y2x10->setFont(font6);
@@ -855,8 +842,8 @@ public:
 
         y4x5 = new QPushButton(gridLayoutWidget_2);
         y4x5->setObjectName(QStringLiteral("y4x5"));
-        sizePolicy1.setHeightForWidth(y4x5->sizePolicy().hasHeightForWidth());
-        y4x5->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y4x5->sizePolicy().hasHeightForWidth());
+        y4x5->setSizePolicy(sizePolicy);
         y4x5->setMinimumSize(QSize(39, 39));
         y4x5->setMaximumSize(QSize(39, 39));
         y4x5->setFont(font6);
@@ -868,8 +855,8 @@ public:
 
         y11x11 = new QPushButton(gridLayoutWidget_2);
         y11x11->setObjectName(QStringLiteral("y11x11"));
-        sizePolicy1.setHeightForWidth(y11x11->sizePolicy().hasHeightForWidth());
-        y11x11->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y11x11->sizePolicy().hasHeightForWidth());
+        y11x11->setSizePolicy(sizePolicy);
         y11x11->setMinimumSize(QSize(39, 39));
         y11x11->setMaximumSize(QSize(39, 39));
         y11x11->setFont(font6);
@@ -881,8 +868,8 @@ public:
 
         y8x9 = new QPushButton(gridLayoutWidget_2);
         y8x9->setObjectName(QStringLiteral("y8x9"));
-        sizePolicy1.setHeightForWidth(y8x9->sizePolicy().hasHeightForWidth());
-        y8x9->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y8x9->sizePolicy().hasHeightForWidth());
+        y8x9->setSizePolicy(sizePolicy);
         y8x9->setMinimumSize(QSize(39, 39));
         y8x9->setMaximumSize(QSize(39, 39));
         y8x9->setFont(font6);
@@ -894,8 +881,8 @@ public:
 
         y2x4 = new QPushButton(gridLayoutWidget_2);
         y2x4->setObjectName(QStringLiteral("y2x4"));
-        sizePolicy1.setHeightForWidth(y2x4->sizePolicy().hasHeightForWidth());
-        y2x4->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y2x4->sizePolicy().hasHeightForWidth());
+        y2x4->setSizePolicy(sizePolicy);
         y2x4->setMinimumSize(QSize(39, 39));
         y2x4->setMaximumSize(QSize(39, 39));
         y2x4->setFont(font6);
@@ -907,8 +894,8 @@ public:
 
         y10x7 = new QPushButton(gridLayoutWidget_2);
         y10x7->setObjectName(QStringLiteral("y10x7"));
-        sizePolicy1.setHeightForWidth(y10x7->sizePolicy().hasHeightForWidth());
-        y10x7->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y10x7->sizePolicy().hasHeightForWidth());
+        y10x7->setSizePolicy(sizePolicy);
         y10x7->setMinimumSize(QSize(39, 39));
         y10x7->setMaximumSize(QSize(39, 39));
         y10x7->setFont(font6);
@@ -920,8 +907,8 @@ public:
 
         y7x14 = new QPushButton(gridLayoutWidget_2);
         y7x14->setObjectName(QStringLiteral("y7x14"));
-        sizePolicy1.setHeightForWidth(y7x14->sizePolicy().hasHeightForWidth());
-        y7x14->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y7x14->sizePolicy().hasHeightForWidth());
+        y7x14->setSizePolicy(sizePolicy);
         y7x14->setMinimumSize(QSize(39, 39));
         y7x14->setMaximumSize(QSize(39, 39));
         y7x14->setFont(font6);
@@ -933,8 +920,8 @@ public:
 
         y6x14 = new QPushButton(gridLayoutWidget_2);
         y6x14->setObjectName(QStringLiteral("y6x14"));
-        sizePolicy1.setHeightForWidth(y6x14->sizePolicy().hasHeightForWidth());
-        y6x14->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y6x14->sizePolicy().hasHeightForWidth());
+        y6x14->setSizePolicy(sizePolicy);
         y6x14->setMinimumSize(QSize(39, 39));
         y6x14->setMaximumSize(QSize(39, 39));
         y6x14->setFont(font6);
@@ -946,8 +933,8 @@ public:
 
         y5x15 = new QPushButton(gridLayoutWidget_2);
         y5x15->setObjectName(QStringLiteral("y5x15"));
-        sizePolicy1.setHeightForWidth(y5x15->sizePolicy().hasHeightForWidth());
-        y5x15->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y5x15->sizePolicy().hasHeightForWidth());
+        y5x15->setSizePolicy(sizePolicy);
         y5x15->setMinimumSize(QSize(39, 39));
         y5x15->setMaximumSize(QSize(39, 39));
         y5x15->setFont(font6);
@@ -959,8 +946,8 @@ public:
 
         y7x8 = new QPushButton(gridLayoutWidget_2);
         y7x8->setObjectName(QStringLiteral("y7x8"));
-        sizePolicy1.setHeightForWidth(y7x8->sizePolicy().hasHeightForWidth());
-        y7x8->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y7x8->sizePolicy().hasHeightForWidth());
+        y7x8->setSizePolicy(sizePolicy);
         y7x8->setMinimumSize(QSize(39, 39));
         y7x8->setMaximumSize(QSize(39, 39));
         y7x8->setFont(font6);
@@ -972,8 +959,8 @@ public:
 
         y7x5 = new QPushButton(gridLayoutWidget_2);
         y7x5->setObjectName(QStringLiteral("y7x5"));
-        sizePolicy1.setHeightForWidth(y7x5->sizePolicy().hasHeightForWidth());
-        y7x5->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y7x5->sizePolicy().hasHeightForWidth());
+        y7x5->setSizePolicy(sizePolicy);
         y7x5->setMinimumSize(QSize(39, 39));
         y7x5->setMaximumSize(QSize(39, 39));
         y7x5->setFont(font6);
@@ -985,8 +972,8 @@ public:
 
         y4x12 = new QPushButton(gridLayoutWidget_2);
         y4x12->setObjectName(QStringLiteral("y4x12"));
-        sizePolicy1.setHeightForWidth(y4x12->sizePolicy().hasHeightForWidth());
-        y4x12->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y4x12->sizePolicy().hasHeightForWidth());
+        y4x12->setSizePolicy(sizePolicy);
         y4x12->setMinimumSize(QSize(39, 39));
         y4x12->setMaximumSize(QSize(39, 39));
         y4x12->setFont(font6);
@@ -998,8 +985,8 @@ public:
 
         y4x15 = new QPushButton(gridLayoutWidget_2);
         y4x15->setObjectName(QStringLiteral("y4x15"));
-        sizePolicy1.setHeightForWidth(y4x15->sizePolicy().hasHeightForWidth());
-        y4x15->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y4x15->sizePolicy().hasHeightForWidth());
+        y4x15->setSizePolicy(sizePolicy);
         y4x15->setMinimumSize(QSize(39, 39));
         y4x15->setMaximumSize(QSize(39, 39));
         y4x15->setFont(font6);
@@ -1011,8 +998,8 @@ public:
 
         y9x14 = new QPushButton(gridLayoutWidget_2);
         y9x14->setObjectName(QStringLiteral("y9x14"));
-        sizePolicy1.setHeightForWidth(y9x14->sizePolicy().hasHeightForWidth());
-        y9x14->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y9x14->sizePolicy().hasHeightForWidth());
+        y9x14->setSizePolicy(sizePolicy);
         y9x14->setMinimumSize(QSize(39, 39));
         y9x14->setMaximumSize(QSize(39, 39));
         y9x14->setFont(font6);
@@ -1024,8 +1011,8 @@ public:
 
         y6x8 = new QPushButton(gridLayoutWidget_2);
         y6x8->setObjectName(QStringLiteral("y6x8"));
-        sizePolicy1.setHeightForWidth(y6x8->sizePolicy().hasHeightForWidth());
-        y6x8->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y6x8->sizePolicy().hasHeightForWidth());
+        y6x8->setSizePolicy(sizePolicy);
         y6x8->setMinimumSize(QSize(39, 39));
         y6x8->setMaximumSize(QSize(39, 39));
         y6x8->setFont(font6);
@@ -1037,8 +1024,8 @@ public:
 
         y10x13 = new QPushButton(gridLayoutWidget_2);
         y10x13->setObjectName(QStringLiteral("y10x13"));
-        sizePolicy1.setHeightForWidth(y10x13->sizePolicy().hasHeightForWidth());
-        y10x13->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y10x13->sizePolicy().hasHeightForWidth());
+        y10x13->setSizePolicy(sizePolicy);
         y10x13->setMinimumSize(QSize(39, 39));
         y10x13->setMaximumSize(QSize(39, 39));
         y10x13->setFont(font6);
@@ -1050,8 +1037,8 @@ public:
 
         y7x9 = new QPushButton(gridLayoutWidget_2);
         y7x9->setObjectName(QStringLiteral("y7x9"));
-        sizePolicy1.setHeightForWidth(y7x9->sizePolicy().hasHeightForWidth());
-        y7x9->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y7x9->sizePolicy().hasHeightForWidth());
+        y7x9->setSizePolicy(sizePolicy);
         y7x9->setMinimumSize(QSize(39, 39));
         y7x9->setMaximumSize(QSize(39, 39));
         y7x9->setFont(font6);
@@ -1063,8 +1050,8 @@ public:
 
         y10x5 = new QPushButton(gridLayoutWidget_2);
         y10x5->setObjectName(QStringLiteral("y10x5"));
-        sizePolicy1.setHeightForWidth(y10x5->sizePolicy().hasHeightForWidth());
-        y10x5->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y10x5->sizePolicy().hasHeightForWidth());
+        y10x5->setSizePolicy(sizePolicy);
         y10x5->setMinimumSize(QSize(39, 39));
         y10x5->setMaximumSize(QSize(39, 39));
         y10x5->setFont(font6);
@@ -1076,8 +1063,8 @@ public:
 
         y2x6 = new QPushButton(gridLayoutWidget_2);
         y2x6->setObjectName(QStringLiteral("y2x6"));
-        sizePolicy1.setHeightForWidth(y2x6->sizePolicy().hasHeightForWidth());
-        y2x6->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y2x6->sizePolicy().hasHeightForWidth());
+        y2x6->setSizePolicy(sizePolicy);
         y2x6->setMinimumSize(QSize(39, 39));
         y2x6->setMaximumSize(QSize(39, 39));
         y2x6->setFont(font6);
@@ -1089,8 +1076,8 @@ public:
 
         y5x17 = new QPushButton(gridLayoutWidget_2);
         y5x17->setObjectName(QStringLiteral("y5x17"));
-        sizePolicy1.setHeightForWidth(y5x17->sizePolicy().hasHeightForWidth());
-        y5x17->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y5x17->sizePolicy().hasHeightForWidth());
+        y5x17->setSizePolicy(sizePolicy);
         y5x17->setMinimumSize(QSize(39, 39));
         y5x17->setMaximumSize(QSize(39, 39));
         y5x17->setFont(font6);
@@ -1102,8 +1089,8 @@ public:
 
         y9x10 = new QPushButton(gridLayoutWidget_2);
         y9x10->setObjectName(QStringLiteral("y9x10"));
-        sizePolicy1.setHeightForWidth(y9x10->sizePolicy().hasHeightForWidth());
-        y9x10->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y9x10->sizePolicy().hasHeightForWidth());
+        y9x10->setSizePolicy(sizePolicy);
         y9x10->setMinimumSize(QSize(39, 39));
         y9x10->setMaximumSize(QSize(39, 39));
         y9x10->setFont(font6);
@@ -1115,8 +1102,8 @@ public:
 
         y9x17 = new QPushButton(gridLayoutWidget_2);
         y9x17->setObjectName(QStringLiteral("y9x17"));
-        sizePolicy1.setHeightForWidth(y9x17->sizePolicy().hasHeightForWidth());
-        y9x17->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y9x17->sizePolicy().hasHeightForWidth());
+        y9x17->setSizePolicy(sizePolicy);
         y9x17->setMinimumSize(QSize(39, 39));
         y9x17->setMaximumSize(QSize(39, 39));
         y9x17->setFont(font6);
@@ -1128,8 +1115,8 @@ public:
 
         y7x4 = new QPushButton(gridLayoutWidget_2);
         y7x4->setObjectName(QStringLiteral("y7x4"));
-        sizePolicy1.setHeightForWidth(y7x4->sizePolicy().hasHeightForWidth());
-        y7x4->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y7x4->sizePolicy().hasHeightForWidth());
+        y7x4->setSizePolicy(sizePolicy);
         y7x4->setMinimumSize(QSize(39, 39));
         y7x4->setMaximumSize(QSize(39, 39));
         y7x4->setFont(font6);
@@ -1141,8 +1128,8 @@ public:
 
         y4x4 = new QPushButton(gridLayoutWidget_2);
         y4x4->setObjectName(QStringLiteral("y4x4"));
-        sizePolicy1.setHeightForWidth(y4x4->sizePolicy().hasHeightForWidth());
-        y4x4->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y4x4->sizePolicy().hasHeightForWidth());
+        y4x4->setSizePolicy(sizePolicy);
         y4x4->setMinimumSize(QSize(39, 39));
         y4x4->setMaximumSize(QSize(39, 39));
         y4x4->setFont(font6);
@@ -1154,8 +1141,8 @@ public:
 
         y12x5 = new QPushButton(gridLayoutWidget_2);
         y12x5->setObjectName(QStringLiteral("y12x5"));
-        sizePolicy1.setHeightForWidth(y12x5->sizePolicy().hasHeightForWidth());
-        y12x5->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y12x5->sizePolicy().hasHeightForWidth());
+        y12x5->setSizePolicy(sizePolicy);
         y12x5->setMinimumSize(QSize(39, 39));
         y12x5->setMaximumSize(QSize(39, 39));
         y12x5->setFont(font6);
@@ -1167,8 +1154,8 @@ public:
 
         y6x4 = new QPushButton(gridLayoutWidget_2);
         y6x4->setObjectName(QStringLiteral("y6x4"));
-        sizePolicy1.setHeightForWidth(y6x4->sizePolicy().hasHeightForWidth());
-        y6x4->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y6x4->sizePolicy().hasHeightForWidth());
+        y6x4->setSizePolicy(sizePolicy);
         y6x4->setMinimumSize(QSize(39, 39));
         y6x4->setMaximumSize(QSize(39, 39));
         y6x4->setFont(font6);
@@ -1180,8 +1167,8 @@ public:
 
         y3x2 = new QPushButton(gridLayoutWidget_2);
         y3x2->setObjectName(QStringLiteral("y3x2"));
-        sizePolicy1.setHeightForWidth(y3x2->sizePolicy().hasHeightForWidth());
-        y3x2->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y3x2->sizePolicy().hasHeightForWidth());
+        y3x2->setSizePolicy(sizePolicy);
         y3x2->setMinimumSize(QSize(39, 39));
         y3x2->setMaximumSize(QSize(39, 39));
         y3x2->setFont(font6);
@@ -1193,8 +1180,8 @@ public:
 
         y13x2 = new QPushButton(gridLayoutWidget_2);
         y13x2->setObjectName(QStringLiteral("y13x2"));
-        sizePolicy1.setHeightForWidth(y13x2->sizePolicy().hasHeightForWidth());
-        y13x2->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y13x2->sizePolicy().hasHeightForWidth());
+        y13x2->setSizePolicy(sizePolicy);
         y13x2->setMinimumSize(QSize(39, 39));
         y13x2->setMaximumSize(QSize(39, 39));
         y13x2->setFont(font6);
@@ -1206,8 +1193,8 @@ public:
 
         y17x4 = new QPushButton(gridLayoutWidget_2);
         y17x4->setObjectName(QStringLiteral("y17x4"));
-        sizePolicy1.setHeightForWidth(y17x4->sizePolicy().hasHeightForWidth());
-        y17x4->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y17x4->sizePolicy().hasHeightForWidth());
+        y17x4->setSizePolicy(sizePolicy);
         y17x4->setMinimumSize(QSize(39, 39));
         y17x4->setMaximumSize(QSize(39, 39));
         y17x4->setFont(font6);
@@ -1219,8 +1206,8 @@ public:
 
         y2x9 = new QPushButton(gridLayoutWidget_2);
         y2x9->setObjectName(QStringLiteral("y2x9"));
-        sizePolicy1.setHeightForWidth(y2x9->sizePolicy().hasHeightForWidth());
-        y2x9->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y2x9->sizePolicy().hasHeightForWidth());
+        y2x9->setSizePolicy(sizePolicy);
         y2x9->setMinimumSize(QSize(39, 39));
         y2x9->setMaximumSize(QSize(39, 39));
         y2x9->setFont(font6);
@@ -1232,8 +1219,8 @@ public:
 
         y9x3 = new QPushButton(gridLayoutWidget_2);
         y9x3->setObjectName(QStringLiteral("y9x3"));
-        sizePolicy1.setHeightForWidth(y9x3->sizePolicy().hasHeightForWidth());
-        y9x3->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y9x3->sizePolicy().hasHeightForWidth());
+        y9x3->setSizePolicy(sizePolicy);
         y9x3->setMinimumSize(QSize(39, 39));
         y9x3->setMaximumSize(QSize(39, 39));
         y9x3->setFont(font6);
@@ -1245,8 +1232,8 @@ public:
 
         y7x2 = new QPushButton(gridLayoutWidget_2);
         y7x2->setObjectName(QStringLiteral("y7x2"));
-        sizePolicy1.setHeightForWidth(y7x2->sizePolicy().hasHeightForWidth());
-        y7x2->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y7x2->sizePolicy().hasHeightForWidth());
+        y7x2->setSizePolicy(sizePolicy);
         y7x2->setMinimumSize(QSize(39, 39));
         y7x2->setMaximumSize(QSize(39, 39));
         y7x2->setFont(font6);
@@ -1258,8 +1245,8 @@ public:
 
         y10x3 = new QPushButton(gridLayoutWidget_2);
         y10x3->setObjectName(QStringLiteral("y10x3"));
-        sizePolicy1.setHeightForWidth(y10x3->sizePolicy().hasHeightForWidth());
-        y10x3->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y10x3->sizePolicy().hasHeightForWidth());
+        y10x3->setSizePolicy(sizePolicy);
         y10x3->setMinimumSize(QSize(39, 39));
         y10x3->setMaximumSize(QSize(39, 39));
         y10x3->setFont(font6);
@@ -1271,8 +1258,8 @@ public:
 
         y6x2 = new QPushButton(gridLayoutWidget_2);
         y6x2->setObjectName(QStringLiteral("y6x2"));
-        sizePolicy1.setHeightForWidth(y6x2->sizePolicy().hasHeightForWidth());
-        y6x2->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y6x2->sizePolicy().hasHeightForWidth());
+        y6x2->setSizePolicy(sizePolicy);
         y6x2->setMinimumSize(QSize(39, 39));
         y6x2->setMaximumSize(QSize(39, 39));
         y6x2->setFont(font6);
@@ -1284,8 +1271,8 @@ public:
 
         y8x2 = new QPushButton(gridLayoutWidget_2);
         y8x2->setObjectName(QStringLiteral("y8x2"));
-        sizePolicy1.setHeightForWidth(y8x2->sizePolicy().hasHeightForWidth());
-        y8x2->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y8x2->sizePolicy().hasHeightForWidth());
+        y8x2->setSizePolicy(sizePolicy);
         y8x2->setMinimumSize(QSize(39, 39));
         y8x2->setMaximumSize(QSize(39, 39));
         y8x2->setFont(font6);
@@ -1297,8 +1284,8 @@ public:
 
         y13x10 = new QPushButton(gridLayoutWidget_2);
         y13x10->setObjectName(QStringLiteral("y13x10"));
-        sizePolicy1.setHeightForWidth(y13x10->sizePolicy().hasHeightForWidth());
-        y13x10->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y13x10->sizePolicy().hasHeightForWidth());
+        y13x10->setSizePolicy(sizePolicy);
         y13x10->setMinimumSize(QSize(39, 39));
         y13x10->setMaximumSize(QSize(39, 39));
         y13x10->setFont(font6);
@@ -1310,8 +1297,8 @@ public:
 
         y13x1 = new QPushButton(gridLayoutWidget_2);
         y13x1->setObjectName(QStringLiteral("y13x1"));
-        sizePolicy1.setHeightForWidth(y13x1->sizePolicy().hasHeightForWidth());
-        y13x1->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y13x1->sizePolicy().hasHeightForWidth());
+        y13x1->setSizePolicy(sizePolicy);
         y13x1->setMinimumSize(QSize(39, 39));
         y13x1->setMaximumSize(QSize(39, 39));
         y13x1->setFont(font6);
@@ -1323,8 +1310,8 @@ public:
 
         y13x7 = new QPushButton(gridLayoutWidget_2);
         y13x7->setObjectName(QStringLiteral("y13x7"));
-        sizePolicy1.setHeightForWidth(y13x7->sizePolicy().hasHeightForWidth());
-        y13x7->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y13x7->sizePolicy().hasHeightForWidth());
+        y13x7->setSizePolicy(sizePolicy);
         y13x7->setMinimumSize(QSize(39, 39));
         y13x7->setMaximumSize(QSize(39, 39));
         y13x7->setFont(font6);
@@ -1336,8 +1323,8 @@ public:
 
         y17x13 = new QPushButton(gridLayoutWidget_2);
         y17x13->setObjectName(QStringLiteral("y17x13"));
-        sizePolicy1.setHeightForWidth(y17x13->sizePolicy().hasHeightForWidth());
-        y17x13->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y17x13->sizePolicy().hasHeightForWidth());
+        y17x13->setSizePolicy(sizePolicy);
         y17x13->setMinimumSize(QSize(39, 39));
         y17x13->setMaximumSize(QSize(39, 39));
         y17x13->setFont(font6);
@@ -1349,8 +1336,8 @@ public:
 
         y17x7 = new QPushButton(gridLayoutWidget_2);
         y17x7->setObjectName(QStringLiteral("y17x7"));
-        sizePolicy1.setHeightForWidth(y17x7->sizePolicy().hasHeightForWidth());
-        y17x7->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y17x7->sizePolicy().hasHeightForWidth());
+        y17x7->setSizePolicy(sizePolicy);
         y17x7->setMinimumSize(QSize(39, 39));
         y17x7->setMaximumSize(QSize(39, 39));
         y17x7->setFont(font6);
@@ -1362,8 +1349,8 @@ public:
 
         y17x9 = new QPushButton(gridLayoutWidget_2);
         y17x9->setObjectName(QStringLiteral("y17x9"));
-        sizePolicy1.setHeightForWidth(y17x9->sizePolicy().hasHeightForWidth());
-        y17x9->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y17x9->sizePolicy().hasHeightForWidth());
+        y17x9->setSizePolicy(sizePolicy);
         y17x9->setMinimumSize(QSize(39, 39));
         y17x9->setMaximumSize(QSize(39, 39));
         y17x9->setFont(font6);
@@ -1375,8 +1362,8 @@ public:
 
         y17x0 = new QPushButton(gridLayoutWidget_2);
         y17x0->setObjectName(QStringLiteral("y17x0"));
-        sizePolicy1.setHeightForWidth(y17x0->sizePolicy().hasHeightForWidth());
-        y17x0->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y17x0->sizePolicy().hasHeightForWidth());
+        y17x0->setSizePolicy(sizePolicy);
         y17x0->setMinimumSize(QSize(39, 39));
         y17x0->setMaximumSize(QSize(39, 39));
         y17x0->setFont(font6);
@@ -1388,8 +1375,8 @@ public:
 
         y0x4 = new QPushButton(gridLayoutWidget_2);
         y0x4->setObjectName(QStringLiteral("y0x4"));
-        sizePolicy1.setHeightForWidth(y0x4->sizePolicy().hasHeightForWidth());
-        y0x4->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y0x4->sizePolicy().hasHeightForWidth());
+        y0x4->setSizePolicy(sizePolicy);
         y0x4->setMinimumSize(QSize(39, 39));
         y0x4->setMaximumSize(QSize(39, 39));
         y0x4->setFont(font6);
@@ -1401,8 +1388,8 @@ public:
 
         y14x4 = new QPushButton(gridLayoutWidget_2);
         y14x4->setObjectName(QStringLiteral("y14x4"));
-        sizePolicy1.setHeightForWidth(y14x4->sizePolicy().hasHeightForWidth());
-        y14x4->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y14x4->sizePolicy().hasHeightForWidth());
+        y14x4->setSizePolicy(sizePolicy);
         y14x4->setMinimumSize(QSize(39, 39));
         y14x4->setMaximumSize(QSize(39, 39));
         y14x4->setFont(font6);
@@ -1414,8 +1401,8 @@ public:
 
         y16x0 = new QPushButton(gridLayoutWidget_2);
         y16x0->setObjectName(QStringLiteral("y16x0"));
-        sizePolicy1.setHeightForWidth(y16x0->sizePolicy().hasHeightForWidth());
-        y16x0->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y16x0->sizePolicy().hasHeightForWidth());
+        y16x0->setSizePolicy(sizePolicy);
         y16x0->setMinimumSize(QSize(39, 39));
         y16x0->setMaximumSize(QSize(39, 39));
         y16x0->setFont(font6);
@@ -1427,8 +1414,8 @@ public:
 
         y16x2 = new QPushButton(gridLayoutWidget_2);
         y16x2->setObjectName(QStringLiteral("y16x2"));
-        sizePolicy1.setHeightForWidth(y16x2->sizePolicy().hasHeightForWidth());
-        y16x2->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y16x2->sizePolicy().hasHeightForWidth());
+        y16x2->setSizePolicy(sizePolicy);
         y16x2->setMinimumSize(QSize(39, 39));
         y16x2->setMaximumSize(QSize(39, 39));
         y16x2->setFont(font6);
@@ -1440,8 +1427,8 @@ public:
 
         y7x17 = new QPushButton(gridLayoutWidget_2);
         y7x17->setObjectName(QStringLiteral("y7x17"));
-        sizePolicy1.setHeightForWidth(y7x17->sizePolicy().hasHeightForWidth());
-        y7x17->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y7x17->sizePolicy().hasHeightForWidth());
+        y7x17->setSizePolicy(sizePolicy);
         y7x17->setMinimumSize(QSize(39, 39));
         y7x17->setMaximumSize(QSize(39, 39));
         y7x17->setFont(font6);
@@ -1453,8 +1440,8 @@ public:
 
         y13x17 = new QPushButton(gridLayoutWidget_2);
         y13x17->setObjectName(QStringLiteral("y13x17"));
-        sizePolicy1.setHeightForWidth(y13x17->sizePolicy().hasHeightForWidth());
-        y13x17->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y13x17->sizePolicy().hasHeightForWidth());
+        y13x17->setSizePolicy(sizePolicy);
         y13x17->setMinimumSize(QSize(39, 39));
         y13x17->setMaximumSize(QSize(39, 39));
         y13x17->setFont(font6);
@@ -1466,8 +1453,8 @@ public:
 
         y1x17 = new QPushButton(gridLayoutWidget_2);
         y1x17->setObjectName(QStringLiteral("y1x17"));
-        sizePolicy1.setHeightForWidth(y1x17->sizePolicy().hasHeightForWidth());
-        y1x17->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y1x17->sizePolicy().hasHeightForWidth());
+        y1x17->setSizePolicy(sizePolicy);
         y1x17->setMinimumSize(QSize(39, 39));
         y1x17->setMaximumSize(QSize(39, 39));
         y1x17->setFont(font6);
@@ -1479,8 +1466,8 @@ public:
 
         y6x16 = new QPushButton(gridLayoutWidget_2);
         y6x16->setObjectName(QStringLiteral("y6x16"));
-        sizePolicy1.setHeightForWidth(y6x16->sizePolicy().hasHeightForWidth());
-        y6x16->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y6x16->sizePolicy().hasHeightForWidth());
+        y6x16->setSizePolicy(sizePolicy);
         y6x16->setMinimumSize(QSize(39, 39));
         y6x16->setMaximumSize(QSize(39, 39));
         y6x16->setFont(font6);
@@ -1492,8 +1479,8 @@ public:
 
         y7x0 = new QPushButton(gridLayoutWidget_2);
         y7x0->setObjectName(QStringLiteral("y7x0"));
-        sizePolicy1.setHeightForWidth(y7x0->sizePolicy().hasHeightForWidth());
-        y7x0->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y7x0->sizePolicy().hasHeightForWidth());
+        y7x0->setSizePolicy(sizePolicy);
         y7x0->setMinimumSize(QSize(39, 39));
         y7x0->setMaximumSize(QSize(39, 39));
         y7x0->setFont(font6);
@@ -1505,8 +1492,8 @@ public:
 
         y16x6 = new QPushButton(gridLayoutWidget_2);
         y16x6->setObjectName(QStringLiteral("y16x6"));
-        sizePolicy1.setHeightForWidth(y16x6->sizePolicy().hasHeightForWidth());
-        y16x6->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y16x6->sizePolicy().hasHeightForWidth());
+        y16x6->setSizePolicy(sizePolicy);
         y16x6->setMinimumSize(QSize(39, 39));
         y16x6->setMaximumSize(QSize(39, 39));
         y16x6->setFont(font6);
@@ -1518,8 +1505,8 @@ public:
 
         y5x1 = new QPushButton(gridLayoutWidget_2);
         y5x1->setObjectName(QStringLiteral("y5x1"));
-        sizePolicy1.setHeightForWidth(y5x1->sizePolicy().hasHeightForWidth());
-        y5x1->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y5x1->sizePolicy().hasHeightForWidth());
+        y5x1->setSizePolicy(sizePolicy);
         y5x1->setMinimumSize(QSize(39, 39));
         y5x1->setMaximumSize(QSize(39, 39));
         y5x1->setFont(font6);
@@ -1531,8 +1518,8 @@ public:
 
         y10x0 = new QPushButton(gridLayoutWidget_2);
         y10x0->setObjectName(QStringLiteral("y10x0"));
-        sizePolicy1.setHeightForWidth(y10x0->sizePolicy().hasHeightForWidth());
-        y10x0->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y10x0->sizePolicy().hasHeightForWidth());
+        y10x0->setSizePolicy(sizePolicy);
         y10x0->setMinimumSize(QSize(39, 39));
         y10x0->setMaximumSize(QSize(39, 39));
         y10x0->setFont(font6);
@@ -1544,8 +1531,8 @@ public:
 
         y0x3 = new QPushButton(gridLayoutWidget_2);
         y0x3->setObjectName(QStringLiteral("y0x3"));
-        sizePolicy1.setHeightForWidth(y0x3->sizePolicy().hasHeightForWidth());
-        y0x3->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y0x3->sizePolicy().hasHeightForWidth());
+        y0x3->setSizePolicy(sizePolicy);
         y0x3->setMinimumSize(QSize(39, 39));
         y0x3->setMaximumSize(QSize(39, 39));
         y0x3->setFont(font6);
@@ -1557,8 +1544,8 @@ public:
 
         y14x16 = new QPushButton(gridLayoutWidget_2);
         y14x16->setObjectName(QStringLiteral("y14x16"));
-        sizePolicy1.setHeightForWidth(y14x16->sizePolicy().hasHeightForWidth());
-        y14x16->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y14x16->sizePolicy().hasHeightForWidth());
+        y14x16->setSizePolicy(sizePolicy);
         y14x16->setMinimumSize(QSize(39, 39));
         y14x16->setMaximumSize(QSize(39, 39));
         y14x16->setFont(font6);
@@ -1570,8 +1557,8 @@ public:
 
         y1x14 = new QPushButton(gridLayoutWidget_2);
         y1x14->setObjectName(QStringLiteral("y1x14"));
-        sizePolicy1.setHeightForWidth(y1x14->sizePolicy().hasHeightForWidth());
-        y1x14->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y1x14->sizePolicy().hasHeightForWidth());
+        y1x14->setSizePolicy(sizePolicy);
         y1x14->setMinimumSize(QSize(39, 39));
         y1x14->setMaximumSize(QSize(39, 39));
         y1x14->setFont(font6);
@@ -1583,8 +1570,8 @@ public:
 
         y14x7 = new QPushButton(gridLayoutWidget_2);
         y14x7->setObjectName(QStringLiteral("y14x7"));
-        sizePolicy1.setHeightForWidth(y14x7->sizePolicy().hasHeightForWidth());
-        y14x7->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y14x7->sizePolicy().hasHeightForWidth());
+        y14x7->setSizePolicy(sizePolicy);
         y14x7->setMinimumSize(QSize(39, 39));
         y14x7->setMaximumSize(QSize(39, 39));
         y14x7->setFont(font6);
@@ -1596,8 +1583,8 @@ public:
 
         y15x10 = new QPushButton(gridLayoutWidget_2);
         y15x10->setObjectName(QStringLiteral("y15x10"));
-        sizePolicy1.setHeightForWidth(y15x10->sizePolicy().hasHeightForWidth());
-        y15x10->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y15x10->sizePolicy().hasHeightForWidth());
+        y15x10->setSizePolicy(sizePolicy);
         y15x10->setMinimumSize(QSize(39, 39));
         y15x10->setMaximumSize(QSize(39, 39));
         y15x10->setFont(font6);
@@ -1609,8 +1596,8 @@ public:
 
         y15x13 = new QPushButton(gridLayoutWidget_2);
         y15x13->setObjectName(QStringLiteral("y15x13"));
-        sizePolicy1.setHeightForWidth(y15x13->sizePolicy().hasHeightForWidth());
-        y15x13->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y15x13->sizePolicy().hasHeightForWidth());
+        y15x13->setSizePolicy(sizePolicy);
         y15x13->setMinimumSize(QSize(39, 39));
         y15x13->setMaximumSize(QSize(39, 39));
         y15x13->setFont(font6);
@@ -1622,8 +1609,8 @@ public:
 
         y15x1 = new QPushButton(gridLayoutWidget_2);
         y15x1->setObjectName(QStringLiteral("y15x1"));
-        sizePolicy1.setHeightForWidth(y15x1->sizePolicy().hasHeightForWidth());
-        y15x1->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y15x1->sizePolicy().hasHeightForWidth());
+        y15x1->setSizePolicy(sizePolicy);
         y15x1->setMinimumSize(QSize(39, 39));
         y15x1->setMaximumSize(QSize(39, 39));
         y15x1->setFont(font6);
@@ -1635,8 +1622,8 @@ public:
 
         y15x15 = new QPushButton(gridLayoutWidget_2);
         y15x15->setObjectName(QStringLiteral("y15x15"));
-        sizePolicy1.setHeightForWidth(y15x15->sizePolicy().hasHeightForWidth());
-        y15x15->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y15x15->sizePolicy().hasHeightForWidth());
+        y15x15->setSizePolicy(sizePolicy);
         y15x15->setMinimumSize(QSize(39, 39));
         y15x15->setMaximumSize(QSize(39, 39));
         y15x15->setFont(font6);
@@ -1648,8 +1635,8 @@ public:
 
         y15x14 = new QPushButton(gridLayoutWidget_2);
         y15x14->setObjectName(QStringLiteral("y15x14"));
-        sizePolicy1.setHeightForWidth(y15x14->sizePolicy().hasHeightForWidth());
-        y15x14->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y15x14->sizePolicy().hasHeightForWidth());
+        y15x14->setSizePolicy(sizePolicy);
         y15x14->setMinimumSize(QSize(39, 39));
         y15x14->setMaximumSize(QSize(39, 39));
         y15x14->setFont(font6);
@@ -1661,8 +1648,8 @@ public:
 
         y16x14 = new QPushButton(gridLayoutWidget_2);
         y16x14->setObjectName(QStringLiteral("y16x14"));
-        sizePolicy1.setHeightForWidth(y16x14->sizePolicy().hasHeightForWidth());
-        y16x14->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y16x14->sizePolicy().hasHeightForWidth());
+        y16x14->setSizePolicy(sizePolicy);
         y16x14->setMinimumSize(QSize(39, 39));
         y16x14->setMaximumSize(QSize(39, 39));
         y16x14->setFont(font6);
@@ -1674,8 +1661,8 @@ public:
 
         y14x3 = new QPushButton(gridLayoutWidget_2);
         y14x3->setObjectName(QStringLiteral("y14x3"));
-        sizePolicy1.setHeightForWidth(y14x3->sizePolicy().hasHeightForWidth());
-        y14x3->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y14x3->sizePolicy().hasHeightForWidth());
+        y14x3->setSizePolicy(sizePolicy);
         y14x3->setMinimumSize(QSize(39, 39));
         y14x3->setMaximumSize(QSize(39, 39));
         y14x3->setFont(font6);
@@ -1687,8 +1674,8 @@ public:
 
         y15x5 = new QPushButton(gridLayoutWidget_2);
         y15x5->setObjectName(QStringLiteral("y15x5"));
-        sizePolicy1.setHeightForWidth(y15x5->sizePolicy().hasHeightForWidth());
-        y15x5->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y15x5->sizePolicy().hasHeightForWidth());
+        y15x5->setSizePolicy(sizePolicy);
         y15x5->setMinimumSize(QSize(39, 39));
         y15x5->setMaximumSize(QSize(39, 39));
         y15x5->setFont(font6);
@@ -1700,8 +1687,8 @@ public:
 
         y14x2 = new QPushButton(gridLayoutWidget_2);
         y14x2->setObjectName(QStringLiteral("y14x2"));
-        sizePolicy1.setHeightForWidth(y14x2->sizePolicy().hasHeightForWidth());
-        y14x2->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y14x2->sizePolicy().hasHeightForWidth());
+        y14x2->setSizePolicy(sizePolicy);
         y14x2->setMinimumSize(QSize(39, 39));
         y14x2->setMaximumSize(QSize(39, 39));
         y14x2->setFont(font6);
@@ -1713,8 +1700,8 @@ public:
 
         y7x16 = new QPushButton(gridLayoutWidget_2);
         y7x16->setObjectName(QStringLiteral("y7x16"));
-        sizePolicy1.setHeightForWidth(y7x16->sizePolicy().hasHeightForWidth());
-        y7x16->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y7x16->sizePolicy().hasHeightForWidth());
+        y7x16->setSizePolicy(sizePolicy);
         y7x16->setMinimumSize(QSize(39, 39));
         y7x16->setMaximumSize(QSize(39, 39));
         y7x16->setFont(font6);
@@ -1726,8 +1713,8 @@ public:
 
         y1x6 = new QPushButton(gridLayoutWidget_2);
         y1x6->setObjectName(QStringLiteral("y1x6"));
-        sizePolicy1.setHeightForWidth(y1x6->sizePolicy().hasHeightForWidth());
-        y1x6->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y1x6->sizePolicy().hasHeightForWidth());
+        y1x6->setSizePolicy(sizePolicy);
         y1x6->setMinimumSize(QSize(39, 39));
         y1x6->setMaximumSize(QSize(39, 39));
         y1x6->setFont(font6);
@@ -1739,8 +1726,8 @@ public:
 
         y11x5 = new QPushButton(gridLayoutWidget_2);
         y11x5->setObjectName(QStringLiteral("y11x5"));
-        sizePolicy1.setHeightForWidth(y11x5->sizePolicy().hasHeightForWidth());
-        y11x5->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y11x5->sizePolicy().hasHeightForWidth());
+        y11x5->setSizePolicy(sizePolicy);
         y11x5->setMinimumSize(QSize(39, 39));
         y11x5->setMaximumSize(QSize(39, 39));
         y11x5->setFont(font6);
@@ -1752,8 +1739,8 @@ public:
 
         y5x8 = new QPushButton(gridLayoutWidget_2);
         y5x8->setObjectName(QStringLiteral("y5x8"));
-        sizePolicy1.setHeightForWidth(y5x8->sizePolicy().hasHeightForWidth());
-        y5x8->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y5x8->sizePolicy().hasHeightForWidth());
+        y5x8->setSizePolicy(sizePolicy);
         y5x8->setMinimumSize(QSize(39, 39));
         y5x8->setMaximumSize(QSize(39, 39));
         y5x8->setFont(font6);
@@ -1765,8 +1752,8 @@ public:
 
         y8x7 = new QPushButton(gridLayoutWidget_2);
         y8x7->setObjectName(QStringLiteral("y8x7"));
-        sizePolicy1.setHeightForWidth(y8x7->sizePolicy().hasHeightForWidth());
-        y8x7->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y8x7->sizePolicy().hasHeightForWidth());
+        y8x7->setSizePolicy(sizePolicy);
         y8x7->setMinimumSize(QSize(39, 39));
         y8x7->setMaximumSize(QSize(39, 39));
         y8x7->setFont(font6);
@@ -1778,8 +1765,8 @@ public:
 
         y10x8 = new QPushButton(gridLayoutWidget_2);
         y10x8->setObjectName(QStringLiteral("y10x8"));
-        sizePolicy1.setHeightForWidth(y10x8->sizePolicy().hasHeightForWidth());
-        y10x8->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y10x8->sizePolicy().hasHeightForWidth());
+        y10x8->setSizePolicy(sizePolicy);
         y10x8->setMinimumSize(QSize(39, 39));
         y10x8->setMaximumSize(QSize(39, 39));
         y10x8->setFont(font6);
@@ -1791,8 +1778,8 @@ public:
 
         y4x17 = new QPushButton(gridLayoutWidget_2);
         y4x17->setObjectName(QStringLiteral("y4x17"));
-        sizePolicy1.setHeightForWidth(y4x17->sizePolicy().hasHeightForWidth());
-        y4x17->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y4x17->sizePolicy().hasHeightForWidth());
+        y4x17->setSizePolicy(sizePolicy);
         y4x17->setMinimumSize(QSize(39, 39));
         y4x17->setMaximumSize(QSize(39, 39));
         y4x17->setFont(font6);
@@ -1804,8 +1791,8 @@ public:
 
         y11x4 = new QPushButton(gridLayoutWidget_2);
         y11x4->setObjectName(QStringLiteral("y11x4"));
-        sizePolicy1.setHeightForWidth(y11x4->sizePolicy().hasHeightForWidth());
-        y11x4->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y11x4->sizePolicy().hasHeightForWidth());
+        y11x4->setSizePolicy(sizePolicy);
         y11x4->setMinimumSize(QSize(39, 39));
         y11x4->setMaximumSize(QSize(39, 39));
         y11x4->setFont(font6);
@@ -1817,8 +1804,8 @@ public:
 
         y4x8 = new QPushButton(gridLayoutWidget_2);
         y4x8->setObjectName(QStringLiteral("y4x8"));
-        sizePolicy1.setHeightForWidth(y4x8->sizePolicy().hasHeightForWidth());
-        y4x8->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y4x8->sizePolicy().hasHeightForWidth());
+        y4x8->setSizePolicy(sizePolicy);
         y4x8->setMinimumSize(QSize(39, 39));
         y4x8->setMaximumSize(QSize(39, 39));
         y4x8->setFont(font6);
@@ -1830,8 +1817,8 @@ public:
 
         y4x10 = new QPushButton(gridLayoutWidget_2);
         y4x10->setObjectName(QStringLiteral("y4x10"));
-        sizePolicy1.setHeightForWidth(y4x10->sizePolicy().hasHeightForWidth());
-        y4x10->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y4x10->sizePolicy().hasHeightForWidth());
+        y4x10->setSizePolicy(sizePolicy);
         y4x10->setMinimumSize(QSize(39, 39));
         y4x10->setMaximumSize(QSize(39, 39));
         y4x10->setFont(font6);
@@ -1843,8 +1830,8 @@ public:
 
         y3x13 = new QPushButton(gridLayoutWidget_2);
         y3x13->setObjectName(QStringLiteral("y3x13"));
-        sizePolicy1.setHeightForWidth(y3x13->sizePolicy().hasHeightForWidth());
-        y3x13->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y3x13->sizePolicy().hasHeightForWidth());
+        y3x13->setSizePolicy(sizePolicy);
         y3x13->setMinimumSize(QSize(39, 39));
         y3x13->setMaximumSize(QSize(39, 39));
         y3x13->setFont(font6);
@@ -1856,8 +1843,8 @@ public:
 
         y12x17 = new QPushButton(gridLayoutWidget_2);
         y12x17->setObjectName(QStringLiteral("y12x17"));
-        sizePolicy1.setHeightForWidth(y12x17->sizePolicy().hasHeightForWidth());
-        y12x17->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y12x17->sizePolicy().hasHeightForWidth());
+        y12x17->setSizePolicy(sizePolicy);
         y12x17->setMinimumSize(QSize(39, 39));
         y12x17->setMaximumSize(QSize(39, 39));
         y12x17->setFont(font6);
@@ -1869,8 +1856,8 @@ public:
 
         y8x6 = new QPushButton(gridLayoutWidget_2);
         y8x6->setObjectName(QStringLiteral("y8x6"));
-        sizePolicy1.setHeightForWidth(y8x6->sizePolicy().hasHeightForWidth());
-        y8x6->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y8x6->sizePolicy().hasHeightForWidth());
+        y8x6->setSizePolicy(sizePolicy);
         y8x6->setMinimumSize(QSize(39, 39));
         y8x6->setMaximumSize(QSize(39, 39));
         y8x6->setFont(font6);
@@ -1882,8 +1869,8 @@ public:
 
         y7x7 = new QPushButton(gridLayoutWidget_2);
         y7x7->setObjectName(QStringLiteral("y7x7"));
-        sizePolicy1.setHeightForWidth(y7x7->sizePolicy().hasHeightForWidth());
-        y7x7->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y7x7->sizePolicy().hasHeightForWidth());
+        y7x7->setSizePolicy(sizePolicy);
         y7x7->setMinimumSize(QSize(39, 39));
         y7x7->setMaximumSize(QSize(39, 39));
         y7x7->setFont(font6);
@@ -1895,8 +1882,8 @@ public:
 
         y5x12 = new QPushButton(gridLayoutWidget_2);
         y5x12->setObjectName(QStringLiteral("y5x12"));
-        sizePolicy1.setHeightForWidth(y5x12->sizePolicy().hasHeightForWidth());
-        y5x12->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y5x12->sizePolicy().hasHeightForWidth());
+        y5x12->setSizePolicy(sizePolicy);
         y5x12->setMinimumSize(QSize(39, 39));
         y5x12->setMaximumSize(QSize(39, 39));
         y5x12->setFont(font6);
@@ -1908,8 +1895,8 @@ public:
 
         y4x11 = new QPushButton(gridLayoutWidget_2);
         y4x11->setObjectName(QStringLiteral("y4x11"));
-        sizePolicy1.setHeightForWidth(y4x11->sizePolicy().hasHeightForWidth());
-        y4x11->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y4x11->sizePolicy().hasHeightForWidth());
+        y4x11->setSizePolicy(sizePolicy);
         y4x11->setMinimumSize(QSize(39, 39));
         y4x11->setMaximumSize(QSize(39, 39));
         y4x11->setFont(font6);
@@ -1921,8 +1908,8 @@ public:
 
         y11x2 = new QPushButton(gridLayoutWidget_2);
         y11x2->setObjectName(QStringLiteral("y11x2"));
-        sizePolicy1.setHeightForWidth(y11x2->sizePolicy().hasHeightForWidth());
-        y11x2->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y11x2->sizePolicy().hasHeightForWidth());
+        y11x2->setSizePolicy(sizePolicy);
         y11x2->setMinimumSize(QSize(39, 39));
         y11x2->setMaximumSize(QSize(39, 39));
         y11x2->setFont(font6);
@@ -1934,8 +1921,8 @@ public:
 
         y13x3 = new QPushButton(gridLayoutWidget_2);
         y13x3->setObjectName(QStringLiteral("y13x3"));
-        sizePolicy1.setHeightForWidth(y13x3->sizePolicy().hasHeightForWidth());
-        y13x3->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y13x3->sizePolicy().hasHeightForWidth());
+        y13x3->setSizePolicy(sizePolicy);
         y13x3->setMinimumSize(QSize(39, 39));
         y13x3->setMaximumSize(QSize(39, 39));
         y13x3->setFont(font6);
@@ -1947,8 +1934,8 @@ public:
 
         y4x13 = new QPushButton(gridLayoutWidget_2);
         y4x13->setObjectName(QStringLiteral("y4x13"));
-        sizePolicy1.setHeightForWidth(y4x13->sizePolicy().hasHeightForWidth());
-        y4x13->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y4x13->sizePolicy().hasHeightForWidth());
+        y4x13->setSizePolicy(sizePolicy);
         y4x13->setMinimumSize(QSize(39, 39));
         y4x13->setMaximumSize(QSize(39, 39));
         y4x13->setFont(font6);
@@ -1960,8 +1947,8 @@ public:
 
         y9x6 = new QPushButton(gridLayoutWidget_2);
         y9x6->setObjectName(QStringLiteral("y9x6"));
-        sizePolicy1.setHeightForWidth(y9x6->sizePolicy().hasHeightForWidth());
-        y9x6->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y9x6->sizePolicy().hasHeightForWidth());
+        y9x6->setSizePolicy(sizePolicy);
         y9x6->setMinimumSize(QSize(39, 39));
         y9x6->setMaximumSize(QSize(39, 39));
         y9x6->setFont(font6);
@@ -1973,8 +1960,8 @@ public:
 
         y7x3 = new QPushButton(gridLayoutWidget_2);
         y7x3->setObjectName(QStringLiteral("y7x3"));
-        sizePolicy1.setHeightForWidth(y7x3->sizePolicy().hasHeightForWidth());
-        y7x3->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y7x3->sizePolicy().hasHeightForWidth());
+        y7x3->setSizePolicy(sizePolicy);
         y7x3->setMinimumSize(QSize(39, 39));
         y7x3->setMaximumSize(QSize(39, 39));
         y7x3->setFont(font6);
@@ -1986,8 +1973,8 @@ public:
 
         y9x8 = new QPushButton(gridLayoutWidget_2);
         y9x8->setObjectName(QStringLiteral("y9x8"));
-        sizePolicy1.setHeightForWidth(y9x8->sizePolicy().hasHeightForWidth());
-        y9x8->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y9x8->sizePolicy().hasHeightForWidth());
+        y9x8->setSizePolicy(sizePolicy);
         y9x8->setMinimumSize(QSize(39, 39));
         y9x8->setMaximumSize(QSize(39, 39));
         y9x8->setFont(font6);
@@ -1999,8 +1986,8 @@ public:
 
         y4x3 = new QPushButton(gridLayoutWidget_2);
         y4x3->setObjectName(QStringLiteral("y4x3"));
-        sizePolicy1.setHeightForWidth(y4x3->sizePolicy().hasHeightForWidth());
-        y4x3->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y4x3->sizePolicy().hasHeightForWidth());
+        y4x3->setSizePolicy(sizePolicy);
         y4x3->setMinimumSize(QSize(39, 39));
         y4x3->setMaximumSize(QSize(39, 39));
         y4x3->setFont(font6);
@@ -2012,8 +1999,8 @@ public:
 
         y13x6 = new QPushButton(gridLayoutWidget_2);
         y13x6->setObjectName(QStringLiteral("y13x6"));
-        sizePolicy1.setHeightForWidth(y13x6->sizePolicy().hasHeightForWidth());
-        y13x6->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y13x6->sizePolicy().hasHeightForWidth());
+        y13x6->setSizePolicy(sizePolicy);
         y13x6->setMinimumSize(QSize(39, 39));
         y13x6->setMaximumSize(QSize(39, 39));
         y13x6->setFont(font6);
@@ -2025,8 +2012,8 @@ public:
 
         y5x4 = new QPushButton(gridLayoutWidget_2);
         y5x4->setObjectName(QStringLiteral("y5x4"));
-        sizePolicy1.setHeightForWidth(y5x4->sizePolicy().hasHeightForWidth());
-        y5x4->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y5x4->sizePolicy().hasHeightForWidth());
+        y5x4->setSizePolicy(sizePolicy);
         y5x4->setMinimumSize(QSize(39, 39));
         y5x4->setMaximumSize(QSize(39, 39));
         y5x4->setFont(font6);
@@ -2038,8 +2025,8 @@ public:
 
         y11x1 = new QPushButton(gridLayoutWidget_2);
         y11x1->setObjectName(QStringLiteral("y11x1"));
-        sizePolicy1.setHeightForWidth(y11x1->sizePolicy().hasHeightForWidth());
-        y11x1->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y11x1->sizePolicy().hasHeightForWidth());
+        y11x1->setSizePolicy(sizePolicy);
         y11x1->setMinimumSize(QSize(39, 39));
         y11x1->setMaximumSize(QSize(39, 39));
         y11x1->setFont(font6);
@@ -2051,8 +2038,8 @@ public:
 
         y5x7 = new QPushButton(gridLayoutWidget_2);
         y5x7->setObjectName(QStringLiteral("y5x7"));
-        sizePolicy1.setHeightForWidth(y5x7->sizePolicy().hasHeightForWidth());
-        y5x7->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y5x7->sizePolicy().hasHeightForWidth());
+        y5x7->setSizePolicy(sizePolicy);
         y5x7->setMinimumSize(QSize(39, 39));
         y5x7->setMaximumSize(QSize(39, 39));
         y5x7->setFont(font6);
@@ -2064,8 +2051,8 @@ public:
 
         y8x15 = new QPushButton(gridLayoutWidget_2);
         y8x15->setObjectName(QStringLiteral("y8x15"));
-        sizePolicy1.setHeightForWidth(y8x15->sizePolicy().hasHeightForWidth());
-        y8x15->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y8x15->sizePolicy().hasHeightForWidth());
+        y8x15->setSizePolicy(sizePolicy);
         y8x15->setMinimumSize(QSize(39, 39));
         y8x15->setMaximumSize(QSize(39, 39));
         y8x15->setFont(font6);
@@ -2077,8 +2064,8 @@ public:
 
         y5x2 = new QPushButton(gridLayoutWidget_2);
         y5x2->setObjectName(QStringLiteral("y5x2"));
-        sizePolicy1.setHeightForWidth(y5x2->sizePolicy().hasHeightForWidth());
-        y5x2->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y5x2->sizePolicy().hasHeightForWidth());
+        y5x2->setSizePolicy(sizePolicy);
         y5x2->setMinimumSize(QSize(39, 39));
         y5x2->setMaximumSize(QSize(39, 39));
         y5x2->setFont(font6);
@@ -2090,8 +2077,8 @@ public:
 
         y3x14 = new QPushButton(gridLayoutWidget_2);
         y3x14->setObjectName(QStringLiteral("y3x14"));
-        sizePolicy1.setHeightForWidth(y3x14->sizePolicy().hasHeightForWidth());
-        y3x14->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y3x14->sizePolicy().hasHeightForWidth());
+        y3x14->setSizePolicy(sizePolicy);
         y3x14->setMinimumSize(QSize(39, 39));
         y3x14->setMaximumSize(QSize(39, 39));
         y3x14->setFont(font6);
@@ -2103,8 +2090,8 @@ public:
 
         y9x1 = new QPushButton(gridLayoutWidget_2);
         y9x1->setObjectName(QStringLiteral("y9x1"));
-        sizePolicy1.setHeightForWidth(y9x1->sizePolicy().hasHeightForWidth());
-        y9x1->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y9x1->sizePolicy().hasHeightForWidth());
+        y9x1->setSizePolicy(sizePolicy);
         y9x1->setMinimumSize(QSize(39, 39));
         y9x1->setMaximumSize(QSize(39, 39));
         y9x1->setFont(font6);
@@ -2116,8 +2103,8 @@ public:
 
         y7x1 = new QPushButton(gridLayoutWidget_2);
         y7x1->setObjectName(QStringLiteral("y7x1"));
-        sizePolicy1.setHeightForWidth(y7x1->sizePolicy().hasHeightForWidth());
-        y7x1->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y7x1->sizePolicy().hasHeightForWidth());
+        y7x1->setSizePolicy(sizePolicy);
         y7x1->setMinimumSize(QSize(39, 39));
         y7x1->setMaximumSize(QSize(39, 39));
         y7x1->setFont(font6);
@@ -2129,8 +2116,8 @@ public:
 
         y2x1 = new QPushButton(gridLayoutWidget_2);
         y2x1->setObjectName(QStringLiteral("y2x1"));
-        sizePolicy1.setHeightForWidth(y2x1->sizePolicy().hasHeightForWidth());
-        y2x1->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y2x1->sizePolicy().hasHeightForWidth());
+        y2x1->setSizePolicy(sizePolicy);
         y2x1->setMinimumSize(QSize(39, 39));
         y2x1->setMaximumSize(QSize(39, 39));
         y2x1->setFont(font6);
@@ -2142,8 +2129,8 @@ public:
 
         y11x14 = new QPushButton(gridLayoutWidget_2);
         y11x14->setObjectName(QStringLiteral("y11x14"));
-        sizePolicy1.setHeightForWidth(y11x14->sizePolicy().hasHeightForWidth());
-        y11x14->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y11x14->sizePolicy().hasHeightForWidth());
+        y11x14->setSizePolicy(sizePolicy);
         y11x14->setMinimumSize(QSize(39, 39));
         y11x14->setMaximumSize(QSize(39, 39));
         y11x14->setFont(font6);
@@ -2155,8 +2142,8 @@ public:
 
         y2x11 = new QPushButton(gridLayoutWidget_2);
         y2x11->setObjectName(QStringLiteral("y2x11"));
-        sizePolicy1.setHeightForWidth(y2x11->sizePolicy().hasHeightForWidth());
-        y2x11->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y2x11->sizePolicy().hasHeightForWidth());
+        y2x11->setSizePolicy(sizePolicy);
         y2x11->setMinimumSize(QSize(39, 39));
         y2x11->setMaximumSize(QSize(39, 39));
         y2x11->setFont(font6);
@@ -2168,8 +2155,8 @@ public:
 
         y12x14 = new QPushButton(gridLayoutWidget_2);
         y12x14->setObjectName(QStringLiteral("y12x14"));
-        sizePolicy1.setHeightForWidth(y12x14->sizePolicy().hasHeightForWidth());
-        y12x14->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y12x14->sizePolicy().hasHeightForWidth());
+        y12x14->setSizePolicy(sizePolicy);
         y12x14->setMinimumSize(QSize(39, 39));
         y12x14->setMaximumSize(QSize(39, 39));
         y12x14->setFont(font6);
@@ -2181,8 +2168,8 @@ public:
 
         y12x9 = new QPushButton(gridLayoutWidget_2);
         y12x9->setObjectName(QStringLiteral("y12x9"));
-        sizePolicy1.setHeightForWidth(y12x9->sizePolicy().hasHeightForWidth());
-        y12x9->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y12x9->sizePolicy().hasHeightForWidth());
+        y12x9->setSizePolicy(sizePolicy);
         y12x9->setMinimumSize(QSize(39, 39));
         y12x9->setMaximumSize(QSize(39, 39));
         y12x9->setFont(font6);
@@ -2194,8 +2181,8 @@ public:
 
         y6x9 = new QPushButton(gridLayoutWidget_2);
         y6x9->setObjectName(QStringLiteral("y6x9"));
-        sizePolicy1.setHeightForWidth(y6x9->sizePolicy().hasHeightForWidth());
-        y6x9->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y6x9->sizePolicy().hasHeightForWidth());
+        y6x9->setSizePolicy(sizePolicy);
         y6x9->setMinimumSize(QSize(39, 39));
         y6x9->setMaximumSize(QSize(39, 39));
         y6x9->setFont(font6);
@@ -2207,8 +2194,8 @@ public:
 
         y5x14 = new QPushButton(gridLayoutWidget_2);
         y5x14->setObjectName(QStringLiteral("y5x14"));
-        sizePolicy1.setHeightForWidth(y5x14->sizePolicy().hasHeightForWidth());
-        y5x14->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y5x14->sizePolicy().hasHeightForWidth());
+        y5x14->setSizePolicy(sizePolicy);
         y5x14->setMinimumSize(QSize(39, 39));
         y5x14->setMaximumSize(QSize(39, 39));
         y5x14->setFont(font6);
@@ -2220,8 +2207,8 @@ public:
 
         y2x8 = new QPushButton(gridLayoutWidget_2);
         y2x8->setObjectName(QStringLiteral("y2x8"));
-        sizePolicy1.setHeightForWidth(y2x8->sizePolicy().hasHeightForWidth());
-        y2x8->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y2x8->sizePolicy().hasHeightForWidth());
+        y2x8->setSizePolicy(sizePolicy);
         y2x8->setMinimumSize(QSize(39, 39));
         y2x8->setMaximumSize(QSize(39, 39));
         y2x8->setFont(font6);
@@ -2233,8 +2220,8 @@ public:
 
         y1x0 = new QPushButton(gridLayoutWidget_2);
         y1x0->setObjectName(QStringLiteral("y1x0"));
-        sizePolicy1.setHeightForWidth(y1x0->sizePolicy().hasHeightForWidth());
-        y1x0->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y1x0->sizePolicy().hasHeightForWidth());
+        y1x0->setSizePolicy(sizePolicy);
         y1x0->setMinimumSize(QSize(39, 39));
         y1x0->setMaximumSize(QSize(39, 39));
         y1x0->setFont(font6);
@@ -2246,8 +2233,8 @@ public:
 
         y3x16 = new QPushButton(gridLayoutWidget_2);
         y3x16->setObjectName(QStringLiteral("y3x16"));
-        sizePolicy1.setHeightForWidth(y3x16->sizePolicy().hasHeightForWidth());
-        y3x16->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y3x16->sizePolicy().hasHeightForWidth());
+        y3x16->setSizePolicy(sizePolicy);
         y3x16->setMinimumSize(QSize(39, 39));
         y3x16->setMaximumSize(QSize(39, 39));
         y3x16->setFont(font6);
@@ -2259,8 +2246,8 @@ public:
 
         y6x0 = new QPushButton(gridLayoutWidget_2);
         y6x0->setObjectName(QStringLiteral("y6x0"));
-        sizePolicy1.setHeightForWidth(y6x0->sizePolicy().hasHeightForWidth());
-        y6x0->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y6x0->sizePolicy().hasHeightForWidth());
+        y6x0->setSizePolicy(sizePolicy);
         y6x0->setMinimumSize(QSize(39, 39));
         y6x0->setMaximumSize(QSize(39, 39));
         y6x0->setFont(font6);
@@ -2272,8 +2259,8 @@ public:
 
         y1x11 = new QPushButton(gridLayoutWidget_2);
         y1x11->setObjectName(QStringLiteral("y1x11"));
-        sizePolicy1.setHeightForWidth(y1x11->sizePolicy().hasHeightForWidth());
-        y1x11->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y1x11->sizePolicy().hasHeightForWidth());
+        y1x11->setSizePolicy(sizePolicy);
         y1x11->setMinimumSize(QSize(39, 39));
         y1x11->setMaximumSize(QSize(39, 39));
         y1x11->setFont(font6);
@@ -2285,8 +2272,8 @@ public:
 
         y0x9 = new QPushButton(gridLayoutWidget_2);
         y0x9->setObjectName(QStringLiteral("y0x9"));
-        sizePolicy1.setHeightForWidth(y0x9->sizePolicy().hasHeightForWidth());
-        y0x9->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y0x9->sizePolicy().hasHeightForWidth());
+        y0x9->setSizePolicy(sizePolicy);
         y0x9->setMinimumSize(QSize(39, 39));
         y0x9->setMaximumSize(QSize(39, 39));
         y0x9->setFont(font6);
@@ -2298,8 +2285,8 @@ public:
 
         y0x13 = new QPushButton(gridLayoutWidget_2);
         y0x13->setObjectName(QStringLiteral("y0x13"));
-        sizePolicy1.setHeightForWidth(y0x13->sizePolicy().hasHeightForWidth());
-        y0x13->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y0x13->sizePolicy().hasHeightForWidth());
+        y0x13->setSizePolicy(sizePolicy);
         y0x13->setMinimumSize(QSize(39, 39));
         y0x13->setMaximumSize(QSize(39, 39));
         y0x13->setFont(font6);
@@ -2311,8 +2298,8 @@ public:
 
         y0x2 = new QPushButton(gridLayoutWidget_2);
         y0x2->setObjectName(QStringLiteral("y0x2"));
-        sizePolicy1.setHeightForWidth(y0x2->sizePolicy().hasHeightForWidth());
-        y0x2->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y0x2->sizePolicy().hasHeightForWidth());
+        y0x2->setSizePolicy(sizePolicy);
         y0x2->setMinimumSize(QSize(39, 39));
         y0x2->setMaximumSize(QSize(39, 39));
         y0x2->setFont(font6);
@@ -2324,8 +2311,8 @@ public:
 
         y0x11 = new QPushButton(gridLayoutWidget_2);
         y0x11->setObjectName(QStringLiteral("y0x11"));
-        sizePolicy1.setHeightForWidth(y0x11->sizePolicy().hasHeightForWidth());
-        y0x11->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y0x11->sizePolicy().hasHeightForWidth());
+        y0x11->setSizePolicy(sizePolicy);
         y0x11->setMinimumSize(QSize(39, 39));
         y0x11->setMaximumSize(QSize(39, 39));
         y0x11->setFont(font6);
@@ -2337,8 +2324,8 @@ public:
 
         y12x0 = new QPushButton(gridLayoutWidget_2);
         y12x0->setObjectName(QStringLiteral("y12x0"));
-        sizePolicy1.setHeightForWidth(y12x0->sizePolicy().hasHeightForWidth());
-        y12x0->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y12x0->sizePolicy().hasHeightForWidth());
+        y12x0->setSizePolicy(sizePolicy);
         y12x0->setMinimumSize(QSize(39, 39));
         y12x0->setMaximumSize(QSize(39, 39));
         y12x0->setFont(font6);
@@ -2350,8 +2337,8 @@ public:
 
         y16x4 = new QPushButton(gridLayoutWidget_2);
         y16x4->setObjectName(QStringLiteral("y16x4"));
-        sizePolicy1.setHeightForWidth(y16x4->sizePolicy().hasHeightForWidth());
-        y16x4->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y16x4->sizePolicy().hasHeightForWidth());
+        y16x4->setSizePolicy(sizePolicy);
         y16x4->setMinimumSize(QSize(39, 39));
         y16x4->setMaximumSize(QSize(39, 39));
         y16x4->setFont(font6);
@@ -2363,8 +2350,8 @@ public:
 
         y16x11 = new QPushButton(gridLayoutWidget_2);
         y16x11->setObjectName(QStringLiteral("y16x11"));
-        sizePolicy1.setHeightForWidth(y16x11->sizePolicy().hasHeightForWidth());
-        y16x11->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y16x11->sizePolicy().hasHeightForWidth());
+        y16x11->setSizePolicy(sizePolicy);
         y16x11->setMinimumSize(QSize(39, 39));
         y16x11->setMaximumSize(QSize(39, 39));
         y16x11->setFont(font6);
@@ -2376,8 +2363,8 @@ public:
 
         y15x12 = new QPushButton(gridLayoutWidget_2);
         y15x12->setObjectName(QStringLiteral("y15x12"));
-        sizePolicy1.setHeightForWidth(y15x12->sizePolicy().hasHeightForWidth());
-        y15x12->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y15x12->sizePolicy().hasHeightForWidth());
+        y15x12->setSizePolicy(sizePolicy);
         y15x12->setMinimumSize(QSize(39, 39));
         y15x12->setMaximumSize(QSize(39, 39));
         y15x12->setFont(font6);
@@ -2389,8 +2376,8 @@ public:
 
         y15x2 = new QPushButton(gridLayoutWidget_2);
         y15x2->setObjectName(QStringLiteral("y15x2"));
-        sizePolicy1.setHeightForWidth(y15x2->sizePolicy().hasHeightForWidth());
-        y15x2->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y15x2->sizePolicy().hasHeightForWidth());
+        y15x2->setSizePolicy(sizePolicy);
         y15x2->setMinimumSize(QSize(39, 39));
         y15x2->setMaximumSize(QSize(39, 39));
         y15x2->setFont(font6);
@@ -2402,8 +2389,8 @@ public:
 
         y14x14 = new QPushButton(gridLayoutWidget_2);
         y14x14->setObjectName(QStringLiteral("y14x14"));
-        sizePolicy1.setHeightForWidth(y14x14->sizePolicy().hasHeightForWidth());
-        y14x14->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y14x14->sizePolicy().hasHeightForWidth());
+        y14x14->setSizePolicy(sizePolicy);
         y14x14->setMinimumSize(QSize(39, 39));
         y14x14->setMaximumSize(QSize(39, 39));
         y14x14->setFont(font6);
@@ -2415,8 +2402,8 @@ public:
 
         y15x16 = new QPushButton(gridLayoutWidget_2);
         y15x16->setObjectName(QStringLiteral("y15x16"));
-        sizePolicy1.setHeightForWidth(y15x16->sizePolicy().hasHeightForWidth());
-        y15x16->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y15x16->sizePolicy().hasHeightForWidth());
+        y15x16->setSizePolicy(sizePolicy);
         y15x16->setMinimumSize(QSize(39, 39));
         y15x16->setMaximumSize(QSize(39, 39));
         y15x16->setFont(font6);
@@ -2428,8 +2415,8 @@ public:
 
         y15x11 = new QPushButton(gridLayoutWidget_2);
         y15x11->setObjectName(QStringLiteral("y15x11"));
-        sizePolicy1.setHeightForWidth(y15x11->sizePolicy().hasHeightForWidth());
-        y15x11->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y15x11->sizePolicy().hasHeightForWidth());
+        y15x11->setSizePolicy(sizePolicy);
         y15x11->setMinimumSize(QSize(39, 39));
         y15x11->setMaximumSize(QSize(39, 39));
         y15x11->setFont(font6);
@@ -2441,8 +2428,8 @@ public:
 
         y1x1 = new QPushButton(gridLayoutWidget_2);
         y1x1->setObjectName(QStringLiteral("y1x1"));
-        sizePolicy1.setHeightForWidth(y1x1->sizePolicy().hasHeightForWidth());
-        y1x1->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y1x1->sizePolicy().hasHeightForWidth());
+        y1x1->setSizePolicy(sizePolicy);
         y1x1->setMinimumSize(QSize(39, 39));
         y1x1->setMaximumSize(QSize(39, 39));
         y1x1->setFont(font6);
@@ -2454,8 +2441,8 @@ public:
 
         y16x13 = new QPushButton(gridLayoutWidget_2);
         y16x13->setObjectName(QStringLiteral("y16x13"));
-        sizePolicy1.setHeightForWidth(y16x13->sizePolicy().hasHeightForWidth());
-        y16x13->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y16x13->sizePolicy().hasHeightForWidth());
+        y16x13->setSizePolicy(sizePolicy);
         y16x13->setMinimumSize(QSize(39, 39));
         y16x13->setMaximumSize(QSize(39, 39));
         y16x13->setFont(font6);
@@ -2467,8 +2454,8 @@ public:
 
         y3x10 = new QPushButton(gridLayoutWidget_2);
         y3x10->setObjectName(QStringLiteral("y3x10"));
-        sizePolicy1.setHeightForWidth(y3x10->sizePolicy().hasHeightForWidth());
-        y3x10->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y3x10->sizePolicy().hasHeightForWidth());
+        y3x10->setSizePolicy(sizePolicy);
         y3x10->setMinimumSize(QSize(39, 39));
         y3x10->setMaximumSize(QSize(39, 39));
         y3x10->setFont(font6);
@@ -2480,8 +2467,8 @@ public:
 
         y9x11 = new QPushButton(gridLayoutWidget_2);
         y9x11->setObjectName(QStringLiteral("y9x11"));
-        sizePolicy1.setHeightForWidth(y9x11->sizePolicy().hasHeightForWidth());
-        y9x11->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y9x11->sizePolicy().hasHeightForWidth());
+        y9x11->setSizePolicy(sizePolicy);
         y9x11->setMinimumSize(QSize(39, 39));
         y9x11->setMaximumSize(QSize(39, 39));
         y9x11->setFont(font6);
@@ -2493,8 +2480,8 @@ public:
 
         y10x9 = new QPushButton(gridLayoutWidget_2);
         y10x9->setObjectName(QStringLiteral("y10x9"));
-        sizePolicy1.setHeightForWidth(y10x9->sizePolicy().hasHeightForWidth());
-        y10x9->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y10x9->sizePolicy().hasHeightForWidth());
+        y10x9->setSizePolicy(sizePolicy);
         y10x9->setMinimumSize(QSize(39, 39));
         y10x9->setMaximumSize(QSize(39, 39));
         y10x9->setFont(font6);
@@ -2506,8 +2493,8 @@ public:
 
         y9x5 = new QPushButton(gridLayoutWidget_2);
         y9x5->setObjectName(QStringLiteral("y9x5"));
-        sizePolicy1.setHeightForWidth(y9x5->sizePolicy().hasHeightForWidth());
-        y9x5->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y9x5->sizePolicy().hasHeightForWidth());
+        y9x5->setSizePolicy(sizePolicy);
         y9x5->setMinimumSize(QSize(39, 39));
         y9x5->setMaximumSize(QSize(39, 39));
         y9x5->setFont(font6);
@@ -2519,8 +2506,8 @@ public:
 
         y16x1 = new QPushButton(gridLayoutWidget_2);
         y16x1->setObjectName(QStringLiteral("y16x1"));
-        sizePolicy1.setHeightForWidth(y16x1->sizePolicy().hasHeightForWidth());
-        y16x1->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y16x1->sizePolicy().hasHeightForWidth());
+        y16x1->setSizePolicy(sizePolicy);
         y16x1->setMinimumSize(QSize(39, 39));
         y16x1->setMaximumSize(QSize(39, 39));
         y16x1->setFont(font6);
@@ -2532,8 +2519,8 @@ public:
 
         y2x0 = new QPushButton(gridLayoutWidget_2);
         y2x0->setObjectName(QStringLiteral("y2x0"));
-        sizePolicy1.setHeightForWidth(y2x0->sizePolicy().hasHeightForWidth());
-        y2x0->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y2x0->sizePolicy().hasHeightForWidth());
+        y2x0->setSizePolicy(sizePolicy);
         y2x0->setMinimumSize(QSize(39, 39));
         y2x0->setMaximumSize(QSize(39, 39));
         y2x0->setFont(font6);
@@ -2545,8 +2532,8 @@ public:
 
         y3x0 = new QPushButton(gridLayoutWidget_2);
         y3x0->setObjectName(QStringLiteral("y3x0"));
-        sizePolicy1.setHeightForWidth(y3x0->sizePolicy().hasHeightForWidth());
-        y3x0->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y3x0->sizePolicy().hasHeightForWidth());
+        y3x0->setSizePolicy(sizePolicy);
         y3x0->setMinimumSize(QSize(39, 39));
         y3x0->setMaximumSize(QSize(39, 39));
         y3x0->setFont(font6);
@@ -2558,8 +2545,8 @@ public:
 
         y8x13 = new QPushButton(gridLayoutWidget_2);
         y8x13->setObjectName(QStringLiteral("y8x13"));
-        sizePolicy1.setHeightForWidth(y8x13->sizePolicy().hasHeightForWidth());
-        y8x13->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y8x13->sizePolicy().hasHeightForWidth());
+        y8x13->setSizePolicy(sizePolicy);
         y8x13->setMinimumSize(QSize(39, 39));
         y8x13->setMaximumSize(QSize(39, 39));
         y8x13->setFont(font6);
@@ -2571,8 +2558,8 @@ public:
 
         y13x12 = new QPushButton(gridLayoutWidget_2);
         y13x12->setObjectName(QStringLiteral("y13x12"));
-        sizePolicy1.setHeightForWidth(y13x12->sizePolicy().hasHeightForWidth());
-        y13x12->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y13x12->sizePolicy().hasHeightForWidth());
+        y13x12->setSizePolicy(sizePolicy);
         y13x12->setMinimumSize(QSize(39, 39));
         y13x12->setMaximumSize(QSize(39, 39));
         y13x12->setFont(font6);
@@ -2584,8 +2571,8 @@ public:
 
         y12x2 = new QPushButton(gridLayoutWidget_2);
         y12x2->setObjectName(QStringLiteral("y12x2"));
-        sizePolicy1.setHeightForWidth(y12x2->sizePolicy().hasHeightForWidth());
-        y12x2->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y12x2->sizePolicy().hasHeightForWidth());
+        y12x2->setSizePolicy(sizePolicy);
         y12x2->setMinimumSize(QSize(39, 39));
         y12x2->setMaximumSize(QSize(39, 39));
         y12x2->setFont(font6);
@@ -2597,8 +2584,8 @@ public:
 
         y16x7 = new QPushButton(gridLayoutWidget_2);
         y16x7->setObjectName(QStringLiteral("y16x7"));
-        sizePolicy1.setHeightForWidth(y16x7->sizePolicy().hasHeightForWidth());
-        y16x7->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y16x7->sizePolicy().hasHeightForWidth());
+        y16x7->setSizePolicy(sizePolicy);
         y16x7->setMinimumSize(QSize(39, 39));
         y16x7->setMaximumSize(QSize(39, 39));
         y16x7->setFont(font6);
@@ -2610,8 +2597,8 @@ public:
 
         y14x13 = new QPushButton(gridLayoutWidget_2);
         y14x13->setObjectName(QStringLiteral("y14x13"));
-        sizePolicy1.setHeightForWidth(y14x13->sizePolicy().hasHeightForWidth());
-        y14x13->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y14x13->sizePolicy().hasHeightForWidth());
+        y14x13->setSizePolicy(sizePolicy);
         y14x13->setMinimumSize(QSize(39, 39));
         y14x13->setMaximumSize(QSize(39, 39));
         y14x13->setFont(font6);
@@ -2623,8 +2610,8 @@ public:
 
         y14x15 = new QPushButton(gridLayoutWidget_2);
         y14x15->setObjectName(QStringLiteral("y14x15"));
-        sizePolicy1.setHeightForWidth(y14x15->sizePolicy().hasHeightForWidth());
-        y14x15->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y14x15->sizePolicy().hasHeightForWidth());
+        y14x15->setSizePolicy(sizePolicy);
         y14x15->setMinimumSize(QSize(39, 39));
         y14x15->setMaximumSize(QSize(39, 39));
         y14x15->setFont(font6);
@@ -2636,8 +2623,8 @@ public:
 
         y15x6 = new QPushButton(gridLayoutWidget_2);
         y15x6->setObjectName(QStringLiteral("y15x6"));
-        sizePolicy1.setHeightForWidth(y15x6->sizePolicy().hasHeightForWidth());
-        y15x6->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y15x6->sizePolicy().hasHeightForWidth());
+        y15x6->setSizePolicy(sizePolicy);
         y15x6->setMinimumSize(QSize(39, 39));
         y15x6->setMaximumSize(QSize(39, 39));
         y15x6->setFont(font6);
@@ -2649,8 +2636,8 @@ public:
 
         y14x5 = new QPushButton(gridLayoutWidget_2);
         y14x5->setObjectName(QStringLiteral("y14x5"));
-        sizePolicy1.setHeightForWidth(y14x5->sizePolicy().hasHeightForWidth());
-        y14x5->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y14x5->sizePolicy().hasHeightForWidth());
+        y14x5->setSizePolicy(sizePolicy);
         y14x5->setMinimumSize(QSize(39, 39));
         y14x5->setMaximumSize(QSize(39, 39));
         y14x5->setFont(font6);
@@ -2662,8 +2649,8 @@ public:
 
         y1x15 = new QPushButton(gridLayoutWidget_2);
         y1x15->setObjectName(QStringLiteral("y1x15"));
-        sizePolicy1.setHeightForWidth(y1x15->sizePolicy().hasHeightForWidth());
-        y1x15->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y1x15->sizePolicy().hasHeightForWidth());
+        y1x15->setSizePolicy(sizePolicy);
         y1x15->setMinimumSize(QSize(39, 39));
         y1x15->setMaximumSize(QSize(39, 39));
         y1x15->setFont(font6);
@@ -2675,8 +2662,8 @@ public:
 
         y1x3 = new QPushButton(gridLayoutWidget_2);
         y1x3->setObjectName(QStringLiteral("y1x3"));
-        sizePolicy1.setHeightForWidth(y1x3->sizePolicy().hasHeightForWidth());
-        y1x3->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y1x3->sizePolicy().hasHeightForWidth());
+        y1x3->setSizePolicy(sizePolicy);
         y1x3->setMinimumSize(QSize(39, 39));
         y1x3->setMaximumSize(QSize(39, 39));
         y1x3->setFont(font6);
@@ -2688,8 +2675,8 @@ public:
 
         y9x16 = new QPushButton(gridLayoutWidget_2);
         y9x16->setObjectName(QStringLiteral("y9x16"));
-        sizePolicy1.setHeightForWidth(y9x16->sizePolicy().hasHeightForWidth());
-        y9x16->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y9x16->sizePolicy().hasHeightForWidth());
+        y9x16->setSizePolicy(sizePolicy);
         y9x16->setMinimumSize(QSize(39, 39));
         y9x16->setMaximumSize(QSize(39, 39));
         y9x16->setFont(font6);
@@ -2701,8 +2688,8 @@ public:
 
         y12x16 = new QPushButton(gridLayoutWidget_2);
         y12x16->setObjectName(QStringLiteral("y12x16"));
-        sizePolicy1.setHeightForWidth(y12x16->sizePolicy().hasHeightForWidth());
-        y12x16->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y12x16->sizePolicy().hasHeightForWidth());
+        y12x16->setSizePolicy(sizePolicy);
         y12x16->setMinimumSize(QSize(39, 39));
         y12x16->setMaximumSize(QSize(39, 39));
         y12x16->setFont(font6);
@@ -2714,8 +2701,8 @@ public:
 
         y17x2 = new QPushButton(gridLayoutWidget_2);
         y17x2->setObjectName(QStringLiteral("y17x2"));
-        sizePolicy1.setHeightForWidth(y17x2->sizePolicy().hasHeightForWidth());
-        y17x2->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y17x2->sizePolicy().hasHeightForWidth());
+        y17x2->setSizePolicy(sizePolicy);
         y17x2->setMinimumSize(QSize(39, 39));
         y17x2->setMaximumSize(QSize(39, 39));
         y17x2->setFont(font6);
@@ -2727,8 +2714,8 @@ public:
 
         y17x5 = new QPushButton(gridLayoutWidget_2);
         y17x5->setObjectName(QStringLiteral("y17x5"));
-        sizePolicy1.setHeightForWidth(y17x5->sizePolicy().hasHeightForWidth());
-        y17x5->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y17x5->sizePolicy().hasHeightForWidth());
+        y17x5->setSizePolicy(sizePolicy);
         y17x5->setMinimumSize(QSize(39, 39));
         y17x5->setMaximumSize(QSize(39, 39));
         y17x5->setFont(font6);
@@ -2740,8 +2727,8 @@ public:
 
         y9x7 = new QPushButton(gridLayoutWidget_2);
         y9x7->setObjectName(QStringLiteral("y9x7"));
-        sizePolicy1.setHeightForWidth(y9x7->sizePolicy().hasHeightForWidth());
-        y9x7->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y9x7->sizePolicy().hasHeightForWidth());
+        y9x7->setSizePolicy(sizePolicy);
         y9x7->setMinimumSize(QSize(39, 39));
         y9x7->setMaximumSize(QSize(39, 39));
         y9x7->setFont(font6);
@@ -2753,8 +2740,8 @@ public:
 
         y11x3 = new QPushButton(gridLayoutWidget_2);
         y11x3->setObjectName(QStringLiteral("y11x3"));
-        sizePolicy1.setHeightForWidth(y11x3->sizePolicy().hasHeightForWidth());
-        y11x3->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y11x3->sizePolicy().hasHeightForWidth());
+        y11x3->setSizePolicy(sizePolicy);
         y11x3->setMinimumSize(QSize(39, 39));
         y11x3->setMaximumSize(QSize(39, 39));
         y11x3->setFont(font6);
@@ -2766,8 +2753,8 @@ public:
 
         y12x12 = new QPushButton(gridLayoutWidget_2);
         y12x12->setObjectName(QStringLiteral("y12x12"));
-        sizePolicy1.setHeightForWidth(y12x12->sizePolicy().hasHeightForWidth());
-        y12x12->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y12x12->sizePolicy().hasHeightForWidth());
+        y12x12->setSizePolicy(sizePolicy);
         y12x12->setMinimumSize(QSize(39, 39));
         y12x12->setMaximumSize(QSize(39, 39));
         y12x12->setFont(font6);
@@ -2779,8 +2766,8 @@ public:
 
         y16x17 = new QPushButton(gridLayoutWidget_2);
         y16x17->setObjectName(QStringLiteral("y16x17"));
-        sizePolicy1.setHeightForWidth(y16x17->sizePolicy().hasHeightForWidth());
-        y16x17->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y16x17->sizePolicy().hasHeightForWidth());
+        y16x17->setSizePolicy(sizePolicy);
         y16x17->setMinimumSize(QSize(39, 39));
         y16x17->setMaximumSize(QSize(39, 39));
         y16x17->setFont(font6);
@@ -2792,8 +2779,8 @@ public:
 
         y0x17 = new QPushButton(gridLayoutWidget_2);
         y0x17->setObjectName(QStringLiteral("y0x17"));
-        sizePolicy1.setHeightForWidth(y0x17->sizePolicy().hasHeightForWidth());
-        y0x17->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y0x17->sizePolicy().hasHeightForWidth());
+        y0x17->setSizePolicy(sizePolicy);
         y0x17->setMinimumSize(QSize(39, 39));
         y0x17->setMaximumSize(QSize(39, 39));
         y0x17->setFont(font6);
@@ -2805,8 +2792,8 @@ public:
 
         y17x10 = new QPushButton(gridLayoutWidget_2);
         y17x10->setObjectName(QStringLiteral("y17x10"));
-        sizePolicy1.setHeightForWidth(y17x10->sizePolicy().hasHeightForWidth());
-        y17x10->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y17x10->sizePolicy().hasHeightForWidth());
+        y17x10->setSizePolicy(sizePolicy);
         y17x10->setMinimumSize(QSize(39, 39));
         y17x10->setMaximumSize(QSize(39, 39));
         y17x10->setFont(font6);
@@ -2818,8 +2805,8 @@ public:
 
         y2x17 = new QPushButton(gridLayoutWidget_2);
         y2x17->setObjectName(QStringLiteral("y2x17"));
-        sizePolicy1.setHeightForWidth(y2x17->sizePolicy().hasHeightForWidth());
-        y2x17->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y2x17->sizePolicy().hasHeightForWidth());
+        y2x17->setSizePolicy(sizePolicy);
         y2x17->setMinimumSize(QSize(39, 39));
         y2x17->setMaximumSize(QSize(39, 39));
         y2x17->setFont(font6);
@@ -2831,8 +2818,8 @@ public:
 
         y3x17 = new QPushButton(gridLayoutWidget_2);
         y3x17->setObjectName(QStringLiteral("y3x17"));
-        sizePolicy1.setHeightForWidth(y3x17->sizePolicy().hasHeightForWidth());
-        y3x17->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y3x17->sizePolicy().hasHeightForWidth());
+        y3x17->setSizePolicy(sizePolicy);
         y3x17->setMinimumSize(QSize(39, 39));
         y3x17->setMaximumSize(QSize(39, 39));
         y3x17->setFont(font6);
@@ -2844,8 +2831,8 @@ public:
 
         y17x15 = new QPushButton(gridLayoutWidget_2);
         y17x15->setObjectName(QStringLiteral("y17x15"));
-        sizePolicy1.setHeightForWidth(y17x15->sizePolicy().hasHeightForWidth());
-        y17x15->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y17x15->sizePolicy().hasHeightForWidth());
+        y17x15->setSizePolicy(sizePolicy);
         y17x15->setMinimumSize(QSize(39, 39));
         y17x15->setMaximumSize(QSize(39, 39));
         y17x15->setFont(font6);
@@ -2857,8 +2844,8 @@ public:
 
         y13x4 = new QPushButton(gridLayoutWidget_2);
         y13x4->setObjectName(QStringLiteral("y13x4"));
-        sizePolicy1.setHeightForWidth(y13x4->sizePolicy().hasHeightForWidth());
-        y13x4->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y13x4->sizePolicy().hasHeightForWidth());
+        y13x4->setSizePolicy(sizePolicy);
         y13x4->setMinimumSize(QSize(39, 39));
         y13x4->setMaximumSize(QSize(39, 39));
         y13x4->setFont(font6);
@@ -2870,8 +2857,8 @@ public:
 
         y11x7 = new QPushButton(gridLayoutWidget_2);
         y11x7->setObjectName(QStringLiteral("y11x7"));
-        sizePolicy1.setHeightForWidth(y11x7->sizePolicy().hasHeightForWidth());
-        y11x7->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y11x7->sizePolicy().hasHeightForWidth());
+        y11x7->setSizePolicy(sizePolicy);
         y11x7->setMinimumSize(QSize(39, 39));
         y11x7->setMaximumSize(QSize(39, 39));
         y11x7->setFont(font6);
@@ -2883,8 +2870,8 @@ public:
 
         y12x11 = new QPushButton(gridLayoutWidget_2);
         y12x11->setObjectName(QStringLiteral("y12x11"));
-        sizePolicy1.setHeightForWidth(y12x11->sizePolicy().hasHeightForWidth());
-        y12x11->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y12x11->sizePolicy().hasHeightForWidth());
+        y12x11->setSizePolicy(sizePolicy);
         y12x11->setMinimumSize(QSize(39, 39));
         y12x11->setMaximumSize(QSize(39, 39));
         y12x11->setFont(font6);
@@ -2896,8 +2883,8 @@ public:
 
         y8x1 = new QPushButton(gridLayoutWidget_2);
         y8x1->setObjectName(QStringLiteral("y8x1"));
-        sizePolicy1.setHeightForWidth(y8x1->sizePolicy().hasHeightForWidth());
-        y8x1->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y8x1->sizePolicy().hasHeightForWidth());
+        y8x1->setSizePolicy(sizePolicy);
         y8x1->setMinimumSize(QSize(39, 39));
         y8x1->setMaximumSize(QSize(39, 39));
         y8x1->setFont(font6);
@@ -2909,8 +2896,8 @@ public:
 
         y12x13 = new QPushButton(gridLayoutWidget_2);
         y12x13->setObjectName(QStringLiteral("y12x13"));
-        sizePolicy1.setHeightForWidth(y12x13->sizePolicy().hasHeightForWidth());
-        y12x13->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y12x13->sizePolicy().hasHeightForWidth());
+        y12x13->setSizePolicy(sizePolicy);
         y12x13->setMinimumSize(QSize(39, 39));
         y12x13->setMaximumSize(QSize(39, 39));
         y12x13->setFont(font6);
@@ -2922,8 +2909,8 @@ public:
 
         y9x13 = new QPushButton(gridLayoutWidget_2);
         y9x13->setObjectName(QStringLiteral("y9x13"));
-        sizePolicy1.setHeightForWidth(y9x13->sizePolicy().hasHeightForWidth());
-        y9x13->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y9x13->sizePolicy().hasHeightForWidth());
+        y9x13->setSizePolicy(sizePolicy);
         y9x13->setMinimumSize(QSize(39, 39));
         y9x13->setMaximumSize(QSize(39, 39));
         y9x13->setFont(font6);
@@ -2935,8 +2922,8 @@ public:
 
         y4x14 = new QPushButton(gridLayoutWidget_2);
         y4x14->setObjectName(QStringLiteral("y4x14"));
-        sizePolicy1.setHeightForWidth(y4x14->sizePolicy().hasHeightForWidth());
-        y4x14->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y4x14->sizePolicy().hasHeightForWidth());
+        y4x14->setSizePolicy(sizePolicy);
         y4x14->setMinimumSize(QSize(39, 39));
         y4x14->setMaximumSize(QSize(39, 39));
         y4x14->setFont(font6);
@@ -2948,8 +2935,8 @@ public:
 
         y1x7 = new QPushButton(gridLayoutWidget_2);
         y1x7->setObjectName(QStringLiteral("y1x7"));
-        sizePolicy1.setHeightForWidth(y1x7->sizePolicy().hasHeightForWidth());
-        y1x7->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y1x7->sizePolicy().hasHeightForWidth());
+        y1x7->setSizePolicy(sizePolicy);
         y1x7->setMinimumSize(QSize(39, 39));
         y1x7->setMaximumSize(QSize(39, 39));
         y1x7->setFont(font6);
@@ -2961,8 +2948,8 @@ public:
 
         y2x5 = new QPushButton(gridLayoutWidget_2);
         y2x5->setObjectName(QStringLiteral("y2x5"));
-        sizePolicy1.setHeightForWidth(y2x5->sizePolicy().hasHeightForWidth());
-        y2x5->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y2x5->sizePolicy().hasHeightForWidth());
+        y2x5->setSizePolicy(sizePolicy);
         y2x5->setMinimumSize(QSize(39, 39));
         y2x5->setMaximumSize(QSize(39, 39));
         y2x5->setFont(font6);
@@ -2974,8 +2961,8 @@ public:
 
         y12x3 = new QPushButton(gridLayoutWidget_2);
         y12x3->setObjectName(QStringLiteral("y12x3"));
-        sizePolicy1.setHeightForWidth(y12x3->sizePolicy().hasHeightForWidth());
-        y12x3->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y12x3->sizePolicy().hasHeightForWidth());
+        y12x3->setSizePolicy(sizePolicy);
         y12x3->setMinimumSize(QSize(39, 39));
         y12x3->setMaximumSize(QSize(39, 39));
         y12x3->setFont(font6);
@@ -2987,8 +2974,8 @@ public:
 
         y6x3 = new QPushButton(gridLayoutWidget_2);
         y6x3->setObjectName(QStringLiteral("y6x3"));
-        sizePolicy1.setHeightForWidth(y6x3->sizePolicy().hasHeightForWidth());
-        y6x3->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y6x3->sizePolicy().hasHeightForWidth());
+        y6x3->setSizePolicy(sizePolicy);
         y6x3->setMinimumSize(QSize(39, 39));
         y6x3->setMaximumSize(QSize(39, 39));
         y6x3->setFont(font6);
@@ -3000,8 +2987,8 @@ public:
 
         y12x15 = new QPushButton(gridLayoutWidget_2);
         y12x15->setObjectName(QStringLiteral("y12x15"));
-        sizePolicy1.setHeightForWidth(y12x15->sizePolicy().hasHeightForWidth());
-        y12x15->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y12x15->sizePolicy().hasHeightForWidth());
+        y12x15->setSizePolicy(sizePolicy);
         y12x15->setMinimumSize(QSize(39, 39));
         y12x15->setMaximumSize(QSize(39, 39));
         y12x15->setFont(font6);
@@ -3013,8 +3000,8 @@ public:
 
         y1x10 = new QPushButton(gridLayoutWidget_2);
         y1x10->setObjectName(QStringLiteral("y1x10"));
-        sizePolicy1.setHeightForWidth(y1x10->sizePolicy().hasHeightForWidth());
-        y1x10->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y1x10->sizePolicy().hasHeightForWidth());
+        y1x10->setSizePolicy(sizePolicy);
         y1x10->setMinimumSize(QSize(39, 39));
         y1x10->setMaximumSize(QSize(39, 39));
         y1x10->setFont(font6);
@@ -3026,8 +3013,8 @@ public:
 
         y10x2 = new QPushButton(gridLayoutWidget_2);
         y10x2->setObjectName(QStringLiteral("y10x2"));
-        sizePolicy1.setHeightForWidth(y10x2->sizePolicy().hasHeightForWidth());
-        y10x2->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y10x2->sizePolicy().hasHeightForWidth());
+        y10x2->setSizePolicy(sizePolicy);
         y10x2->setMinimumSize(QSize(39, 39));
         y10x2->setMaximumSize(QSize(39, 39));
         y10x2->setFont(font6);
@@ -3039,8 +3026,8 @@ public:
 
         y11x13 = new QPushButton(gridLayoutWidget_2);
         y11x13->setObjectName(QStringLiteral("y11x13"));
-        sizePolicy1.setHeightForWidth(y11x13->sizePolicy().hasHeightForWidth());
-        y11x13->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y11x13->sizePolicy().hasHeightForWidth());
+        y11x13->setSizePolicy(sizePolicy);
         y11x13->setMinimumSize(QSize(39, 39));
         y11x13->setMaximumSize(QSize(39, 39));
         y11x13->setFont(font6);
@@ -3052,8 +3039,8 @@ public:
 
         y12x1 = new QPushButton(gridLayoutWidget_2);
         y12x1->setObjectName(QStringLiteral("y12x1"));
-        sizePolicy1.setHeightForWidth(y12x1->sizePolicy().hasHeightForWidth());
-        y12x1->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y12x1->sizePolicy().hasHeightForWidth());
+        y12x1->setSizePolicy(sizePolicy);
         y12x1->setMinimumSize(QSize(39, 39));
         y12x1->setMaximumSize(QSize(39, 39));
         y12x1->setFont(font6);
@@ -3065,8 +3052,8 @@ public:
 
         y11x9 = new QPushButton(gridLayoutWidget_2);
         y11x9->setObjectName(QStringLiteral("y11x9"));
-        sizePolicy1.setHeightForWidth(y11x9->sizePolicy().hasHeightForWidth());
-        y11x9->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y11x9->sizePolicy().hasHeightForWidth());
+        y11x9->setSizePolicy(sizePolicy);
         y11x9->setMinimumSize(QSize(39, 39));
         y11x9->setMaximumSize(QSize(39, 39));
         y11x9->setFont(font6);
@@ -3078,8 +3065,8 @@ public:
 
         y6x7 = new QPushButton(gridLayoutWidget_2);
         y6x7->setObjectName(QStringLiteral("y6x7"));
-        sizePolicy1.setHeightForWidth(y6x7->sizePolicy().hasHeightForWidth());
-        y6x7->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y6x7->sizePolicy().hasHeightForWidth());
+        y6x7->setSizePolicy(sizePolicy);
         y6x7->setMinimumSize(QSize(39, 39));
         y6x7->setMaximumSize(QSize(39, 39));
         y6x7->setFont(font6);
@@ -3091,8 +3078,8 @@ public:
 
         y3x4 = new QPushButton(gridLayoutWidget_2);
         y3x4->setObjectName(QStringLiteral("y3x4"));
-        sizePolicy1.setHeightForWidth(y3x4->sizePolicy().hasHeightForWidth());
-        y3x4->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y3x4->sizePolicy().hasHeightForWidth());
+        y3x4->setSizePolicy(sizePolicy);
         y3x4->setMinimumSize(QSize(39, 39));
         y3x4->setMaximumSize(QSize(39, 39));
         y3x4->setFont(font6);
@@ -3104,8 +3091,8 @@ public:
 
         y2x3 = new QPushButton(gridLayoutWidget_2);
         y2x3->setObjectName(QStringLiteral("y2x3"));
-        sizePolicy1.setHeightForWidth(y2x3->sizePolicy().hasHeightForWidth());
-        y2x3->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y2x3->sizePolicy().hasHeightForWidth());
+        y2x3->setSizePolicy(sizePolicy);
         y2x3->setMinimumSize(QSize(39, 39));
         y2x3->setMaximumSize(QSize(39, 39));
         y2x3->setFont(font6);
@@ -3117,8 +3104,8 @@ public:
 
         y10x12 = new QPushButton(gridLayoutWidget_2);
         y10x12->setObjectName(QStringLiteral("y10x12"));
-        sizePolicy1.setHeightForWidth(y10x12->sizePolicy().hasHeightForWidth());
-        y10x12->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y10x12->sizePolicy().hasHeightForWidth());
+        y10x12->setSizePolicy(sizePolicy);
         y10x12->setMinimumSize(QSize(39, 39));
         y10x12->setMaximumSize(QSize(39, 39));
         y10x12->setFont(font6);
@@ -3130,8 +3117,8 @@ public:
 
         y4x2 = new QPushButton(gridLayoutWidget_2);
         y4x2->setObjectName(QStringLiteral("y4x2"));
-        sizePolicy1.setHeightForWidth(y4x2->sizePolicy().hasHeightForWidth());
-        y4x2->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y4x2->sizePolicy().hasHeightForWidth());
+        y4x2->setSizePolicy(sizePolicy);
         y4x2->setMinimumSize(QSize(39, 39));
         y4x2->setMaximumSize(QSize(39, 39));
         y4x2->setFont(font6);
@@ -3143,8 +3130,8 @@ public:
 
         y12x10 = new QPushButton(gridLayoutWidget_2);
         y12x10->setObjectName(QStringLiteral("y12x10"));
-        sizePolicy1.setHeightForWidth(y12x10->sizePolicy().hasHeightForWidth());
-        y12x10->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y12x10->sizePolicy().hasHeightForWidth());
+        y12x10->setSizePolicy(sizePolicy);
         y12x10->setMinimumSize(QSize(39, 39));
         y12x10->setMaximumSize(QSize(39, 39));
         y12x10->setFont(font6);
@@ -3156,8 +3143,8 @@ public:
 
         y4x7 = new QPushButton(gridLayoutWidget_2);
         y4x7->setObjectName(QStringLiteral("y4x7"));
-        sizePolicy1.setHeightForWidth(y4x7->sizePolicy().hasHeightForWidth());
-        y4x7->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y4x7->sizePolicy().hasHeightForWidth());
+        y4x7->setSizePolicy(sizePolicy);
         y4x7->setMinimumSize(QSize(39, 39));
         y4x7->setMaximumSize(QSize(39, 39));
         y4x7->setFont(font6);
@@ -3169,8 +3156,8 @@ public:
 
         y7x12 = new QPushButton(gridLayoutWidget_2);
         y7x12->setObjectName(QStringLiteral("y7x12"));
-        sizePolicy1.setHeightForWidth(y7x12->sizePolicy().hasHeightForWidth());
-        y7x12->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y7x12->sizePolicy().hasHeightForWidth());
+        y7x12->setSizePolicy(sizePolicy);
         y7x12->setMinimumSize(QSize(39, 39));
         y7x12->setMaximumSize(QSize(39, 39));
         y7x12->setFont(font6);
@@ -3182,8 +3169,8 @@ public:
 
         y13x11 = new QPushButton(gridLayoutWidget_2);
         y13x11->setObjectName(QStringLiteral("y13x11"));
-        sizePolicy1.setHeightForWidth(y13x11->sizePolicy().hasHeightForWidth());
-        y13x11->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y13x11->sizePolicy().hasHeightForWidth());
+        y13x11->setSizePolicy(sizePolicy);
         y13x11->setMinimumSize(QSize(39, 39));
         y13x11->setMaximumSize(QSize(39, 39));
         y13x11->setFont(font6);
@@ -3195,8 +3182,8 @@ public:
 
         y8x12 = new QPushButton(gridLayoutWidget_2);
         y8x12->setObjectName(QStringLiteral("y8x12"));
-        sizePolicy1.setHeightForWidth(y8x12->sizePolicy().hasHeightForWidth());
-        y8x12->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y8x12->sizePolicy().hasHeightForWidth());
+        y8x12->setSizePolicy(sizePolicy);
         y8x12->setMinimumSize(QSize(39, 39));
         y8x12->setMaximumSize(QSize(39, 39));
         y8x12->setFont(font6);
@@ -3208,8 +3195,8 @@ public:
 
         y4x9 = new QPushButton(gridLayoutWidget_2);
         y4x9->setObjectName(QStringLiteral("y4x9"));
-        sizePolicy1.setHeightForWidth(y4x9->sizePolicy().hasHeightForWidth());
-        y4x9->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y4x9->sizePolicy().hasHeightForWidth());
+        y4x9->setSizePolicy(sizePolicy);
         y4x9->setMinimumSize(QSize(39, 39));
         y4x9->setMaximumSize(QSize(39, 39));
         y4x9->setFont(font6);
@@ -3221,8 +3208,8 @@ public:
 
         y11x15 = new QPushButton(gridLayoutWidget_2);
         y11x15->setObjectName(QStringLiteral("y11x15"));
-        sizePolicy1.setHeightForWidth(y11x15->sizePolicy().hasHeightForWidth());
-        y11x15->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y11x15->sizePolicy().hasHeightForWidth());
+        y11x15->setSizePolicy(sizePolicy);
         y11x15->setMinimumSize(QSize(39, 39));
         y11x15->setMaximumSize(QSize(39, 39));
         y11x15->setFont(font6);
@@ -3234,8 +3221,8 @@ public:
 
         y6x15 = new QPushButton(gridLayoutWidget_2);
         y6x15->setObjectName(QStringLiteral("y6x15"));
-        sizePolicy1.setHeightForWidth(y6x15->sizePolicy().hasHeightForWidth());
-        y6x15->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y6x15->sizePolicy().hasHeightForWidth());
+        y6x15->setSizePolicy(sizePolicy);
         y6x15->setMinimumSize(QSize(39, 39));
         y6x15->setMaximumSize(QSize(39, 39));
         y6x15->setFont(font6);
@@ -3247,8 +3234,8 @@ public:
 
         y6x11 = new QPushButton(gridLayoutWidget_2);
         y6x11->setObjectName(QStringLiteral("y6x11"));
-        sizePolicy1.setHeightForWidth(y6x11->sizePolicy().hasHeightForWidth());
-        y6x11->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y6x11->sizePolicy().hasHeightForWidth());
+        y6x11->setSizePolicy(sizePolicy);
         y6x11->setMinimumSize(QSize(39, 39));
         y6x11->setMaximumSize(QSize(39, 39));
         y6x11->setFont(font6);
@@ -3260,8 +3247,8 @@ public:
 
         y2x14 = new QPushButton(gridLayoutWidget_2);
         y2x14->setObjectName(QStringLiteral("y2x14"));
-        sizePolicy1.setHeightForWidth(y2x14->sizePolicy().hasHeightForWidth());
-        y2x14->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y2x14->sizePolicy().hasHeightForWidth());
+        y2x14->setSizePolicy(sizePolicy);
         y2x14->setMinimumSize(QSize(39, 39));
         y2x14->setMaximumSize(QSize(39, 39));
         y2x14->setFont(font6);
@@ -3273,8 +3260,8 @@ public:
 
         y2x13 = new QPushButton(gridLayoutWidget_2);
         y2x13->setObjectName(QStringLiteral("y2x13"));
-        sizePolicy1.setHeightForWidth(y2x13->sizePolicy().hasHeightForWidth());
-        y2x13->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y2x13->sizePolicy().hasHeightForWidth());
+        y2x13->setSizePolicy(sizePolicy);
         y2x13->setMinimumSize(QSize(39, 39));
         y2x13->setMaximumSize(QSize(39, 39));
         y2x13->setFont(font6);
@@ -3286,8 +3273,8 @@ public:
 
         y10x14 = new QPushButton(gridLayoutWidget_2);
         y10x14->setObjectName(QStringLiteral("y10x14"));
-        sizePolicy1.setHeightForWidth(y10x14->sizePolicy().hasHeightForWidth());
-        y10x14->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y10x14->sizePolicy().hasHeightForWidth());
+        y10x14->setSizePolicy(sizePolicy);
         y10x14->setMinimumSize(QSize(39, 39));
         y10x14->setMaximumSize(QSize(39, 39));
         y10x14->setFont(font6);
@@ -3299,8 +3286,8 @@ public:
 
         y10x4 = new QPushButton(gridLayoutWidget_2);
         y10x4->setObjectName(QStringLiteral("y10x4"));
-        sizePolicy1.setHeightForWidth(y10x4->sizePolicy().hasHeightForWidth());
-        y10x4->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y10x4->sizePolicy().hasHeightForWidth());
+        y10x4->setSizePolicy(sizePolicy);
         y10x4->setMinimumSize(QSize(39, 39));
         y10x4->setMaximumSize(QSize(39, 39));
         y10x4->setFont(font6);
@@ -3312,8 +3299,8 @@ public:
 
         y11x10 = new QPushButton(gridLayoutWidget_2);
         y11x10->setObjectName(QStringLiteral("y11x10"));
-        sizePolicy1.setHeightForWidth(y11x10->sizePolicy().hasHeightForWidth());
-        y11x10->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y11x10->sizePolicy().hasHeightForWidth());
+        y11x10->setSizePolicy(sizePolicy);
         y11x10->setMinimumSize(QSize(39, 39));
         y11x10->setMaximumSize(QSize(39, 39));
         y11x10->setFont(font6);
@@ -3325,8 +3312,8 @@ public:
 
         y6x13 = new QPushButton(gridLayoutWidget_2);
         y6x13->setObjectName(QStringLiteral("y6x13"));
-        sizePolicy1.setHeightForWidth(y6x13->sizePolicy().hasHeightForWidth());
-        y6x13->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y6x13->sizePolicy().hasHeightForWidth());
+        y6x13->setSizePolicy(sizePolicy);
         y6x13->setMinimumSize(QSize(39, 39));
         y6x13->setMaximumSize(QSize(39, 39));
         y6x13->setFont(font6);
@@ -3338,8 +3325,8 @@ public:
 
         y11x6 = new QPushButton(gridLayoutWidget_2);
         y11x6->setObjectName(QStringLiteral("y11x6"));
-        sizePolicy1.setHeightForWidth(y11x6->sizePolicy().hasHeightForWidth());
-        y11x6->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y11x6->sizePolicy().hasHeightForWidth());
+        y11x6->setSizePolicy(sizePolicy);
         y11x6->setMinimumSize(QSize(39, 39));
         y11x6->setMaximumSize(QSize(39, 39));
         y11x6->setFont(font6);
@@ -3351,8 +3338,8 @@ public:
 
         y7x10 = new QPushButton(gridLayoutWidget_2);
         y7x10->setObjectName(QStringLiteral("y7x10"));
-        sizePolicy1.setHeightForWidth(y7x10->sizePolicy().hasHeightForWidth());
-        y7x10->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y7x10->sizePolicy().hasHeightForWidth());
+        y7x10->setSizePolicy(sizePolicy);
         y7x10->setMinimumSize(QSize(39, 39));
         y7x10->setMaximumSize(QSize(39, 39));
         y7x10->setFont(font6);
@@ -3364,8 +3351,8 @@ public:
 
         y9x12 = new QPushButton(gridLayoutWidget_2);
         y9x12->setObjectName(QStringLiteral("y9x12"));
-        sizePolicy1.setHeightForWidth(y9x12->sizePolicy().hasHeightForWidth());
-        y9x12->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y9x12->sizePolicy().hasHeightForWidth());
+        y9x12->setSizePolicy(sizePolicy);
         y9x12->setMinimumSize(QSize(39, 39));
         y9x12->setMaximumSize(QSize(39, 39));
         y9x12->setFont(font6);
@@ -3377,8 +3364,8 @@ public:
 
         y6x10 = new QPushButton(gridLayoutWidget_2);
         y6x10->setObjectName(QStringLiteral("y6x10"));
-        sizePolicy1.setHeightForWidth(y6x10->sizePolicy().hasHeightForWidth());
-        y6x10->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y6x10->sizePolicy().hasHeightForWidth());
+        y6x10->setSizePolicy(sizePolicy);
         y6x10->setMinimumSize(QSize(39, 39));
         y6x10->setMaximumSize(QSize(39, 39));
         y6x10->setFont(font6);
@@ -3390,8 +3377,8 @@ public:
 
         y2x7 = new QPushButton(gridLayoutWidget_2);
         y2x7->setObjectName(QStringLiteral("y2x7"));
-        sizePolicy1.setHeightForWidth(y2x7->sizePolicy().hasHeightForWidth());
-        y2x7->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y2x7->sizePolicy().hasHeightForWidth());
+        y2x7->setSizePolicy(sizePolicy);
         y2x7->setMinimumSize(QSize(39, 39));
         y2x7->setMaximumSize(QSize(39, 39));
         y2x7->setFont(font6);
@@ -3403,8 +3390,8 @@ public:
 
         y10x10 = new QPushButton(gridLayoutWidget_2);
         y10x10->setObjectName(QStringLiteral("y10x10"));
-        sizePolicy1.setHeightForWidth(y10x10->sizePolicy().hasHeightForWidth());
-        y10x10->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y10x10->sizePolicy().hasHeightForWidth());
+        y10x10->setSizePolicy(sizePolicy);
         y10x10->setMinimumSize(QSize(39, 39));
         y10x10->setMaximumSize(QSize(39, 39));
         y10x10->setFont(font6);
@@ -3416,8 +3403,8 @@ public:
 
         y3x6 = new QPushButton(gridLayoutWidget_2);
         y3x6->setObjectName(QStringLiteral("y3x6"));
-        sizePolicy1.setHeightForWidth(y3x6->sizePolicy().hasHeightForWidth());
-        y3x6->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y3x6->sizePolicy().hasHeightForWidth());
+        y3x6->setSizePolicy(sizePolicy);
         y3x6->setMinimumSize(QSize(39, 39));
         y3x6->setMaximumSize(QSize(39, 39));
         y3x6->setFont(font6);
@@ -3429,8 +3416,8 @@ public:
 
         y6x5 = new QPushButton(gridLayoutWidget_2);
         y6x5->setObjectName(QStringLiteral("y6x5"));
-        sizePolicy1.setHeightForWidth(y6x5->sizePolicy().hasHeightForWidth());
-        y6x5->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y6x5->sizePolicy().hasHeightForWidth());
+        y6x5->setSizePolicy(sizePolicy);
         y6x5->setMinimumSize(QSize(39, 39));
         y6x5->setMaximumSize(QSize(39, 39));
         y6x5->setFont(font6);
@@ -3442,8 +3429,8 @@ public:
 
         y5x9 = new QPushButton(gridLayoutWidget_2);
         y5x9->setObjectName(QStringLiteral("y5x9"));
-        sizePolicy1.setHeightForWidth(y5x9->sizePolicy().hasHeightForWidth());
-        y5x9->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y5x9->sizePolicy().hasHeightForWidth());
+        y5x9->setSizePolicy(sizePolicy);
         y5x9->setMinimumSize(QSize(39, 39));
         y5x9->setMaximumSize(QSize(39, 39));
         y5x9->setFont(font6);
@@ -3455,8 +3442,8 @@ public:
 
         y5x5 = new QPushButton(gridLayoutWidget_2);
         y5x5->setObjectName(QStringLiteral("y5x5"));
-        sizePolicy1.setHeightForWidth(y5x5->sizePolicy().hasHeightForWidth());
-        y5x5->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y5x5->sizePolicy().hasHeightForWidth());
+        y5x5->setSizePolicy(sizePolicy);
         y5x5->setMinimumSize(QSize(39, 39));
         y5x5->setMaximumSize(QSize(39, 39));
         y5x5->setFont(font6);
@@ -3468,8 +3455,8 @@ public:
 
         y14x11 = new QPushButton(gridLayoutWidget_2);
         y14x11->setObjectName(QStringLiteral("y14x11"));
-        sizePolicy1.setHeightForWidth(y14x11->sizePolicy().hasHeightForWidth());
-        y14x11->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y14x11->sizePolicy().hasHeightForWidth());
+        y14x11->setSizePolicy(sizePolicy);
         y14x11->setMinimumSize(QSize(39, 39));
         y14x11->setMaximumSize(QSize(39, 39));
         y14x11->setFont(font6);
@@ -3481,8 +3468,8 @@ public:
 
         y0x15 = new QPushButton(gridLayoutWidget_2);
         y0x15->setObjectName(QStringLiteral("y0x15"));
-        sizePolicy1.setHeightForWidth(y0x15->sizePolicy().hasHeightForWidth());
-        y0x15->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y0x15->sizePolicy().hasHeightForWidth());
+        y0x15->setSizePolicy(sizePolicy);
         y0x15->setMinimumSize(QSize(39, 39));
         y0x15->setMaximumSize(QSize(39, 39));
         y0x15->setFont(font6);
@@ -3494,8 +3481,8 @@ public:
 
         y0x6 = new QPushButton(gridLayoutWidget_2);
         y0x6->setObjectName(QStringLiteral("y0x6"));
-        sizePolicy1.setHeightForWidth(y0x6->sizePolicy().hasHeightForWidth());
-        y0x6->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y0x6->sizePolicy().hasHeightForWidth());
+        y0x6->setSizePolicy(sizePolicy);
         y0x6->setMinimumSize(QSize(39, 39));
         y0x6->setMaximumSize(QSize(39, 39));
         y0x6->setFont(font6);
@@ -3507,8 +3494,8 @@ public:
 
         y16x5 = new QPushButton(gridLayoutWidget_2);
         y16x5->setObjectName(QStringLiteral("y16x5"));
-        sizePolicy1.setHeightForWidth(y16x5->sizePolicy().hasHeightForWidth());
-        y16x5->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y16x5->sizePolicy().hasHeightForWidth());
+        y16x5->setSizePolicy(sizePolicy);
         y16x5->setMinimumSize(QSize(39, 39));
         y16x5->setMaximumSize(QSize(39, 39));
         y16x5->setFont(font6);
@@ -3520,8 +3507,8 @@ public:
 
         y14x0 = new QPushButton(gridLayoutWidget_2);
         y14x0->setObjectName(QStringLiteral("y14x0"));
-        sizePolicy1.setHeightForWidth(y14x0->sizePolicy().hasHeightForWidth());
-        y14x0->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y14x0->sizePolicy().hasHeightForWidth());
+        y14x0->setSizePolicy(sizePolicy);
         y14x0->setMinimumSize(QSize(39, 39));
         y14x0->setMaximumSize(QSize(39, 39));
         y14x0->setFont(font6);
@@ -3533,8 +3520,11 @@ public:
 
         y0x0 = new QPushButton(gridLayoutWidget_2);
         y0x0->setObjectName(QStringLiteral("y0x0"));
-        sizePolicy.setHeightForWidth(y0x0->sizePolicy().hasHeightForWidth());
-        y0x0->setSizePolicy(sizePolicy);
+        QSizePolicy sizePolicy1(QSizePolicy::Fixed, QSizePolicy::Fixed);
+        sizePolicy1.setHorizontalStretch(0);
+        sizePolicy1.setVerticalStretch(0);
+        sizePolicy1.setHeightForWidth(y0x0->sizePolicy().hasHeightForWidth());
+        y0x0->setSizePolicy(sizePolicy1);
         y0x0->setMinimumSize(QSize(39, 39));
         y0x0->setMaximumSize(QSize(39, 39));
         y0x0->setBaseSize(QSize(39, 39));
@@ -3548,8 +3538,8 @@ public:
 
         y0x14 = new QPushButton(gridLayoutWidget_2);
         y0x14->setObjectName(QStringLiteral("y0x14"));
-        sizePolicy1.setHeightForWidth(y0x14->sizePolicy().hasHeightForWidth());
-        y0x14->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y0x14->sizePolicy().hasHeightForWidth());
+        y0x14->setSizePolicy(sizePolicy);
         y0x14->setMinimumSize(QSize(39, 39));
         y0x14->setMaximumSize(QSize(39, 39));
         y0x14->setFont(font6);
@@ -3561,8 +3551,8 @@ public:
 
         y0x7 = new QPushButton(gridLayoutWidget_2);
         y0x7->setObjectName(QStringLiteral("y0x7"));
-        sizePolicy1.setHeightForWidth(y0x7->sizePolicy().hasHeightForWidth());
-        y0x7->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y0x7->sizePolicy().hasHeightForWidth());
+        y0x7->setSizePolicy(sizePolicy);
         y0x7->setMinimumSize(QSize(39, 39));
         y0x7->setMaximumSize(QSize(39, 39));
         y0x7->setFont(font6);
@@ -3574,8 +3564,8 @@ public:
 
         y4x0 = new QPushButton(gridLayoutWidget_2);
         y4x0->setObjectName(QStringLiteral("y4x0"));
-        sizePolicy1.setHeightForWidth(y4x0->sizePolicy().hasHeightForWidth());
-        y4x0->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y4x0->sizePolicy().hasHeightForWidth());
+        y4x0->setSizePolicy(sizePolicy);
         y4x0->setMinimumSize(QSize(39, 39));
         y4x0->setMaximumSize(QSize(39, 39));
         y4x0->setFont(font6);
@@ -3587,8 +3577,8 @@ public:
 
         y8x0 = new QPushButton(gridLayoutWidget_2);
         y8x0->setObjectName(QStringLiteral("y8x0"));
-        sizePolicy1.setHeightForWidth(y8x0->sizePolicy().hasHeightForWidth());
-        y8x0->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y8x0->sizePolicy().hasHeightForWidth());
+        y8x0->setSizePolicy(sizePolicy);
         y8x0->setMinimumSize(QSize(39, 39));
         y8x0->setMaximumSize(QSize(39, 39));
         y8x0->setFont(font6);
@@ -3600,8 +3590,8 @@ public:
 
         y0x5 = new QPushButton(gridLayoutWidget_2);
         y0x5->setObjectName(QStringLiteral("y0x5"));
-        sizePolicy1.setHeightForWidth(y0x5->sizePolicy().hasHeightForWidth());
-        y0x5->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y0x5->sizePolicy().hasHeightForWidth());
+        y0x5->setSizePolicy(sizePolicy);
         y0x5->setMinimumSize(QSize(39, 39));
         y0x5->setMaximumSize(QSize(39, 39));
         y0x5->setFont(font6);
@@ -3613,8 +3603,8 @@ public:
 
         y5x0 = new QPushButton(gridLayoutWidget_2);
         y5x0->setObjectName(QStringLiteral("y5x0"));
-        sizePolicy1.setHeightForWidth(y5x0->sizePolicy().hasHeightForWidth());
-        y5x0->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y5x0->sizePolicy().hasHeightForWidth());
+        y5x0->setSizePolicy(sizePolicy);
         y5x0->setMinimumSize(QSize(39, 39));
         y5x0->setMaximumSize(QSize(39, 39));
         y5x0->setFont(font6);
@@ -3626,8 +3616,8 @@ public:
 
         y0x16 = new QPushButton(gridLayoutWidget_2);
         y0x16->setObjectName(QStringLiteral("y0x16"));
-        sizePolicy1.setHeightForWidth(y0x16->sizePolicy().hasHeightForWidth());
-        y0x16->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y0x16->sizePolicy().hasHeightForWidth());
+        y0x16->setSizePolicy(sizePolicy);
         y0x16->setMinimumSize(QSize(39, 39));
         y0x16->setMaximumSize(QSize(39, 39));
         y0x16->setFont(font6);
@@ -3639,8 +3629,8 @@ public:
 
         y11x0 = new QPushButton(gridLayoutWidget_2);
         y11x0->setObjectName(QStringLiteral("y11x0"));
-        sizePolicy1.setHeightForWidth(y11x0->sizePolicy().hasHeightForWidth());
-        y11x0->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y11x0->sizePolicy().hasHeightForWidth());
+        y11x0->setSizePolicy(sizePolicy);
         y11x0->setMinimumSize(QSize(39, 39));
         y11x0->setMaximumSize(QSize(39, 39));
         y11x0->setFont(font6);
@@ -3652,8 +3642,8 @@ public:
 
         y0x12 = new QPushButton(gridLayoutWidget_2);
         y0x12->setObjectName(QStringLiteral("y0x12"));
-        sizePolicy1.setHeightForWidth(y0x12->sizePolicy().hasHeightForWidth());
-        y0x12->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y0x12->sizePolicy().hasHeightForWidth());
+        y0x12->setSizePolicy(sizePolicy);
         y0x12->setMinimumSize(QSize(39, 39));
         y0x12->setMaximumSize(QSize(39, 39));
         y0x12->setFont(font6);
@@ -3665,8 +3655,8 @@ public:
 
         y15x3 = new QPushButton(gridLayoutWidget_2);
         y15x3->setObjectName(QStringLiteral("y15x3"));
-        sizePolicy1.setHeightForWidth(y15x3->sizePolicy().hasHeightForWidth());
-        y15x3->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y15x3->sizePolicy().hasHeightForWidth());
+        y15x3->setSizePolicy(sizePolicy);
         y15x3->setMinimumSize(QSize(39, 39));
         y15x3->setMaximumSize(QSize(39, 39));
         y15x3->setFont(font6);
@@ -3678,8 +3668,8 @@ public:
 
         y15x0 = new QPushButton(gridLayoutWidget_2);
         y15x0->setObjectName(QStringLiteral("y15x0"));
-        sizePolicy1.setHeightForWidth(y15x0->sizePolicy().hasHeightForWidth());
-        y15x0->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y15x0->sizePolicy().hasHeightForWidth());
+        y15x0->setSizePolicy(sizePolicy);
         y15x0->setMinimumSize(QSize(39, 39));
         y15x0->setMaximumSize(QSize(39, 39));
         y15x0->setFont(font6);
@@ -3691,8 +3681,8 @@ public:
 
         y16x10 = new QPushButton(gridLayoutWidget_2);
         y16x10->setObjectName(QStringLiteral("y16x10"));
-        sizePolicy1.setHeightForWidth(y16x10->sizePolicy().hasHeightForWidth());
-        y16x10->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y16x10->sizePolicy().hasHeightForWidth());
+        y16x10->setSizePolicy(sizePolicy);
         y16x10->setMinimumSize(QSize(39, 39));
         y16x10->setMaximumSize(QSize(39, 39));
         y16x10->setFont(font6);
@@ -3704,8 +3694,8 @@ public:
 
         y16x12 = new QPushButton(gridLayoutWidget_2);
         y16x12->setObjectName(QStringLiteral("y16x12"));
-        sizePolicy1.setHeightForWidth(y16x12->sizePolicy().hasHeightForWidth());
-        y16x12->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y16x12->sizePolicy().hasHeightForWidth());
+        y16x12->setSizePolicy(sizePolicy);
         y16x12->setMinimumSize(QSize(39, 39));
         y16x12->setMaximumSize(QSize(39, 39));
         y16x12->setFont(font6);
@@ -3717,8 +3707,8 @@ public:
 
         y15x7 = new QPushButton(gridLayoutWidget_2);
         y15x7->setObjectName(QStringLiteral("y15x7"));
-        sizePolicy1.setHeightForWidth(y15x7->sizePolicy().hasHeightForWidth());
-        y15x7->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y15x7->sizePolicy().hasHeightForWidth());
+        y15x7->setSizePolicy(sizePolicy);
         y15x7->setMinimumSize(QSize(39, 39));
         y15x7->setMaximumSize(QSize(39, 39));
         y15x7->setFont(font6);
@@ -3730,8 +3720,8 @@ public:
 
         y15x8 = new QPushButton(gridLayoutWidget_2);
         y15x8->setObjectName(QStringLiteral("y15x8"));
-        sizePolicy1.setHeightForWidth(y15x8->sizePolicy().hasHeightForWidth());
-        y15x8->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y15x8->sizePolicy().hasHeightForWidth());
+        y15x8->setSizePolicy(sizePolicy);
         y15x8->setMinimumSize(QSize(39, 39));
         y15x8->setMaximumSize(QSize(39, 39));
         y15x8->setFont(font6);
@@ -3743,8 +3733,8 @@ public:
 
         y16x16 = new QPushButton(gridLayoutWidget_2);
         y16x16->setObjectName(QStringLiteral("y16x16"));
-        sizePolicy1.setHeightForWidth(y16x16->sizePolicy().hasHeightForWidth());
-        y16x16->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y16x16->sizePolicy().hasHeightForWidth());
+        y16x16->setSizePolicy(sizePolicy);
         y16x16->setMinimumSize(QSize(39, 39));
         y16x16->setMaximumSize(QSize(39, 39));
         y16x16->setFont(font6);
@@ -3756,8 +3746,8 @@ public:
 
         y16x3 = new QPushButton(gridLayoutWidget_2);
         y16x3->setObjectName(QStringLiteral("y16x3"));
-        sizePolicy1.setHeightForWidth(y16x3->sizePolicy().hasHeightForWidth());
-        y16x3->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y16x3->sizePolicy().hasHeightForWidth());
+        y16x3->setSizePolicy(sizePolicy);
         y16x3->setMinimumSize(QSize(39, 39));
         y16x3->setMaximumSize(QSize(39, 39));
         y16x3->setFont(font6);
@@ -3769,8 +3759,8 @@ public:
 
         y1x16 = new QPushButton(gridLayoutWidget_2);
         y1x16->setObjectName(QStringLiteral("y1x16"));
-        sizePolicy1.setHeightForWidth(y1x16->sizePolicy().hasHeightForWidth());
-        y1x16->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y1x16->sizePolicy().hasHeightForWidth());
+        y1x16->setSizePolicy(sizePolicy);
         y1x16->setMinimumSize(QSize(39, 39));
         y1x16->setMaximumSize(QSize(39, 39));
         y1x16->setFont(font6);
@@ -3782,8 +3772,8 @@ public:
 
         y14x12 = new QPushButton(gridLayoutWidget_2);
         y14x12->setObjectName(QStringLiteral("y14x12"));
-        sizePolicy1.setHeightForWidth(y14x12->sizePolicy().hasHeightForWidth());
-        y14x12->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y14x12->sizePolicy().hasHeightForWidth());
+        y14x12->setSizePolicy(sizePolicy);
         y14x12->setMinimumSize(QSize(39, 39));
         y14x12->setMaximumSize(QSize(39, 39));
         y14x12->setFont(font6);
@@ -3795,8 +3785,8 @@ public:
 
         y14x1 = new QPushButton(gridLayoutWidget_2);
         y14x1->setObjectName(QStringLiteral("y14x1"));
-        sizePolicy1.setHeightForWidth(y14x1->sizePolicy().hasHeightForWidth());
-        y14x1->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y14x1->sizePolicy().hasHeightForWidth());
+        y14x1->setSizePolicy(sizePolicy);
         y14x1->setMinimumSize(QSize(39, 39));
         y14x1->setMaximumSize(QSize(39, 39));
         y14x1->setFont(font6);
@@ -3808,8 +3798,8 @@ public:
 
         y5x16 = new QPushButton(gridLayoutWidget_2);
         y5x16->setObjectName(QStringLiteral("y5x16"));
-        sizePolicy1.setHeightForWidth(y5x16->sizePolicy().hasHeightForWidth());
-        y5x16->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y5x16->sizePolicy().hasHeightForWidth());
+        y5x16->setSizePolicy(sizePolicy);
         y5x16->setMinimumSize(QSize(39, 39));
         y5x16->setMaximumSize(QSize(39, 39));
         y5x16->setFont(font6);
@@ -3821,8 +3811,8 @@ public:
 
         y15x4 = new QPushButton(gridLayoutWidget_2);
         y15x4->setObjectName(QStringLiteral("y15x4"));
-        sizePolicy1.setHeightForWidth(y15x4->sizePolicy().hasHeightForWidth());
-        y15x4->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y15x4->sizePolicy().hasHeightForWidth());
+        y15x4->setSizePolicy(sizePolicy);
         y15x4->setMinimumSize(QSize(39, 39));
         y15x4->setMaximumSize(QSize(39, 39));
         y15x4->setFont(font6);
@@ -3834,8 +3824,8 @@ public:
 
         y14x8 = new QPushButton(gridLayoutWidget_2);
         y14x8->setObjectName(QStringLiteral("y14x8"));
-        sizePolicy1.setHeightForWidth(y14x8->sizePolicy().hasHeightForWidth());
-        y14x8->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y14x8->sizePolicy().hasHeightForWidth());
+        y14x8->setSizePolicy(sizePolicy);
         y14x8->setMinimumSize(QSize(39, 39));
         y14x8->setMaximumSize(QSize(39, 39));
         y14x8->setFont(font6);
@@ -3847,8 +3837,8 @@ public:
 
         y1x2 = new QPushButton(gridLayoutWidget_2);
         y1x2->setObjectName(QStringLiteral("y1x2"));
-        sizePolicy1.setHeightForWidth(y1x2->sizePolicy().hasHeightForWidth());
-        y1x2->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y1x2->sizePolicy().hasHeightForWidth());
+        y1x2->setSizePolicy(sizePolicy);
         y1x2->setMinimumSize(QSize(39, 39));
         y1x2->setMaximumSize(QSize(39, 39));
         y1x2->setFont(font6);
@@ -3860,8 +3850,8 @@ public:
 
         y8x16 = new QPushButton(gridLayoutWidget_2);
         y8x16->setObjectName(QStringLiteral("y8x16"));
-        sizePolicy1.setHeightForWidth(y8x16->sizePolicy().hasHeightForWidth());
-        y8x16->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y8x16->sizePolicy().hasHeightForWidth());
+        y8x16->setSizePolicy(sizePolicy);
         y8x16->setMinimumSize(QSize(39, 39));
         y8x16->setMaximumSize(QSize(39, 39));
         y8x16->setFont(font6);
@@ -3873,8 +3863,8 @@ public:
 
         y14x9 = new QPushButton(gridLayoutWidget_2);
         y14x9->setObjectName(QStringLiteral("y14x9"));
-        sizePolicy1.setHeightForWidth(y14x9->sizePolicy().hasHeightForWidth());
-        y14x9->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y14x9->sizePolicy().hasHeightForWidth());
+        y14x9->setSizePolicy(sizePolicy);
         y14x9->setMinimumSize(QSize(39, 39));
         y14x9->setMaximumSize(QSize(39, 39));
         y14x9->setFont(font6);
@@ -3886,8 +3876,8 @@ public:
 
         y1x13 = new QPushButton(gridLayoutWidget_2);
         y1x13->setObjectName(QStringLiteral("y1x13"));
-        sizePolicy1.setHeightForWidth(y1x13->sizePolicy().hasHeightForWidth());
-        y1x13->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y1x13->sizePolicy().hasHeightForWidth());
+        y1x13->setSizePolicy(sizePolicy);
         y1x13->setMinimumSize(QSize(39, 39));
         y1x13->setMaximumSize(QSize(39, 39));
         y1x13->setFont(font6);
@@ -3899,8 +3889,8 @@ public:
 
         y10x16 = new QPushButton(gridLayoutWidget_2);
         y10x16->setObjectName(QStringLiteral("y10x16"));
-        sizePolicy1.setHeightForWidth(y10x16->sizePolicy().hasHeightForWidth());
-        y10x16->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y10x16->sizePolicy().hasHeightForWidth());
+        y10x16->setSizePolicy(sizePolicy);
         y10x16->setMinimumSize(QSize(39, 39));
         y10x16->setMaximumSize(QSize(39, 39));
         y10x16->setFont(font6);
@@ -3912,8 +3902,8 @@ public:
 
         y13x16 = new QPushButton(gridLayoutWidget_2);
         y13x16->setObjectName(QStringLiteral("y13x16"));
-        sizePolicy1.setHeightForWidth(y13x16->sizePolicy().hasHeightForWidth());
-        y13x16->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y13x16->sizePolicy().hasHeightForWidth());
+        y13x16->setSizePolicy(sizePolicy);
         y13x16->setMinimumSize(QSize(39, 39));
         y13x16->setMaximumSize(QSize(39, 39));
         y13x16->setFont(font6);
@@ -3925,8 +3915,8 @@ public:
 
         y11x16 = new QPushButton(gridLayoutWidget_2);
         y11x16->setObjectName(QStringLiteral("y11x16"));
-        sizePolicy1.setHeightForWidth(y11x16->sizePolicy().hasHeightForWidth());
-        y11x16->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y11x16->sizePolicy().hasHeightForWidth());
+        y11x16->setSizePolicy(sizePolicy);
         y11x16->setMinimumSize(QSize(39, 39));
         y11x16->setMaximumSize(QSize(39, 39));
         y11x16->setFont(font6);
@@ -3938,8 +3928,8 @@ public:
 
         y17x14 = new QPushButton(gridLayoutWidget_2);
         y17x14->setObjectName(QStringLiteral("y17x14"));
-        sizePolicy1.setHeightForWidth(y17x14->sizePolicy().hasHeightForWidth());
-        y17x14->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y17x14->sizePolicy().hasHeightForWidth());
+        y17x14->setSizePolicy(sizePolicy);
         y17x14->setMinimumSize(QSize(39, 39));
         y17x14->setMaximumSize(QSize(39, 39));
         y17x14->setFont(font6);
@@ -3951,8 +3941,8 @@ public:
 
         y6x6 = new QPushButton(gridLayoutWidget_2);
         y6x6->setObjectName(QStringLiteral("y6x6"));
-        sizePolicy1.setHeightForWidth(y6x6->sizePolicy().hasHeightForWidth());
-        y6x6->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y6x6->sizePolicy().hasHeightForWidth());
+        y6x6->setSizePolicy(sizePolicy);
         y6x6->setMinimumSize(QSize(39, 39));
         y6x6->setMaximumSize(QSize(39, 39));
         y6x6->setFont(font6);
@@ -3964,8 +3954,8 @@ public:
 
         y17x16 = new QPushButton(gridLayoutWidget_2);
         y17x16->setObjectName(QStringLiteral("y17x16"));
-        sizePolicy1.setHeightForWidth(y17x16->sizePolicy().hasHeightForWidth());
-        y17x16->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y17x16->sizePolicy().hasHeightForWidth());
+        y17x16->setSizePolicy(sizePolicy);
         y17x16->setMinimumSize(QSize(39, 39));
         y17x16->setMaximumSize(QSize(39, 39));
         y17x16->setFont(font6);
@@ -3977,8 +3967,8 @@ public:
 
         y17x6 = new QPushButton(gridLayoutWidget_2);
         y17x6->setObjectName(QStringLiteral("y17x6"));
-        sizePolicy1.setHeightForWidth(y17x6->sizePolicy().hasHeightForWidth());
-        y17x6->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y17x6->sizePolicy().hasHeightForWidth());
+        y17x6->setSizePolicy(sizePolicy);
         y17x6->setMinimumSize(QSize(39, 39));
         y17x6->setMaximumSize(QSize(39, 39));
         y17x6->setFont(font6);
@@ -3990,8 +3980,8 @@ public:
 
         y9x2 = new QPushButton(gridLayoutWidget_2);
         y9x2->setObjectName(QStringLiteral("y9x2"));
-        sizePolicy1.setHeightForWidth(y9x2->sizePolicy().hasHeightForWidth());
-        y9x2->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y9x2->sizePolicy().hasHeightForWidth());
+        y9x2->setSizePolicy(sizePolicy);
         y9x2->setMinimumSize(QSize(39, 39));
         y9x2->setMaximumSize(QSize(39, 39));
         y9x2->setFont(font6);
@@ -4003,8 +3993,8 @@ public:
 
         y6x1 = new QPushButton(gridLayoutWidget_2);
         y6x1->setObjectName(QStringLiteral("y6x1"));
-        sizePolicy1.setHeightForWidth(y6x1->sizePolicy().hasHeightForWidth());
-        y6x1->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y6x1->sizePolicy().hasHeightForWidth());
+        y6x1->setSizePolicy(sizePolicy);
         y6x1->setMinimumSize(QSize(39, 39));
         y6x1->setMaximumSize(QSize(39, 39));
         y6x1->setFont(font6);
@@ -4016,8 +4006,8 @@ public:
 
         y4x1 = new QPushButton(gridLayoutWidget_2);
         y4x1->setObjectName(QStringLiteral("y4x1"));
-        sizePolicy1.setHeightForWidth(y4x1->sizePolicy().hasHeightForWidth());
-        y4x1->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y4x1->sizePolicy().hasHeightForWidth());
+        y4x1->setSizePolicy(sizePolicy);
         y4x1->setMinimumSize(QSize(39, 39));
         y4x1->setMaximumSize(QSize(39, 39));
         y4x1->setFont(font6);
@@ -4029,8 +4019,8 @@ public:
 
         y10x6 = new QPushButton(gridLayoutWidget_2);
         y10x6->setObjectName(QStringLiteral("y10x6"));
-        sizePolicy1.setHeightForWidth(y10x6->sizePolicy().hasHeightForWidth());
-        y10x6->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y10x6->sizePolicy().hasHeightForWidth());
+        y10x6->setSizePolicy(sizePolicy);
         y10x6->setMinimumSize(QSize(39, 39));
         y10x6->setMaximumSize(QSize(39, 39));
         y10x6->setFont(font6);
@@ -4042,8 +4032,8 @@ public:
 
         y3x7 = new QPushButton(gridLayoutWidget_2);
         y3x7->setObjectName(QStringLiteral("y3x7"));
-        sizePolicy1.setHeightForWidth(y3x7->sizePolicy().hasHeightForWidth());
-        y3x7->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y3x7->sizePolicy().hasHeightForWidth());
+        y3x7->setSizePolicy(sizePolicy);
         y3x7->setMinimumSize(QSize(39, 39));
         y3x7->setMaximumSize(QSize(39, 39));
         y3x7->setFont(font6);
@@ -4055,8 +4045,8 @@ public:
 
         y3x9 = new QPushButton(gridLayoutWidget_2);
         y3x9->setObjectName(QStringLiteral("y3x9"));
-        sizePolicy1.setHeightForWidth(y3x9->sizePolicy().hasHeightForWidth());
-        y3x9->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y3x9->sizePolicy().hasHeightForWidth());
+        y3x9->setSizePolicy(sizePolicy);
         y3x9->setMinimumSize(QSize(39, 39));
         y3x9->setMaximumSize(QSize(39, 39));
         y3x9->setFont(font6);
@@ -4068,8 +4058,8 @@ public:
 
         y13x15 = new QPushButton(gridLayoutWidget_2);
         y13x15->setObjectName(QStringLiteral("y13x15"));
-        sizePolicy1.setHeightForWidth(y13x15->sizePolicy().hasHeightForWidth());
-        y13x15->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y13x15->sizePolicy().hasHeightForWidth());
+        y13x15->setSizePolicy(sizePolicy);
         y13x15->setMinimumSize(QSize(39, 39));
         y13x15->setMaximumSize(QSize(39, 39));
         y13x15->setFont(font6);
@@ -4081,8 +4071,8 @@ public:
 
         y17x17 = new QPushButton(gridLayoutWidget_2);
         y17x17->setObjectName(QStringLiteral("y17x17"));
-        sizePolicy1.setHeightForWidth(y17x17->sizePolicy().hasHeightForWidth());
-        y17x17->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y17x17->sizePolicy().hasHeightForWidth());
+        y17x17->setSizePolicy(sizePolicy);
         y17x17->setMinimumSize(QSize(39, 39));
         y17x17->setMaximumSize(QSize(39, 39));
         y17x17->setFont(font6);
@@ -4094,8 +4084,8 @@ public:
 
         y7x15 = new QPushButton(gridLayoutWidget_2);
         y7x15->setObjectName(QStringLiteral("y7x15"));
-        sizePolicy1.setHeightForWidth(y7x15->sizePolicy().hasHeightForWidth());
-        y7x15->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y7x15->sizePolicy().hasHeightForWidth());
+        y7x15->setSizePolicy(sizePolicy);
         y7x15->setMinimumSize(QSize(39, 39));
         y7x15->setMaximumSize(QSize(39, 39));
         y7x15->setFont(font6);
@@ -4107,8 +4097,8 @@ public:
 
         y5x6 = new QPushButton(gridLayoutWidget_2);
         y5x6->setObjectName(QStringLiteral("y5x6"));
-        sizePolicy1.setHeightForWidth(y5x6->sizePolicy().hasHeightForWidth());
-        y5x6->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y5x6->sizePolicy().hasHeightForWidth());
+        y5x6->setSizePolicy(sizePolicy);
         y5x6->setMinimumSize(QSize(39, 39));
         y5x6->setMaximumSize(QSize(39, 39));
         y5x6->setFont(font6);
@@ -4120,8 +4110,8 @@ public:
 
         y12x7 = new QPushButton(gridLayoutWidget_2);
         y12x7->setObjectName(QStringLiteral("y12x7"));
-        sizePolicy1.setHeightForWidth(y12x7->sizePolicy().hasHeightForWidth());
-        y12x7->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y12x7->sizePolicy().hasHeightForWidth());
+        y12x7->setSizePolicy(sizePolicy);
         y12x7->setMinimumSize(QSize(39, 39));
         y12x7->setMaximumSize(QSize(39, 39));
         y12x7->setFont(font6);
@@ -4133,8 +4123,8 @@ public:
 
         y3x12 = new QPushButton(gridLayoutWidget_2);
         y3x12->setObjectName(QStringLiteral("y3x12"));
-        sizePolicy1.setHeightForWidth(y3x12->sizePolicy().hasHeightForWidth());
-        y3x12->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y3x12->sizePolicy().hasHeightForWidth());
+        y3x12->setSizePolicy(sizePolicy);
         y3x12->setMinimumSize(QSize(39, 39));
         y3x12->setMaximumSize(QSize(39, 39));
         y3x12->setFont(font6);
@@ -4146,8 +4136,8 @@ public:
 
         y13x8 = new QPushButton(gridLayoutWidget_2);
         y13x8->setObjectName(QStringLiteral("y13x8"));
-        sizePolicy1.setHeightForWidth(y13x8->sizePolicy().hasHeightForWidth());
-        y13x8->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y13x8->sizePolicy().hasHeightForWidth());
+        y13x8->setSizePolicy(sizePolicy);
         y13x8->setMinimumSize(QSize(39, 39));
         y13x8->setMaximumSize(QSize(39, 39));
         y13x8->setFont(font6);
@@ -4159,8 +4149,8 @@ public:
 
         y9x4 = new QPushButton(gridLayoutWidget_2);
         y9x4->setObjectName(QStringLiteral("y9x4"));
-        sizePolicy1.setHeightForWidth(y9x4->sizePolicy().hasHeightForWidth());
-        y9x4->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y9x4->sizePolicy().hasHeightForWidth());
+        y9x4->setSizePolicy(sizePolicy);
         y9x4->setMinimumSize(QSize(39, 39));
         y9x4->setMaximumSize(QSize(39, 39));
         y9x4->setFont(font6);
@@ -4172,8 +4162,8 @@ public:
 
         y6x12 = new QPushButton(gridLayoutWidget_2);
         y6x12->setObjectName(QStringLiteral("y6x12"));
-        sizePolicy1.setHeightForWidth(y6x12->sizePolicy().hasHeightForWidth());
-        y6x12->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y6x12->sizePolicy().hasHeightForWidth());
+        y6x12->setSizePolicy(sizePolicy);
         y6x12->setMinimumSize(QSize(39, 39));
         y6x12->setMaximumSize(QSize(39, 39));
         y6x12->setFont(font6);
@@ -4185,8 +4175,8 @@ public:
 
         y8x3 = new QPushButton(gridLayoutWidget_2);
         y8x3->setObjectName(QStringLiteral("y8x3"));
-        sizePolicy1.setHeightForWidth(y8x3->sizePolicy().hasHeightForWidth());
-        y8x3->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y8x3->sizePolicy().hasHeightForWidth());
+        y8x3->setSizePolicy(sizePolicy);
         y8x3->setMinimumSize(QSize(39, 39));
         y8x3->setMaximumSize(QSize(39, 39));
         y8x3->setFont(font6);
@@ -4198,8 +4188,8 @@ public:
 
         y13x0 = new QPushButton(gridLayoutWidget_2);
         y13x0->setObjectName(QStringLiteral("y13x0"));
-        sizePolicy1.setHeightForWidth(y13x0->sizePolicy().hasHeightForWidth());
-        y13x0->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y13x0->sizePolicy().hasHeightForWidth());
+        y13x0->setSizePolicy(sizePolicy);
         y13x0->setMinimumSize(QSize(39, 39));
         y13x0->setMaximumSize(QSize(39, 39));
         y13x0->setFont(font6);
@@ -4211,8 +4201,8 @@ public:
 
         y16x9 = new QPushButton(gridLayoutWidget_2);
         y16x9->setObjectName(QStringLiteral("y16x9"));
-        sizePolicy1.setHeightForWidth(y16x9->sizePolicy().hasHeightForWidth());
-        y16x9->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y16x9->sizePolicy().hasHeightForWidth());
+        y16x9->setSizePolicy(sizePolicy);
         y16x9->setMinimumSize(QSize(39, 39));
         y16x9->setMaximumSize(QSize(39, 39));
         y16x9->setFont(font6);
@@ -4224,8 +4214,8 @@ public:
 
         y17x12 = new QPushButton(gridLayoutWidget_2);
         y17x12->setObjectName(QStringLiteral("y17x12"));
-        sizePolicy1.setHeightForWidth(y17x12->sizePolicy().hasHeightForWidth());
-        y17x12->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y17x12->sizePolicy().hasHeightForWidth());
+        y17x12->setSizePolicy(sizePolicy);
         y17x12->setMinimumSize(QSize(39, 39));
         y17x12->setMaximumSize(QSize(39, 39));
         y17x12->setFont(font6);
@@ -4237,8 +4227,8 @@ public:
 
         y8x10 = new QPushButton(gridLayoutWidget_2);
         y8x10->setObjectName(QStringLiteral("y8x10"));
-        sizePolicy1.setHeightForWidth(y8x10->sizePolicy().hasHeightForWidth());
-        y8x10->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y8x10->sizePolicy().hasHeightForWidth());
+        y8x10->setSizePolicy(sizePolicy);
         y8x10->setMinimumSize(QSize(39, 39));
         y8x10->setMaximumSize(QSize(39, 39));
         y8x10->setFont(font6);
@@ -4250,8 +4240,8 @@ public:
 
         y8x11 = new QPushButton(gridLayoutWidget_2);
         y8x11->setObjectName(QStringLiteral("y8x11"));
-        sizePolicy1.setHeightForWidth(y8x11->sizePolicy().hasHeightForWidth());
-        y8x11->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y8x11->sizePolicy().hasHeightForWidth());
+        y8x11->setSizePolicy(sizePolicy);
         y8x11->setMinimumSize(QSize(39, 39));
         y8x11->setMaximumSize(QSize(39, 39));
         y8x11->setFont(font6);
@@ -4263,8 +4253,8 @@ public:
 
         y3x15 = new QPushButton(gridLayoutWidget_2);
         y3x15->setObjectName(QStringLiteral("y3x15"));
-        sizePolicy1.setHeightForWidth(y3x15->sizePolicy().hasHeightForWidth());
-        y3x15->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y3x15->sizePolicy().hasHeightForWidth());
+        y3x15->setSizePolicy(sizePolicy);
         y3x15->setMinimumSize(QSize(39, 39));
         y3x15->setMaximumSize(QSize(39, 39));
         y3x15->setFont(font6);
@@ -4276,8 +4266,8 @@ public:
 
         y10x15 = new QPushButton(gridLayoutWidget_2);
         y10x15->setObjectName(QStringLiteral("y10x15"));
-        sizePolicy1.setHeightForWidth(y10x15->sizePolicy().hasHeightForWidth());
-        y10x15->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y10x15->sizePolicy().hasHeightForWidth());
+        y10x15->setSizePolicy(sizePolicy);
         y10x15->setMinimumSize(QSize(39, 39));
         y10x15->setMaximumSize(QSize(39, 39));
         y10x15->setFont(font6);
@@ -4289,8 +4279,8 @@ public:
 
         y3x5 = new QPushButton(gridLayoutWidget_2);
         y3x5->setObjectName(QStringLiteral("y3x5"));
-        sizePolicy1.setHeightForWidth(y3x5->sizePolicy().hasHeightForWidth());
-        y3x5->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y3x5->sizePolicy().hasHeightForWidth());
+        y3x5->setSizePolicy(sizePolicy);
         y3x5->setMinimumSize(QSize(39, 39));
         y3x5->setMaximumSize(QSize(39, 39));
         y3x5->setFont(font6);
@@ -4302,8 +4292,8 @@ public:
 
         y5x13 = new QPushButton(gridLayoutWidget_2);
         y5x13->setObjectName(QStringLiteral("y5x13"));
-        sizePolicy1.setHeightForWidth(y5x13->sizePolicy().hasHeightForWidth());
-        y5x13->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y5x13->sizePolicy().hasHeightForWidth());
+        y5x13->setSizePolicy(sizePolicy);
         y5x13->setMinimumSize(QSize(39, 39));
         y5x13->setMaximumSize(QSize(39, 39));
         y5x13->setFont(font6);
@@ -4315,8 +4305,8 @@ public:
 
         y9x15 = new QPushButton(gridLayoutWidget_2);
         y9x15->setObjectName(QStringLiteral("y9x15"));
-        sizePolicy1.setHeightForWidth(y9x15->sizePolicy().hasHeightForWidth());
-        y9x15->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y9x15->sizePolicy().hasHeightForWidth());
+        y9x15->setSizePolicy(sizePolicy);
         y9x15->setMinimumSize(QSize(39, 39));
         y9x15->setMaximumSize(QSize(39, 39));
         y9x15->setFont(font6);
@@ -4328,8 +4318,8 @@ public:
 
         y11x8 = new QPushButton(gridLayoutWidget_2);
         y11x8->setObjectName(QStringLiteral("y11x8"));
-        sizePolicy1.setHeightForWidth(y11x8->sizePolicy().hasHeightForWidth());
-        y11x8->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y11x8->sizePolicy().hasHeightForWidth());
+        y11x8->setSizePolicy(sizePolicy);
         y11x8->setMinimumSize(QSize(39, 39));
         y11x8->setMaximumSize(QSize(39, 39));
         y11x8->setFont(font6);
@@ -4341,8 +4331,8 @@ public:
 
         y17x1 = new QPushButton(gridLayoutWidget_2);
         y17x1->setObjectName(QStringLiteral("y17x1"));
-        sizePolicy1.setHeightForWidth(y17x1->sizePolicy().hasHeightForWidth());
-        y17x1->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y17x1->sizePolicy().hasHeightForWidth());
+        y17x1->setSizePolicy(sizePolicy);
         y17x1->setMinimumSize(QSize(39, 39));
         y17x1->setMaximumSize(QSize(39, 39));
         y17x1->setFont(font6);
@@ -4354,8 +4344,8 @@ public:
 
         y7x13 = new QPushButton(gridLayoutWidget_2);
         y7x13->setObjectName(QStringLiteral("y7x13"));
-        sizePolicy1.setHeightForWidth(y7x13->sizePolicy().hasHeightForWidth());
-        y7x13->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y7x13->sizePolicy().hasHeightForWidth());
+        y7x13->setSizePolicy(sizePolicy);
         y7x13->setMinimumSize(QSize(39, 39));
         y7x13->setMaximumSize(QSize(39, 39));
         y7x13->setFont(font6);
@@ -4367,8 +4357,8 @@ public:
 
         y5x3 = new QPushButton(gridLayoutWidget_2);
         y5x3->setObjectName(QStringLiteral("y5x3"));
-        sizePolicy1.setHeightForWidth(y5x3->sizePolicy().hasHeightForWidth());
-        y5x3->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y5x3->sizePolicy().hasHeightForWidth());
+        y5x3->setSizePolicy(sizePolicy);
         y5x3->setMinimumSize(QSize(39, 39));
         y5x3->setMaximumSize(QSize(39, 39));
         y5x3->setFont(font6);
@@ -4380,8 +4370,8 @@ public:
 
         y14x17 = new QPushButton(gridLayoutWidget_2);
         y14x17->setObjectName(QStringLiteral("y14x17"));
-        sizePolicy1.setHeightForWidth(y14x17->sizePolicy().hasHeightForWidth());
-        y14x17->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y14x17->sizePolicy().hasHeightForWidth());
+        y14x17->setSizePolicy(sizePolicy);
         y14x17->setMinimumSize(QSize(39, 39));
         y14x17->setMaximumSize(QSize(39, 39));
         y14x17->setFont(font6);
@@ -4393,8 +4383,8 @@ public:
 
         y13x9 = new QPushButton(gridLayoutWidget_2);
         y13x9->setObjectName(QStringLiteral("y13x9"));
-        sizePolicy1.setHeightForWidth(y13x9->sizePolicy().hasHeightForWidth());
-        y13x9->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y13x9->sizePolicy().hasHeightForWidth());
+        y13x9->setSizePolicy(sizePolicy);
         y13x9->setMinimumSize(QSize(39, 39));
         y13x9->setMaximumSize(QSize(39, 39));
         y13x9->setFont(font6);
@@ -4406,8 +4396,8 @@ public:
 
         y4x6 = new QPushButton(gridLayoutWidget_2);
         y4x6->setObjectName(QStringLiteral("y4x6"));
-        sizePolicy1.setHeightForWidth(y4x6->sizePolicy().hasHeightForWidth());
-        y4x6->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y4x6->sizePolicy().hasHeightForWidth());
+        y4x6->setSizePolicy(sizePolicy);
         y4x6->setMinimumSize(QSize(39, 39));
         y4x6->setMaximumSize(QSize(39, 39));
         y4x6->setFont(font6);
@@ -4419,8 +4409,8 @@ public:
 
         y9x9 = new QPushButton(gridLayoutWidget_2);
         y9x9->setObjectName(QStringLiteral("y9x9"));
-        sizePolicy1.setHeightForWidth(y9x9->sizePolicy().hasHeightForWidth());
-        y9x9->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y9x9->sizePolicy().hasHeightForWidth());
+        y9x9->setSizePolicy(sizePolicy);
         y9x9->setMinimumSize(QSize(39, 39));
         y9x9->setMaximumSize(QSize(39, 39));
         y9x9->setFont(font6);
@@ -4432,8 +4422,8 @@ public:
 
         y8x4 = new QPushButton(gridLayoutWidget_2);
         y8x4->setObjectName(QStringLiteral("y8x4"));
-        sizePolicy1.setHeightForWidth(y8x4->sizePolicy().hasHeightForWidth());
-        y8x4->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y8x4->sizePolicy().hasHeightForWidth());
+        y8x4->setSizePolicy(sizePolicy);
         y8x4->setMinimumSize(QSize(39, 39));
         y8x4->setMaximumSize(QSize(39, 39));
         y8x4->setFont(font6);
@@ -4445,8 +4435,8 @@ public:
 
         y12x6 = new QPushButton(gridLayoutWidget_2);
         y12x6->setObjectName(QStringLiteral("y12x6"));
-        sizePolicy1.setHeightForWidth(y12x6->sizePolicy().hasHeightForWidth());
-        y12x6->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y12x6->sizePolicy().hasHeightForWidth());
+        y12x6->setSizePolicy(sizePolicy);
         y12x6->setMinimumSize(QSize(39, 39));
         y12x6->setMaximumSize(QSize(39, 39));
         y12x6->setFont(font6);
@@ -4458,8 +4448,8 @@ public:
 
         y3x11 = new QPushButton(gridLayoutWidget_2);
         y3x11->setObjectName(QStringLiteral("y3x11"));
-        sizePolicy1.setHeightForWidth(y3x11->sizePolicy().hasHeightForWidth());
-        y3x11->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y3x11->sizePolicy().hasHeightForWidth());
+        y3x11->setSizePolicy(sizePolicy);
         y3x11->setMinimumSize(QSize(39, 39));
         y3x11->setMaximumSize(QSize(39, 39));
         y3x11->setFont(font6);
@@ -4471,8 +4461,8 @@ public:
 
         y10x11 = new QPushButton(gridLayoutWidget_2);
         y10x11->setObjectName(QStringLiteral("y10x11"));
-        sizePolicy1.setHeightForWidth(y10x11->sizePolicy().hasHeightForWidth());
-        y10x11->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y10x11->sizePolicy().hasHeightForWidth());
+        y10x11->setSizePolicy(sizePolicy);
         y10x11->setMinimumSize(QSize(39, 39));
         y10x11->setMaximumSize(QSize(39, 39));
         y10x11->setFont(font6);
@@ -4484,8 +4474,8 @@ public:
 
         y13x13 = new QPushButton(gridLayoutWidget_2);
         y13x13->setObjectName(QStringLiteral("y13x13"));
-        sizePolicy1.setHeightForWidth(y13x13->sizePolicy().hasHeightForWidth());
-        y13x13->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y13x13->sizePolicy().hasHeightForWidth());
+        y13x13->setSizePolicy(sizePolicy);
         y13x13->setMinimumSize(QSize(39, 39));
         y13x13->setMaximumSize(QSize(39, 39));
         y13x13->setFont(font6);
@@ -4497,8 +4487,8 @@ public:
 
         y0x1 = new QPushButton(gridLayoutWidget_2);
         y0x1->setObjectName(QStringLiteral("y0x1"));
-        sizePolicy1.setHeightForWidth(y0x1->sizePolicy().hasHeightForWidth());
-        y0x1->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y0x1->sizePolicy().hasHeightForWidth());
+        y0x1->setSizePolicy(sizePolicy);
         y0x1->setMinimumSize(QSize(39, 39));
         y0x1->setMaximumSize(QSize(39, 39));
         y0x1->setFont(font6);
@@ -4510,8 +4500,8 @@ public:
 
         y1x12 = new QPushButton(gridLayoutWidget_2);
         y1x12->setObjectName(QStringLiteral("y1x12"));
-        sizePolicy1.setHeightForWidth(y1x12->sizePolicy().hasHeightForWidth());
-        y1x12->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y1x12->sizePolicy().hasHeightForWidth());
+        y1x12->setSizePolicy(sizePolicy);
         y1x12->setMinimumSize(QSize(39, 39));
         y1x12->setMaximumSize(QSize(39, 39));
         y1x12->setFont(font6);
@@ -4523,8 +4513,8 @@ public:
 
         y15x9 = new QPushButton(gridLayoutWidget_2);
         y15x9->setObjectName(QStringLiteral("y15x9"));
-        sizePolicy1.setHeightForWidth(y15x9->sizePolicy().hasHeightForWidth());
-        y15x9->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y15x9->sizePolicy().hasHeightForWidth());
+        y15x9->setSizePolicy(sizePolicy);
         y15x9->setMinimumSize(QSize(39, 39));
         y15x9->setMaximumSize(QSize(39, 39));
         y15x9->setFont(font6);
@@ -4536,8 +4526,8 @@ public:
 
         y9x0 = new QPushButton(gridLayoutWidget_2);
         y9x0->setObjectName(QStringLiteral("y9x0"));
-        sizePolicy1.setHeightForWidth(y9x0->sizePolicy().hasHeightForWidth());
-        y9x0->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y9x0->sizePolicy().hasHeightForWidth());
+        y9x0->setSizePolicy(sizePolicy);
         y9x0->setMinimumSize(QSize(39, 39));
         y9x0->setMaximumSize(QSize(39, 39));
         y9x0->setFont(font6);
@@ -4549,8 +4539,8 @@ public:
 
         y0x8 = new QPushButton(gridLayoutWidget_2);
         y0x8->setObjectName(QStringLiteral("y0x8"));
-        sizePolicy1.setHeightForWidth(y0x8->sizePolicy().hasHeightForWidth());
-        y0x8->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y0x8->sizePolicy().hasHeightForWidth());
+        y0x8->setSizePolicy(sizePolicy);
         y0x8->setMinimumSize(QSize(39, 39));
         y0x8->setMaximumSize(QSize(39, 39));
         y0x8->setFont(font6);
@@ -4562,8 +4552,8 @@ public:
 
         y0x10 = new QPushButton(gridLayoutWidget_2);
         y0x10->setObjectName(QStringLiteral("y0x10"));
-        sizePolicy1.setHeightForWidth(y0x10->sizePolicy().hasHeightForWidth());
-        y0x10->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y0x10->sizePolicy().hasHeightForWidth());
+        y0x10->setSizePolicy(sizePolicy);
         y0x10->setMinimumSize(QSize(39, 39));
         y0x10->setMaximumSize(QSize(39, 39));
         y0x10->setFont(font6);
@@ -4575,8 +4565,8 @@ public:
 
         y16x15 = new QPushButton(gridLayoutWidget_2);
         y16x15->setObjectName(QStringLiteral("y16x15"));
-        sizePolicy1.setHeightForWidth(y16x15->sizePolicy().hasHeightForWidth());
-        y16x15->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y16x15->sizePolicy().hasHeightForWidth());
+        y16x15->setSizePolicy(sizePolicy);
         y16x15->setMinimumSize(QSize(39, 39));
         y16x15->setMaximumSize(QSize(39, 39));
         y16x15->setFont(font6);
@@ -4588,8 +4578,8 @@ public:
 
         y16x8 = new QPushButton(gridLayoutWidget_2);
         y16x8->setObjectName(QStringLiteral("y16x8"));
-        sizePolicy1.setHeightForWidth(y16x8->sizePolicy().hasHeightForWidth());
-        y16x8->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y16x8->sizePolicy().hasHeightForWidth());
+        y16x8->setSizePolicy(sizePolicy);
         y16x8->setMinimumSize(QSize(39, 39));
         y16x8->setMaximumSize(QSize(39, 39));
         y16x8->setFont(font6);
@@ -4601,8 +4591,8 @@ public:
 
         y2x16 = new QPushButton(gridLayoutWidget_2);
         y2x16->setObjectName(QStringLiteral("y2x16"));
-        sizePolicy1.setHeightForWidth(y2x16->sizePolicy().hasHeightForWidth());
-        y2x16->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y2x16->sizePolicy().hasHeightForWidth());
+        y2x16->setSizePolicy(sizePolicy);
         y2x16->setMinimumSize(QSize(39, 39));
         y2x16->setMaximumSize(QSize(39, 39));
         y2x16->setFont(font6);
@@ -4614,8 +4604,8 @@ public:
 
         y1x4 = new QPushButton(gridLayoutWidget_2);
         y1x4->setObjectName(QStringLiteral("y1x4"));
-        sizePolicy1.setHeightForWidth(y1x4->sizePolicy().hasHeightForWidth());
-        y1x4->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y1x4->sizePolicy().hasHeightForWidth());
+        y1x4->setSizePolicy(sizePolicy);
         y1x4->setMinimumSize(QSize(39, 39));
         y1x4->setMaximumSize(QSize(39, 39));
         y1x4->setFont(font6);
@@ -4627,8 +4617,8 @@ public:
 
         y14x6 = new QPushButton(gridLayoutWidget_2);
         y14x6->setObjectName(QStringLiteral("y14x6"));
-        sizePolicy1.setHeightForWidth(y14x6->sizePolicy().hasHeightForWidth());
-        y14x6->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y14x6->sizePolicy().hasHeightForWidth());
+        y14x6->setSizePolicy(sizePolicy);
         y14x6->setMinimumSize(QSize(39, 39));
         y14x6->setMaximumSize(QSize(39, 39));
         y14x6->setFont(font6);
@@ -4640,8 +4630,8 @@ public:
 
         y4x16 = new QPushButton(gridLayoutWidget_2);
         y4x16->setObjectName(QStringLiteral("y4x16"));
-        sizePolicy1.setHeightForWidth(y4x16->sizePolicy().hasHeightForWidth());
-        y4x16->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y4x16->sizePolicy().hasHeightForWidth());
+        y4x16->setSizePolicy(sizePolicy);
         y4x16->setMinimumSize(QSize(39, 39));
         y4x16->setMaximumSize(QSize(39, 39));
         y4x16->setFont(font6);
@@ -4653,8 +4643,8 @@ public:
 
         y10x17 = new QPushButton(gridLayoutWidget_2);
         y10x17->setObjectName(QStringLiteral("y10x17"));
-        sizePolicy1.setHeightForWidth(y10x17->sizePolicy().hasHeightForWidth());
-        y10x17->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y10x17->sizePolicy().hasHeightForWidth());
+        y10x17->setSizePolicy(sizePolicy);
         y10x17->setMinimumSize(QSize(39, 39));
         y10x17->setMaximumSize(QSize(39, 39));
         y10x17->setFont(font6);
@@ -4666,8 +4656,8 @@ public:
 
         y14x10 = new QPushButton(gridLayoutWidget_2);
         y14x10->setObjectName(QStringLiteral("y14x10"));
-        sizePolicy1.setHeightForWidth(y14x10->sizePolicy().hasHeightForWidth());
-        y14x10->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y14x10->sizePolicy().hasHeightForWidth());
+        y14x10->setSizePolicy(sizePolicy);
         y14x10->setMinimumSize(QSize(39, 39));
         y14x10->setMaximumSize(QSize(39, 39));
         y14x10->setFont(font6);
@@ -4679,8 +4669,8 @@ public:
 
         y8x17 = new QPushButton(gridLayoutWidget_2);
         y8x17->setObjectName(QStringLiteral("y8x17"));
-        sizePolicy1.setHeightForWidth(y8x17->sizePolicy().hasHeightForWidth());
-        y8x17->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y8x17->sizePolicy().hasHeightForWidth());
+        y8x17->setSizePolicy(sizePolicy);
         y8x17->setMinimumSize(QSize(39, 39));
         y8x17->setMaximumSize(QSize(39, 39));
         y8x17->setFont(font6);
@@ -4692,8 +4682,8 @@ public:
 
         y11x17 = new QPushButton(gridLayoutWidget_2);
         y11x17->setObjectName(QStringLiteral("y11x17"));
-        sizePolicy1.setHeightForWidth(y11x17->sizePolicy().hasHeightForWidth());
-        y11x17->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y11x17->sizePolicy().hasHeightForWidth());
+        y11x17->setSizePolicy(sizePolicy);
         y11x17->setMinimumSize(QSize(39, 39));
         y11x17->setMaximumSize(QSize(39, 39));
         y11x17->setFont(font6);
@@ -4705,8 +4695,8 @@ public:
 
         y1x5 = new QPushButton(gridLayoutWidget_2);
         y1x5->setObjectName(QStringLiteral("y1x5"));
-        sizePolicy1.setHeightForWidth(y1x5->sizePolicy().hasHeightForWidth());
-        y1x5->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y1x5->sizePolicy().hasHeightForWidth());
+        y1x5->setSizePolicy(sizePolicy);
         y1x5->setMinimumSize(QSize(39, 39));
         y1x5->setMaximumSize(QSize(39, 39));
         y1x5->setFont(font6);
@@ -4718,8 +4708,8 @@ public:
 
         y17x3 = new QPushButton(gridLayoutWidget_2);
         y17x3->setObjectName(QStringLiteral("y17x3"));
-        sizePolicy1.setHeightForWidth(y17x3->sizePolicy().hasHeightForWidth());
-        y17x3->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y17x3->sizePolicy().hasHeightForWidth());
+        y17x3->setSizePolicy(sizePolicy);
         y17x3->setMinimumSize(QSize(39, 39));
         y17x3->setMaximumSize(QSize(39, 39));
         y17x3->setFont(font6);
@@ -4731,8 +4721,8 @@ public:
 
         y6x17 = new QPushButton(gridLayoutWidget_2);
         y6x17->setObjectName(QStringLiteral("y6x17"));
-        sizePolicy1.setHeightForWidth(y6x17->sizePolicy().hasHeightForWidth());
-        y6x17->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y6x17->sizePolicy().hasHeightForWidth());
+        y6x17->setSizePolicy(sizePolicy);
         y6x17->setMinimumSize(QSize(39, 39));
         y6x17->setMaximumSize(QSize(39, 39));
         y6x17->setFont(font6);
@@ -4744,8 +4734,8 @@ public:
 
         y17x11 = new QPushButton(gridLayoutWidget_2);
         y17x11->setObjectName(QStringLiteral("y17x11"));
-        sizePolicy1.setHeightForWidth(y17x11->sizePolicy().hasHeightForWidth());
-        y17x11->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y17x11->sizePolicy().hasHeightForWidth());
+        y17x11->setSizePolicy(sizePolicy);
         y17x11->setMinimumSize(QSize(39, 39));
         y17x11->setMaximumSize(QSize(39, 39));
         y17x11->setFont(font6);
@@ -4757,8 +4747,8 @@ public:
 
         y3x8 = new QPushButton(gridLayoutWidget_2);
         y3x8->setObjectName(QStringLiteral("y3x8"));
-        sizePolicy1.setHeightForWidth(y3x8->sizePolicy().hasHeightForWidth());
-        y3x8->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y3x8->sizePolicy().hasHeightForWidth());
+        y3x8->setSizePolicy(sizePolicy);
         y3x8->setMinimumSize(QSize(39, 39));
         y3x8->setMaximumSize(QSize(39, 39));
         y3x8->setFont(font6);
@@ -4770,8 +4760,8 @@ public:
 
         y15x17 = new QPushButton(gridLayoutWidget_2);
         y15x17->setObjectName(QStringLiteral("y15x17"));
-        sizePolicy1.setHeightForWidth(y15x17->sizePolicy().hasHeightForWidth());
-        y15x17->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y15x17->sizePolicy().hasHeightForWidth());
+        y15x17->setSizePolicy(sizePolicy);
         y15x17->setMinimumSize(QSize(39, 39));
         y15x17->setMaximumSize(QSize(39, 39));
         y15x17->setFont(font6);
@@ -4783,8 +4773,8 @@ public:
 
         y2x15 = new QPushButton(gridLayoutWidget_2);
         y2x15->setObjectName(QStringLiteral("y2x15"));
-        sizePolicy1.setHeightForWidth(y2x15->sizePolicy().hasHeightForWidth());
-        y2x15->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(y2x15->sizePolicy().hasHeightForWidth());
+        y2x15->setSizePolicy(sizePolicy);
         y2x15->setMinimumSize(QSize(39, 39));
         y2x15->setMaximumSize(QSize(39, 39));
         y2x15->setFont(font6);
@@ -4836,9 +4826,9 @@ public:
         if (battleTable->rowCount() < 18)
             battleTable->setRowCount(18);
         battleTable->setObjectName(QStringLiteral("battleTable"));
-        battleTable->setGeometry(QRect(360, 360, 702, 702));
-        sizePolicy.setHeightForWidth(battleTable->sizePolicy().hasHeightForWidth());
-        battleTable->setSizePolicy(sizePolicy);
+        battleTable->setGeometry(QRect(30, 80, 702, 702));
+        sizePolicy1.setHeightForWidth(battleTable->sizePolicy().hasHeightForWidth());
+        battleTable->setSizePolicy(sizePolicy1);
         battleTable->setMinimumSize(QSize(702, 702));
         battleTable->setMaximumSize(QSize(702, 702));
         battleTable->setBaseSize(QSize(702, 702));
