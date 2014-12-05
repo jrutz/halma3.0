@@ -48,13 +48,17 @@ OBJECTS_DIR   = ./
 SOURCES       = main.cpp \
 		mainwindow.cpp \
 		battlefield.cpp \
-		remoteai.cpp qrc_images.cpp \
+		remoteai.cpp \
+		cellmanager.cpp \
+		cell.cpp qrc_images.cpp \
 		moc_mainwindow.cpp \
 		moc_battlefield.cpp
 OBJECTS       = main.o \
 		mainwindow.o \
 		battlefield.o \
 		remoteai.o \
+		cellmanager.o \
+		cell.o \
 		qrc_images.o \
 		moc_mainwindow.o \
 		moc_battlefield.o
@@ -177,7 +181,9 @@ DIST          = ../../../Qt/5.3/clang_64/mkspecs/features/spec_pre.prf \
 		fuckingHalma.pro main.cpp \
 		mainwindow.cpp \
 		battlefield.cpp \
-		remoteai.cpp
+		remoteai.cpp \
+		cellmanager.cpp \
+		cell.cpp
 QMAKE_TARGET  = fuckingHalma
 DESTDIR       = #avoid trailing-slash linebreak
 TARGET        = fuckingHalma.app/Contents/MacOS/fuckingHalma
@@ -485,7 +491,7 @@ fuckingHalma.app/Contents/Info.plist:
 	@sed -e "s,@SHORT_VERSION@,1.0,g" -e "s,@TYPEINFO@,????,g" -e "s,@ICON@,,g" -e "s,@BUNDLEIDENTIFIER@,edu.smu.lyle.fuckingHalma,g" -e "s,@EXECUTABLE@,fuckingHalma,g" -e "s,@TYPEINFO@,????,g" ../../../Qt/5.3/clang_64/mkspecs/macx-clang/Info.plist.app >fuckingHalma.app/Contents/Info.plist
 dist: 
 	@test -d .tmp/fuckingHalma1.0.0 || mkdir -p .tmp/fuckingHalma1.0.0
-	$(COPY_FILE) --parents $(DIST) .tmp/fuckingHalma1.0.0/ && $(COPY_FILE) --parents images.qrc .tmp/fuckingHalma1.0.0/ && $(COPY_FILE) --parents mainwindow.h battlefield.h remoteai.h .tmp/fuckingHalma1.0.0/ && $(COPY_FILE) --parents main.cpp mainwindow.cpp battlefield.cpp remoteai.cpp .tmp/fuckingHalma1.0.0/ && $(COPY_FILE) --parents mainwindow.ui battlefield.ui .tmp/fuckingHalma1.0.0/ && (cd `dirname .tmp/fuckingHalma1.0.0` && $(TAR) fuckingHalma1.0.0.tar fuckingHalma1.0.0 && $(COMPRESS) fuckingHalma1.0.0.tar) && $(MOVE) `dirname .tmp/fuckingHalma1.0.0`/fuckingHalma1.0.0.tar.gz . && $(DEL_FILE) -r .tmp/fuckingHalma1.0.0
+	$(COPY_FILE) --parents $(DIST) .tmp/fuckingHalma1.0.0/ && $(COPY_FILE) --parents images.qrc .tmp/fuckingHalma1.0.0/ && $(COPY_FILE) --parents mainwindow.h battlefield.h remoteai.h cellmanager.h cell.h .tmp/fuckingHalma1.0.0/ && $(COPY_FILE) --parents main.cpp mainwindow.cpp battlefield.cpp remoteai.cpp cellmanager.cpp cell.cpp .tmp/fuckingHalma1.0.0/ && $(COPY_FILE) --parents mainwindow.ui battlefield.ui .tmp/fuckingHalma1.0.0/ && (cd `dirname .tmp/fuckingHalma1.0.0` && $(TAR) fuckingHalma1.0.0.tar fuckingHalma1.0.0 && $(COMPRESS) fuckingHalma1.0.0.tar) && $(MOVE) `dirname .tmp/fuckingHalma1.0.0`/fuckingHalma1.0.0.tar.gz . && $(DEL_FILE) -r .tmp/fuckingHalma1.0.0
 
 
 clean:compiler_clean 
@@ -675,6 +681,13 @@ remoteai.o: remoteai.cpp remoteai.h \
 		../../../Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QJsonArray \
 		../../../Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qjsonarray.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o remoteai.o remoteai.cpp
+
+cellmanager.o: cellmanager.cpp cellmanager.h \
+		cell.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o cellmanager.o cellmanager.cpp
+
+cell.o: cell.cpp cell.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o cell.o cell.cpp
 
 qrc_images.o: qrc_images.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qrc_images.o qrc_images.cpp

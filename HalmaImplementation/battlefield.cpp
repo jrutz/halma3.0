@@ -36,7 +36,6 @@ battlefield::~battlefield()
 
 void battlefield :: setTeams()
 {
-    ui->battleTable->item(4,4)->data();
 
 }
 
@@ -91,4 +90,14 @@ void battlefield:: setBaseValues()
 {
     ui->moveNumOne->setText("0");
     ui->moveNumTwo->setText("0");
+}
+
+void battlefield::on_battleTable_cellPressed(int row, int column)
+{
+
+}
+
+void battlefield::on_battleTable_currentCellChanged(int currentRow, int currentColumn, int previousRow, int previousColumn)
+{
+
 }

@@ -36,6 +36,11 @@ public:
 protected slots:
 
 
+private slots:
+    void on_battleTable_cellPressed(int row, int column);
+
+    void on_battleTable_currentCellChanged(int currentRow, int currentColumn, int previousRow, int previousColumn);
+
 private:
     Ui::battlefield *ui;
 
