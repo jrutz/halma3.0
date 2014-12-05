@@ -478,7 +478,7 @@
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
-     <x>60</x>
+     <x>30</x>
      <y>820</y>
      <width>241</width>
      <height>61</height>
@@ -494,40 +494,24 @@
     <string>Make a move:</string>
    </property>
   </widget>
-  <widget class="QFrame" name="frame">
+  <widget class="QLabel" name="moveName">
    <property name="geometry">
     <rect>
-     <x>420</x>
-     <y>820</y>
-     <width>371</width>
-     <height>51</height>
+     <x>260</x>
+     <y>830</y>
+     <width>571</width>
+     <height>41</height>
     </rect>
    </property>
-   <property name="frameShape">
-    <enum>QFrame::StyledPanel</enum>
+   <property name="font">
+    <font>
+     <family>Georgia</family>
+     <pointsize>24</pointsize>
+    </font>
    </property>
-   <property name="frameShadow">
-    <enum>QFrame::Raised</enum>
+   <property name="text">
+    <string/>
    </property>
-   <widget class="QLabel" name="moveName">
-    <property name="geometry">
-     <rect>
-      <x>-140</x>
-      <y>0</y>
-      <width>571</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Georgia</family>
-      <pointsize>24</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
   </widget>
  </widget>
  <resources/>

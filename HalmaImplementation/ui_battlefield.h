@@ -267,14 +267,14 @@ public:
         battleTable->verticalHeader()->setMinimumSectionSize(39);
         label_4 = new QLabel(battlefield);
         label_4->setObjectName(QStringLiteral("label_4"));
-        label_4->setGeometry(QRect(60, 820, 241, 61));
+        label_4->setGeometry(QRect(30, 820, 241, 61));
         QFont font6;
         font6.setFamily(QStringLiteral("Georgia"));
         font6.setPointSize(36);
         label_4->setFont(font6);
         moveName = new QLabel(battlefield);
         moveName->setObjectName(QStringLiteral("moveName"));
-        moveName->setGeometry(QRect(320, 830, 571, 41));
+        moveName->setGeometry(QRect(260, 830, 571, 41));
         QFont font7;
         font7.setFamily(QStringLiteral("Georgia"));
         font7.setPointSize(24);
