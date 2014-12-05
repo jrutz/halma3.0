@@ -23,6 +23,8 @@ cellManager::cellManager()
 
 bool cellManager::makeMove(int player, int fromX, int fromY, int toX, int toY)
 {
+
+
     if(gameBoard[fromX][fromY]->player == player) {
 
         //if the destination is another players piece
