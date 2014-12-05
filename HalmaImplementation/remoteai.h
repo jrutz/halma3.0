@@ -26,7 +26,7 @@ public:
     QByteArray PostJsonData(int numPieces, int destSize, int piecesX[], int piecesY[], int destX[],
                             int destY[], int enemyX[], int enemyY[],
                             int enemyDestX[], int enemyDestY[]);
-    QJsonObject MakeJsonObject(int numPieces, int destSize, int piecesX[], int piecesY[], int destX[],
+    int* MakeJsonObject(int numPieces, int destSize, int piecesX[], int piecesY[], int destX[],
                                int destY[], int enemyX[], int enemyY[],
                                int enemyDestX[], int enemyDestY[]);
 
