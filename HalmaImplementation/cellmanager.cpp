@@ -15,7 +15,27 @@ cellManager::cellManager()
 
 }
 
-void cellManager::makeMove(int player, int fromX, int fromY, int toX, int toY)
+bool cellManager::makeMove(int player, int fromX, int fromY, int toX, int toY)
 {
-    //if(gameBoard[fromX])
+
+    if(gameBoard[fromX][fromY] == player) {
+
+        //if the destination is another players piece
+        if(gameBoard[toX][toY] != 0  && gameBoard[toX][toY] != player) {
+            //do nothing
+            return false;
+        }
+        else if(gameBoard[toX][toY] == player) {
+            //do nothing
+            return false;
+        }
+        else if(gameBoard[toX][toY] == 0){
+            gameBoard[fromX][fromY] = 0;
+            gameBoard[toX][toY] = player;
+            return true;
+        }
+    }
+
+    return false;
+>>>>>>> FETCH_HEAD
 }
