@@ -82,7 +82,6 @@ QJsonObject RemoteAI::MakeJsonObject(int numPieces,int destSize, int piecesX[], 
 
 QByteArray RemoteAI::PostJsonData(QByteArray data) {
 
-
     int px [3] = { 1, 1, 1};
     int py [3] = { 1, 1, 1};
     QJsonObject JsonObject = MakeJsonObject(3,3,px,py,px,py,px,py,px,py);
