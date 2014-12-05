@@ -4,7 +4,7 @@
 class cell
 {
 public:
-    cell();
+    cell(int x, int y, int p);
     int player;
     int x;
     int y;
