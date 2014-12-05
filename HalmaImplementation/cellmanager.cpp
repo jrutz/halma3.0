@@ -37,5 +37,5 @@ bool cellManager::makeMove(int player, int fromX, int fromY, int toX, int toY)
     }
 
     return false;
->>>>>>> FETCH_HEAD
+
 }

@@ -372,8 +372,20 @@
    <property name="autoFillBackground">
     <bool>false</bool>
    </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
    <property name="editTriggers">
     <set>QAbstractItemView::NoEditTriggers</set>
+   </property>
+   <property name="tabKeyNavigation">
+    <bool>false</bool>
+   </property>
+   <property name="showDropIndicator" stdset="0">
+    <bool>false</bool>
    </property>
    <property name="dragDropOverwriteMode">
     <bool>false</bool>
@@ -382,7 +394,7 @@
     <bool>false</bool>
    </property>
    <property name="selectionMode">
-    <enum>QAbstractItemView::SingleSelection</enum>
+    <enum>QAbstractItemView::NoSelection</enum>
    </property>
    <property name="iconSize">
     <size>
@@ -394,6 +406,9 @@
     <enum>Qt::DotLine</enum>
    </property>
    <property name="wordWrap">
+    <bool>false</bool>
+   </property>
+   <property name="cornerButtonEnabled">
     <bool>false</bool>
    </property>
    <property name="rowCount">

@@ -27,9 +27,19 @@ public:
     void setTeamOneType(bool type);
     void setTeamTwoType(bool type);
     void setBaseValues();
-    void setTeams();
-    QColor red;
+    void initializeEverything();
+    QColor lightRed;
+    QColor medRed;
+    QColor darkRed;
     QColor black;
+    QColor grey;
+    QColor lightBlue;
+    QColor medBlue;
+    QColor darkBlue;
+    QColor green;
+    QColor pinkish;
+
+
     cellManager boardManager;
 
 
@@ -40,7 +50,11 @@ protected slots:
 
 
 private slots:
-    void on_battleTable_currentCellChanged(int currentRow, int currentColumn, int previousRow, int previousColumn);
+
+
+    void on_battleTable_cellClicked(int row, int column);
+
+
 
 private:
     Ui::battlefield *ui;
@@ -55,6 +69,11 @@ private:
     bool isTwoHuman;
     int playerOneMoves;
     int playerTwoMoves;
+
+    QTableWidgetItem* firstCellClicked;
+    QTableWidgetItem* secondCellClicked;
+    bool oneChecked;
+    bool twoChecked;
 
 
 

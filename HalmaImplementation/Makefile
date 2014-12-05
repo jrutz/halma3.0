@@ -536,6 +536,8 @@ moc_mainwindow.cpp: ../../../Qt/5.3/clang_64/lib/QtWidgets.framework/Versions/5/
 		../../../Qt/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QLineEdit \
 		../../../Qt/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qlineedit.h \
 		battlefield.h \
+		cellmanager.h \
+		cell.h \
 		../../../Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QString \
 		../../../Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qstring.h \
 		../../../Qt/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QWidget \
@@ -552,7 +554,9 @@ moc_mainwindow.cpp: ../../../Qt/5.3/clang_64/lib/QtWidgets.framework/Versions/5/
 		mainwindow.h
 	/Users/Johna/Qt/5.3/clang_64/bin/moc $(DEFINES) -D__APPLE__ -D__GNUC__=4 -I/Users/Johna/Qt/5.3/clang_64/mkspecs/macx-clang -I/Users/Johna/Desktop/halma3.0/HalmaImplementation -I/Users/Johna/Qt/5.3/clang_64/lib/QtWidgets.framework/Headers -I/Users/Johna/Qt/5.3/clang_64/lib/QtNetwork.framework/Headers -I/Users/Johna/Qt/5.3/clang_64/lib/QtGui.framework/Headers -I/Users/Johna/Qt/5.3/clang_64/lib/QtCore.framework/Headers -F/Users/Johna/Qt/5.3/clang_64/lib mainwindow.h -o moc_mainwindow.cpp
 
-moc_battlefield.cpp: ../../../Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QString \
+moc_battlefield.cpp: cellmanager.h \
+		cell.h \
+		../../../Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QString \
 		../../../Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qstring.h \
 		../../../Qt/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QWidget \
 		../../../Qt/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qwidget.h \
@@ -597,6 +601,8 @@ main.o: main.cpp mainwindow.h \
 		../../../Qt/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QLineEdit \
 		../../../Qt/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qlineedit.h \
 		battlefield.h \
+		cellmanager.h \
+		cell.h \
 		../../../Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QString \
 		../../../Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qstring.h \
 		../../../Qt/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QWidget \
@@ -620,6 +626,8 @@ mainwindow.o: mainwindow.cpp mainwindow.h \
 		../../../Qt/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QLineEdit \
 		../../../Qt/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qlineedit.h \
 		battlefield.h \
+		cellmanager.h \
+		cell.h \
 		../../../Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QString \
 		../../../Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qstring.h \
 		../../../Qt/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QWidget \
@@ -637,6 +645,8 @@ mainwindow.o: mainwindow.cpp mainwindow.h \
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o mainwindow.cpp
 
 battlefield.o: battlefield.cpp battlefield.h \
+		cellmanager.h \
+		cell.h \
 		../../../Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QString \
 		../../../Qt/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qstring.h \
 		../../../Qt/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QWidget \

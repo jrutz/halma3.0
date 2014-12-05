@@ -19,8 +19,8 @@
 
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_battlefield_t {
-    QByteArrayData data[7];
-    char stringdata[99];
+    QByteArrayData data[5];
+    char stringdata[51];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -30,16 +30,13 @@ struct qt_meta_stringdata_battlefield_t {
 static const qt_meta_stringdata_battlefield_t qt_meta_stringdata_battlefield = {
     {
 QT_MOC_LITERAL(0, 0, 11),
-QT_MOC_LITERAL(1, 12, 33),
-QT_MOC_LITERAL(2, 46, 0),
-QT_MOC_LITERAL(3, 47, 10),
-QT_MOC_LITERAL(4, 58, 13),
-QT_MOC_LITERAL(5, 72, 11),
-QT_MOC_LITERAL(6, 84, 14)
+QT_MOC_LITERAL(1, 12, 26),
+QT_MOC_LITERAL(2, 39, 0),
+QT_MOC_LITERAL(3, 40, 3),
+QT_MOC_LITERAL(4, 44, 6)
     },
-    "battlefield\0on_battleTable_currentCellChanged\0"
-    "\0currentRow\0currentColumn\0previousRow\0"
-    "previousColumn"
+    "battlefield\0on_battleTable_cellClicked\0"
+    "\0row\0column"
 };
 #undef QT_MOC_LITERAL
 
@@ -57,10 +54,10 @@ static const uint qt_meta_data_battlefield[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    4,   19,    2, 0x08 /* Private */,
+       1,    2,   19,    2, 0x08 /* Private */,
 
  // slots: parameters
-    QMetaType::Void, QMetaType::Int, QMetaType::Int, QMetaType::Int, QMetaType::Int,    3,    4,    5,    6,
+    QMetaType::Void, QMetaType::Int, QMetaType::Int,    3,    4,
 
        0        // eod
 };
@@ -70,7 +67,7 @@ void battlefield::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
     if (_c == QMetaObject::InvokeMetaMethod) {
         battlefield *_t = static_cast<battlefield *>(_o);
         switch (_id) {
-        case 0: _t->on_battleTable_currentCellChanged((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2])),(*reinterpret_cast< int(*)>(_a[3])),(*reinterpret_cast< int(*)>(_a[4]))); break;
+        case 0: _t->on_battleTable_cellClicked((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2]))); break;
         default: ;
         }
     }
