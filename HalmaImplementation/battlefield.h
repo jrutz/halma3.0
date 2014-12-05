@@ -34,6 +34,7 @@ public:
     void initializeEverything();
     bool checkSpatialValidity(int firstX, int firstY, int destX, int destY);
     bool checkTeamValidity(int, QColor);
+    void clickPieceAndMove(QTableWidgetItem* first,QTableWidgetItem* second);
     QColor lightRed;
     QColor medRed;
     QColor darkRed;
