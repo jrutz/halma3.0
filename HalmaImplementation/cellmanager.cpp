@@ -47,21 +47,21 @@ bool cellManager::makeMove(int player, int fromX, int fromY, int toX, int toY)
 int* cellManager::makeAIMove(int player)
 {
     char* sampleAI = "http://lyle.smu.edu/~tbgeorge/cse4345/a1/getMove.php";
-    RemoteAI ai = new RemoteAI(sampleAI);
+    RemoteAI ai(sampleAI);
     int piecesCounter = 0;
     int enemyCounter = 0;
     int destCounter = 0;
     int enemyDestCounter = 0;
 
-    int[12] piecesX;
-    int[12] enemyX;
-    int[9] destX;
-    int[9] enemyDestX;
+    int piecesX[12];
+    int enemyX[12];
+    int destX[9];
+    int enemyDestX[9];
 
-    int[12] piecesY;
-    int[12] enemyY;
-    int[9] destY;
-    int[9] enemyDestY;
+    int piecesY[12];
+    int enemyY[12];
+    int destY[9] ;
+    int enemyDestY[9];
 
     for(int i=0; i < 18; i++) {
         for(int j=0; j<18; j++){
@@ -80,7 +80,7 @@ int* cellManager::makeAIMove(int player)
                 destY[destCounter] = j;
                 destCounter++;
             }
-            else if(gameBoard[i][j]->dest != player %% gameBoard[i][j]->dest != 0) {
+            else if(gameBoard[i][j]->dest != player && gameBoard[i][j]->dest != 0) {
                 enemyDestX[enemyDestCounter] = i;
                 enemyDestY[enemyDestCounter] = j;
                 enemyDestCounter++;
