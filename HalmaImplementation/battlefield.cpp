@@ -45,7 +45,7 @@ void battlefield :: initializeEverything()
 
     for(int i=0; i < row; i++) {
         for(int j = 0; j < column; j++) {
-            int team = boardManager.gameBoard[j][i];
+            int team = boardManager.gameBoard[j][i]->player;
             QTableWidgetItem *newItem = new QTableWidgetItem();
             ui->battleTable->setItem(i,j,newItem);
 

@@ -42,8 +42,6 @@ bool cellManager::makeMove(int player, int fromX, int fromY, int toX, int toY)
     }
 
     return false;
-<<<<<<< HEAD
-=======
 }
 
 int* cellManager::makeAIMove(int player, char* AiLocation)
@@ -96,6 +94,5 @@ int* cellManager::makeAIMove(int player, char* AiLocation)
     makeMove(player, results[0], results[1], results[2], results[3]);
 
     return results;
->>>>>>> FETCH_HEAD
 
 }
