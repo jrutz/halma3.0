@@ -68,6 +68,16 @@ void battlefield :: initializeEverything()
 }
 
 
+bool battlefield :: checkJump(int firstX, int firstY, int destX, int destY) {
+    if(abs(firstX-destX) <= 2 && abs(firstY-destY) <= 2) {
+        
+        
+        
+    }
+    
+    
+}
+
 void battlefield::setTeamNameText(QString one, QString two)
 {
     ui->nameOne->setText(one);

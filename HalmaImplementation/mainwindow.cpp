@@ -34,7 +34,7 @@ void MainWindow::on_pushButton_clicked()
     lava.setTeamOneURL(ui->playerOneURL->text());
    }
 
-   if(isOneHuman == false) {
+   if(isTwoHuman == false) {
     lava.setTeamTwoURL(ui->playerTwoURL->text());
    }
 

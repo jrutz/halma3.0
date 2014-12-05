@@ -21,13 +21,9 @@ public:
 private slots:
     void on_pushButton_clicked();
 
-
-
     void on_playerOneAI_clicked();
 
     void on_playerOneHuman_clicked();
-
-
 
     void on_playerTwoAI_clicked();
 

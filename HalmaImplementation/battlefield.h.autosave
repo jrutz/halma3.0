@@ -32,6 +32,7 @@ public:
     void setTeamTwoType(bool type);
     void setBaseValues();
     void initializeEverything();
+    bool checkJump(int firstX, int firstY, int destX, int destY);
     QColor lightRed;
     QColor medRed;
     QColor darkRed;

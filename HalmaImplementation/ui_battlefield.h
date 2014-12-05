@@ -54,6 +54,8 @@ public:
     QLabel *twoType;
     QFrame *line;
     QTableWidget *battleTable;
+    QLabel *label_4;
+    QLabel *moveName;
 
     void setupUi(QWidget *battlefield)
     {
@@ -263,6 +265,20 @@ public:
         battleTable->verticalHeader()->setVisible(false);
         battleTable->verticalHeader()->setDefaultSectionSize(39);
         battleTable->verticalHeader()->setMinimumSectionSize(39);
+        label_4 = new QLabel(battlefield);
+        label_4->setObjectName(QStringLiteral("label_4"));
+        label_4->setGeometry(QRect(60, 820, 241, 61));
+        QFont font6;
+        font6.setFamily(QStringLiteral("Georgia"));
+        font6.setPointSize(36);
+        label_4->setFont(font6);
+        moveName = new QLabel(battlefield);
+        moveName->setObjectName(QStringLiteral("moveName"));
+        moveName->setGeometry(QRect(320, 830, 571, 41));
+        QFont font7;
+        font7.setFamily(QStringLiteral("Georgia"));
+        font7.setPointSize(24);
+        moveName->setFont(font7);
 
         retranslateUi(battlefield);
 
@@ -294,6 +310,8 @@ public:
         moveNumTwo->setText(QString());
         oneType->setText(QString());
         twoType->setText(QString());
+        label_4->setText(QApplication::translate("battlefield", "Make a move:", 0));
+        moveName->setText(QString());
     } // retranslateUi
 
 };

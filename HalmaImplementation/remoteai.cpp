@@ -4,7 +4,7 @@ RemoteAI::RemoteAI() {
     RemoteAI("");
 }
 
-RemoteAI::RemoteAI(char* url = "") {
+RemoteAI::RemoteAI(QString url = "") {
     connectionUrl = url;
     networkManager = new QNetworkAccessManager();
 
@@ -33,11 +33,11 @@ RemoteAI::RemoteAI(char* url = "") {
 
 }
 
-void RemoteAI::SetConnectionURL(char* url) {
+void RemoteAI::SetConnectionURL(QString url) {
     connectionUrl = url;
 }
 
-bool RemoteAI::TestConnectionURL(char* url) {
+bool RemoteAI::TestConnectionURL(QString url) {
     return false;
 }
 
@@ -105,7 +105,9 @@ int* RemoteAI::PostJsonData(int numPieces, int destSize, int piecesX[], int piec
 
         // the HTTP request
         //url needs to be cstring
-        QNetworkRequest req( QUrl( QString::fromStdString(connectionUrl)) );
+        //QString fuck = "http://lyle.smu.edu/~tbgeorge/cse4345/a1/getMove.php";
+        QByteArray fuck2 = connectionUrl.toLocal8Bit();
+        QNetworkRequest req( QUrl(QString::fromUtf8(fuck2.data())) );
         req.setRawHeader("Content-Type", "application/json");
         //QNetworkReply *reply = mgr.get(req);
         QNetworkReply *reply = mgr.post(req, j);
