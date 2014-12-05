@@ -12,7 +12,7 @@ public:
 
     cellManager();
     bool makeMove(int player, int fromX, int fromY, int toX, int toY);
-    int* makeAIMove(int player);
+    int* makeAIMove(int player, char* AiLocation);
 };
 
 #endif // CELLMANAGER_H

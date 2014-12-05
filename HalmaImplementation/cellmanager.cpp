@@ -44,10 +44,10 @@ bool cellManager::makeMove(int player, int fromX, int fromY, int toX, int toY)
     return false;
 }
 
-int* cellManager::makeAIMove(int player)
+int* cellManager::makeAIMove(int player, char* AiLocation)
 {
-    char* sampleAI = "http://lyle.smu.edu/~tbgeorge/cse4345/a1/getMove.php";
-    RemoteAI ai(sampleAI);
+    //char* sampleAI = "http://lyle.smu.edu/~tbgeorge/cse4345/a1/getMove.php";
+    RemoteAI ai(AiLocation);
     int piecesCounter = 0;
     int enemyCounter = 0;
     int destCounter = 0;
