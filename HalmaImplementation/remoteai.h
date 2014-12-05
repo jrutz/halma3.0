@@ -23,10 +23,10 @@ public:
     RemoteAI(char* url);
     void SetConnectionURL(char* url);
     bool TestConnectionURL(char* url);
-    QByteArray PostJsonData(int numPieces, int destSize, int piecesX[], int piecesY[], int destX[],
+    int* PostJsonData(int numPieces, int destSize, int piecesX[], int piecesY[], int destX[],
                             int destY[], int enemyX[], int enemyY[],
                             int enemyDestX[], int enemyDestY[]);
-    int* MakeJsonObject(int numPieces, int destSize, int piecesX[], int piecesY[], int destX[],
+    QJsonObject MakeJsonObject(int numPieces, int destSize, int piecesX[], int piecesY[], int destX[],
                                int destY[], int enemyX[], int enemyY[],
                                int enemyDestX[], int enemyDestY[]);
 
