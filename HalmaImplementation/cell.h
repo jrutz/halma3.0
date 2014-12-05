@@ -4,10 +4,11 @@
 class cell
 {
 public:
-    cell(int x, int y, int p);
+    cell(int p, int d);
+    cell();
+
     int player;
-    int x;
-    int y;
+    int dest;
 };
 
 #endif // CELL_H
