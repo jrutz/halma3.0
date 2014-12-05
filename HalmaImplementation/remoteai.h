@@ -19,17 +19,20 @@
 class RemoteAI
 {
 public:
-    RemoteAI(QString url);
-    void SetConnectionURL(QString url);
-    bool TestConnectionURL(QString url);
-    QByteArray PostJsonData(QByteArray data);
+    RemoteAI();
+    RemoteAI(char* url);
+    void SetConnectionURL(char* url);
+    bool TestConnectionURL(char* url);
+    QByteArray PostJsonData(int numPieces, int destSize, int piecesX[], int piecesY[], int destX[],
+                            int destY[], int enemyX[], int enemyY[],
+                            int enemyDestX[], int enemyDestY[]);
     QJsonObject MakeJsonObject(int numPieces, int destSize, int piecesX[], int piecesY[], int destX[],
                                int destY[], int enemyX[], int enemyY[],
                                int enemyDestX[], int enemyDestY[]);
 
 
 private:
-    QString connectionUrl;
+    char* connectionUrl;
     QNetworkAccessManager *networkManager;
     char* sampleAI;
     char* sampleAI_2;
