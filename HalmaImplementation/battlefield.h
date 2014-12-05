@@ -32,6 +32,8 @@ public:
     void setTeamTwoType(bool type);
     void setBaseValues();
     void initializeEverything();
+    bool checkSpatialValidity(int firstX, int firstY, int destX, int destY);
+    bool checkTeamValidity(int, QColor);
     QColor lightRed;
     QColor medRed;
     QColor darkRed;

@@ -494,24 +494,40 @@
     <string>Make a move:</string>
    </property>
   </widget>
-  <widget class="QLabel" name="moveName">
+  <widget class="QFrame" name="frame">
    <property name="geometry">
     <rect>
-     <x>320</x>
-     <y>830</y>
-     <width>571</width>
-     <height>41</height>
+     <x>420</x>
+     <y>820</y>
+     <width>371</width>
+     <height>51</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <family>Georgia</family>
-     <pointsize>24</pointsize>
-    </font>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
    </property>
-   <property name="text">
-    <string/>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
    </property>
+   <widget class="QLabel" name="moveName">
+    <property name="geometry">
+     <rect>
+      <x>-140</x>
+      <y>0</y>
+      <width>571</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Georgia</family>
+      <pointsize>24</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
   </widget>
  </widget>
  <resources/>
