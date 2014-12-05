@@ -1,8 +1,13 @@
 #include "cell.h"
 
-cell::cell(int x, int y, int p)
+cell::cell()
 {
-    this->x = x;
-    this->y = y;
-    this->player = p;
+    player = 0;
+    dest = 0;
+}
+
+cell::cell(int p, int d)
+{
+    player = p;
+    dest = d;
 }

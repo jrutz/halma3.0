@@ -2,15 +2,17 @@
 #define CELLMANAGER_H
 
 #include <cell.h>
+#include <remoteai.h>
 
 class cellManager
 {
 public:
 
-    int gameBoard[18][18];
+    cell* gameBoard[18][18];
 
     cellManager();
-    void makeMove(int player, int fromX, int fromY, int toX, int toY);
+    bool makeMove(int player, int fromX, int fromY, int toX, int toY);
+    int* makeAIMove();
 };
 
 #endif // CELLMANAGER_H
