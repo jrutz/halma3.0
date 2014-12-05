@@ -39,6 +39,8 @@ void battlefield :: initializeEverything()
     oneChecked = false;
     twoChecked = false;
 
+    teamTwoURL="http://lyle.smu.edu/~tbgeorge/cse4345/a1/getMove.php";
+
     int row = 18;
     int column = 18;
 
@@ -143,8 +145,15 @@ void battlefield::on_battleTable_cellClicked(int row, int column)
    else if (twoChecked == false) {
        secondCellClicked = current;
        twoChecked = true;
+       if (firstCellClicked == secondCellClicked){
+           if(firstCellClicked->backgroundColor()==darkRed)
+               firstCellClicked->setBackgroundColor(medRed);
 
-       if(firstCellClicked->backgroundColor()==darkRed)
+           if(firstCellClicked->backgroundColor()==darkBlue)
+               firstCellClicked->setBackgroundColor(medBlue);
+
+       }
+       else if(firstCellClicked->backgroundColor()==darkRed)
        {    secondCellClicked->setBackgroundColor(medRed);
            firstCellClicked->setBackgroundColor(grey);}
 
@@ -156,4 +165,21 @@ void battlefield::on_battleTable_cellClicked(int row, int column)
        twoChecked = false;
    }
 
+}
+
+void battlefield::on_makeMove_clicked()
+{
+    char* lol2 = "http://lyle.smu.edu/~tbgeorge/cse4345/a1/getMove.php";
+    //char* lol = teamTwoURL.toLocal8Bit().data();
+    int* moves = boardManager.makeAIMove(2, lol2);
+    int fromX = moves[0];
+    int fromY = moves[1];
+    int toX = moves[2];
+    int toY = moves[3];
+
+
+    on_battleTable_cellClicked(fromX, fromY);
+    on_battleTable_cellClicked(toX, toY);
+
+            //first 2 = from, last 2 = destination
 }

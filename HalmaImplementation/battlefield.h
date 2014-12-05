@@ -56,6 +56,8 @@ private slots:
 
 
 
+    void on_makeMove_clicked();
+
 private:
     Ui::battlefield *ui;
 
