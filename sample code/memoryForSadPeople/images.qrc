@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/easy">
+        <file>pic1</file>
+        <file>base</file>
+        <file>pic2</file>
+        <file>pic3</file>
+        <file>pic4</file>
+        <file>pic5</file>
+        <file>pic6</file>
+        <file>pic7</file>
+        <file>pic8</file>
+    </qresource>
+    <qresource prefix="/hard">
+        <file>hardpic1</file>
+        <file>hardpic2</file>
+        <file>hardpic3</file>
+        <file>hardpic4</file>
+    </qresource>
+</RCC>
