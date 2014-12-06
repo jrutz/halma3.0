@@ -36,6 +36,9 @@ battlefield::~battlefield()
 
 void battlefield :: initializeEverything()
 {
+
+
+
     oneChecked = false;
     twoChecked = false;
     playerTurn = 1;
@@ -70,26 +73,25 @@ void battlefield :: initializeEverything()
 
 //checking if jumps are valid, must be a jump in order to be here
 bool battlefield :: checkSpatialValidity(int firstRow, int firstColumn, int destRow, int destColumn) {
-    ui->moveName->setText(QString::number(destRow) +" "+QString::number(destColumn));
 
     if(ui->battleTable->item(destRow,destColumn)->backgroundColor() !=grey){
-          ui->moveName->setText("You're trying to jump on another piece");
+         sendMessage("You're literally trying to jump on top of another piece");
         return false;}
 
     //Totally normal looking move
     if(abs(firstRow-destRow) <= 1 && abs(firstColumn-destColumn) <= 1) {
-        ui->moveName->setText("Normal move within bounds");
+        sendMessage("Simple but solid move");
         return true;
      }
     //Is it obviously more than one skip space
     if(abs(firstRow-destRow) > 2 || abs(firstColumn-destColumn) > 2) {
-        ui->moveName->setText("You're way out of bounds");
+        sendMessage("You're over-reaching your bounds there");
         return false;
      }
 
     //In case of diagonal jumps
     if(abs(firstRow-destRow) == 2 && abs(firstColumn-destColumn) == 2) {
-        ui->moveName->setText("Moving diagonally eh? Fancy");
+        sendMessage("Moving diagonally eh? I like your style");
 
         //Upper Right Diagonal
         if((firstRow-destRow) == 2 && (firstColumn-destColumn) == -2){
@@ -119,7 +121,8 @@ bool battlefield :: checkSpatialValidity(int firstRow, int firstColumn, int dest
 
      //In case of Horizontal jumps
     } else if (firstRow == destRow) {
-        ui->moveName->setText("Getting some horizontal jumps in");
+
+        sendMessage("That's some nice horizontal action");
        //destination is to the right first
         if((firstColumn-destColumn) == -2) {
             if(ui->battleTable->item(destRow,destColumn-1)->backgroundColor() != grey)
@@ -136,7 +139,7 @@ bool battlefield :: checkSpatialValidity(int firstRow, int firstColumn, int dest
 
      //In case of Vertical jumps
     } else if (firstColumn == destColumn) {
-        ui->moveName->setText("Getting some vertical action");
+        sendMessage("I like the vertical motion, moving up in the world");
             //destination is below the first one
              if((firstRow-destRow) == -2) {
                  if(ui->battleTable->item(destRow-1,destColumn)->backgroundColor() != grey)
@@ -150,11 +153,12 @@ bool battlefield :: checkSpatialValidity(int firstRow, int firstColumn, int dest
                      return true;
                  else
                      return false;  }
-
     }
 
     else
         return false;
+
+    sendMessage("I have no idea what you did there");
 }
 
 bool battlefield:: checkTeamValidity(int player, QColor pieceColor) {
@@ -227,6 +231,9 @@ void battlefield :: clickPieceAndMove(QTableWidgetItem* first,QTableWidgetItem* 
     if(original->backgroundColor() == darkRed) {
         original->setBackgroundColor(grey);
         destination->setBackgroundColor(medRed);
+        if(isOneHuman == true)
+            playerOneMoves ++;
+
 
 
     } else if (original == destination && original->backgroundColor()== darkRed){
@@ -237,11 +244,16 @@ void battlefield :: clickPieceAndMove(QTableWidgetItem* first,QTableWidgetItem* 
      else if(original->backgroundColor() == darkBlue){
             original->setBackgroundColor(grey);
             destination->setBackgroundColor(medBlue);
+            if(isTwoHuman == true)
+                playerTwoMoves++;
     }
 
     else if(original==destination && original->backgroundColor() ==darkBlue){
             original->setBackgroundColor(medBlue);
     }
+
+
+
 }
 
 void battlefield :: clickFirstPiece(QTableWidgetItem* original) {
@@ -261,19 +273,41 @@ void battlefield :: clickFirstPiece(QTableWidgetItem* original) {
 
 
 void battlefield :: endTurn() {
+    QString teamName;
     if(playerTurn == 1)
-        playerTurn = 2;
-    else if(playerTurn == 2)
-        playerTurn = 1;
+        teamName = teamOneName;
+    if(playerTurn == 2)
+        teamName = teamTwoName;
 
+    if(didTheyWin(playerTurn) == true) {
+        sendMessage("Good job "+teamName+" you really crushed this game.");
+        playerTurn = 0;
+
+    }
+
+    else{
+        if(playerTurn == 1)
+            playerTurn = 2;
+        else if(playerTurn == 2)
+             playerTurn = 1;}
+
+}
+
+void battlefield::sendMessage(QString message) {
+
+    ui->moveName->setText(message);
 }
 
 void battlefield::on_battleTable_cellClicked(int row, int column)
 {
+    if(playerTurn == 0) {
+
+        sendMessage("Someone won, yo");
+        return;
+    }
 
    if(row < 0 || row > 17 || column < 0 || column > 17){
-       ui->moveName->setText("Dude you're off the board");
-       ui->suicideJumpNum->setText(QString::number(suicidal));
+       sendMessage("Are you trying to escape off the board?");
        return;
    }
 
@@ -331,15 +365,11 @@ void battlefield::on_battleTable_cellClicked(int row, int column)
             twoChecked = false;
        }
 
-
-
-
    }
 }
 
 void battlefield::on_makeMove_clicked()
 {
-
     for(int i = 0; i < 70; i++) {
     //QString lol2 = "http://lyle.smu.edu/~tbgeorge/cse4345/a1/getMove.php";
 
@@ -374,9 +404,39 @@ void battlefield::on_makeMove_clicked()
     }
     }
 
-
-
-
-
-            //first 2 = from, last 2 = destination
 }
+
+
+//Returns true if player wins, false if they did not
+bool battlefield :: didTheyWin(int player)
+{
+
+    if(player == 1) {
+        for(int i=0; i < 3; i++) {
+            for(int j = 15; j < 18; j++) {
+                if(ui->battleTable->item(i,j)->backgroundColor() != medRed || ui->battleTable->item(i,j)->backgroundColor() != darkRed){
+                   return false;
+                }
+            }
+        }
+}
+
+
+    if(player == 2) {
+        for(int i=0; i < 3; i++) {
+            for(int j = 0; j < 3; j++) {
+                if(ui->battleTable->item(i,j)->backgroundColor() != medBlue || ui->battleTable->item(i,j)->backgroundColor() != darkBlue){
+                   return false;
+                }
+            }
+        }
+    }
+
+
+    return true;
+
+}
+
+
+
+

@@ -31,29 +31,28 @@ public:
     QPushButton *makeMove;
     QWidget *gridLayoutWidget;
     QGridLayout *gridLayout;
-    QLabel *suicideJumpNum;
-    QLabel *moveNumOne;
-    QSpacerItem *verticalSpacer;
-    QLabel *playerOne;
-    QLabel *nameTwo;
     QLabel *oneType;
-    QLabel *nameOne;
-    QLabel *label_3;
-    QLabel *playerTwo;
-    QLabel *label_2;
     QLabel *moveNumTwo;
+    QLabel *moveNumOne;
+    QLabel *playerOne;
+    QLabel *playerTwo;
+    QLabel *label_3;
     QLabel *twoType;
-    QLabel *label_5;
+    QLabel *nameOne;
+    QSpacerItem *verticalSpacer;
+    QLabel *nameTwo;
+    QLabel *label_2;
     QFrame *line;
-    QTableWidget *battleTable;
     QLabel *label_4;
     QLabel *moveName;
+    QLabel *gosling;
+    QTableWidget *battleTable;
 
     void setupUi(QWidget *battlefield)
     {
         if (battlefield->objectName().isEmpty())
             battlefield->setObjectName(QStringLiteral("battlefield"));
-        battlefield->resize(1069, 1509);
+        battlefield->resize(1173, 867);
         QPalette palette;
         QBrush brush(QColor(252, 255, 255, 255));
         brush.setStyle(Qt::SolidPattern);
@@ -71,7 +70,7 @@ public:
         battlefield->setFont(font);
         label = new QLabel(battlefield);
         label->setObjectName(QStringLiteral("label"));
-        label->setGeometry(QRect(30, 10, 181, 51));
+        label->setGeometry(QRect(30, 10, 911, 51));
         QFont font1;
         font1.setFamily(QStringLiteral("Arial"));
         font1.setPointSize(36);
@@ -80,60 +79,66 @@ public:
         label->setFont(font1);
         makeMove = new QPushButton(battlefield);
         makeMove->setObjectName(QStringLiteral("makeMove"));
-        makeMove->setGeometry(QRect(870, 460, 141, 31));
+        makeMove->setGeometry(QRect(290, 800, 141, 31));
+        QFont font2;
+        font2.setFamily(QStringLiteral("Georgia"));
+        font2.setPointSize(14);
+        makeMove->setFont(font2);
         gridLayoutWidget = new QWidget(battlefield);
         gridLayoutWidget->setObjectName(QStringLiteral("gridLayoutWidget"));
-        gridLayoutWidget->setGeometry(QRect(810, 40, 211, 374));
+        gridLayoutWidget->setGeometry(QRect(830, 100, 181, 371));
         gridLayout = new QGridLayout(gridLayoutWidget);
         gridLayout->setObjectName(QStringLiteral("gridLayout"));
         gridLayout->setContentsMargins(0, 0, 0, 0);
-        suicideJumpNum = new QLabel(gridLayoutWidget);
-        suicideJumpNum->setObjectName(QStringLiteral("suicideJumpNum"));
-        QFont font2;
-        font2.setFamily(QStringLiteral("Georgia"));
-        font2.setPointSize(24);
-        suicideJumpNum->setFont(font2);
+        oneType = new QLabel(gridLayoutWidget);
+        oneType->setObjectName(QStringLiteral("oneType"));
+        QFont font3;
+        font3.setFamily(QStringLiteral("Georgia"));
+        font3.setItalic(true);
+        oneType->setFont(font3);
 
-        gridLayout->addWidget(suicideJumpNum, 11, 1, 1, 1);
+        gridLayout->addWidget(oneType, 2, 0, 1, 1);
+
+        moveNumTwo = new QLabel(gridLayoutWidget);
+        moveNumTwo->setObjectName(QStringLiteral("moveNumTwo"));
+        QFont font4;
+        font4.setFamily(QStringLiteral("Georgia"));
+        font4.setPointSize(24);
+        moveNumTwo->setFont(font4);
+
+        gridLayout->addWidget(moveNumTwo, 9, 1, 1, 1);
 
         moveNumOne = new QLabel(gridLayoutWidget);
         moveNumOne->setObjectName(QStringLiteral("moveNumOne"));
-        moveNumOne->setFont(font2);
+        moveNumOne->setFont(font4);
 
         gridLayout->addWidget(moveNumOne, 3, 1, 1, 1);
 
-        verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
-
-        gridLayout->addItem(verticalSpacer, 5, 0, 1, 1);
-
         playerOne = new QLabel(gridLayoutWidget);
         playerOne->setObjectName(QStringLiteral("playerOne"));
-        QFont font3;
-        font3.setFamily(QStringLiteral("Georgia"));
-        font3.setPointSize(18);
-        playerOne->setFont(font3);
+        QFont font5;
+        font5.setFamily(QStringLiteral("Georgia"));
+        font5.setPointSize(18);
+        playerOne->setFont(font5);
 
         gridLayout->addWidget(playerOne, 0, 0, 1, 1);
 
-        nameTwo = new QLabel(gridLayoutWidget);
-        nameTwo->setObjectName(QStringLiteral("nameTwo"));
-        QFont font4;
-        font4.setFamily(QStringLiteral("Georgia"));
-        font4.setPointSize(18);
-        font4.setBold(true);
-        font4.setWeight(75);
-        nameTwo->setFont(font4);
+        playerTwo = new QLabel(gridLayoutWidget);
+        playerTwo->setObjectName(QStringLiteral("playerTwo"));
+        playerTwo->setFont(font5);
 
-        gridLayout->addWidget(nameTwo, 7, 0, 1, 1);
+        gridLayout->addWidget(playerTwo, 6, 0, 1, 1);
 
-        oneType = new QLabel(gridLayoutWidget);
-        oneType->setObjectName(QStringLiteral("oneType"));
-        QFont font5;
-        font5.setFamily(QStringLiteral("Georgia"));
-        font5.setItalic(true);
-        oneType->setFont(font5);
+        label_3 = new QLabel(gridLayoutWidget);
+        label_3->setObjectName(QStringLiteral("label_3"));
 
-        gridLayout->addWidget(oneType, 2, 0, 1, 1);
+        gridLayout->addWidget(label_3, 9, 0, 1, 1);
+
+        twoType = new QLabel(gridLayoutWidget);
+        twoType->setObjectName(QStringLiteral("twoType"));
+        twoType->setFont(font3);
+
+        gridLayout->addWidget(twoType, 8, 0, 1, 1);
 
         nameOne = new QLabel(gridLayoutWidget);
         nameOne->setObjectName(QStringLiteral("nameOne"));
@@ -148,45 +153,51 @@ public:
 
         gridLayout->addWidget(nameOne, 1, 0, 1, 1);
 
-        label_3 = new QLabel(gridLayoutWidget);
-        label_3->setObjectName(QStringLiteral("label_3"));
+        verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
-        gridLayout->addWidget(label_3, 9, 0, 1, 1);
+        gridLayout->addItem(verticalSpacer, 5, 0, 1, 1);
 
-        playerTwo = new QLabel(gridLayoutWidget);
-        playerTwo->setObjectName(QStringLiteral("playerTwo"));
-        playerTwo->setFont(font3);
+        nameTwo = new QLabel(gridLayoutWidget);
+        nameTwo->setObjectName(QStringLiteral("nameTwo"));
+        QFont font7;
+        font7.setFamily(QStringLiteral("Georgia"));
+        font7.setPointSize(18);
+        font7.setBold(true);
+        font7.setWeight(75);
+        nameTwo->setFont(font7);
 
-        gridLayout->addWidget(playerTwo, 6, 0, 1, 1);
+        gridLayout->addWidget(nameTwo, 7, 0, 1, 1);
 
         label_2 = new QLabel(gridLayoutWidget);
         label_2->setObjectName(QStringLiteral("label_2"));
 
         gridLayout->addWidget(label_2, 3, 0, 1, 1);
 
-        moveNumTwo = new QLabel(gridLayoutWidget);
-        moveNumTwo->setObjectName(QStringLiteral("moveNumTwo"));
-        moveNumTwo->setFont(font2);
-
-        gridLayout->addWidget(moveNumTwo, 9, 1, 1, 1);
-
-        twoType = new QLabel(gridLayoutWidget);
-        twoType->setObjectName(QStringLiteral("twoType"));
-        twoType->setFont(font5);
-
-        gridLayout->addWidget(twoType, 8, 0, 1, 1);
-
-        label_5 = new QLabel(gridLayoutWidget);
-        label_5->setObjectName(QStringLiteral("label_5"));
-        label_5->setFont(font);
-
-        gridLayout->addWidget(label_5, 11, 0, 1, 1);
-
         line = new QFrame(battlefield);
         line->setObjectName(QStringLiteral("line"));
-        line->setGeometry(QRect(20, 50, 611, 16));
+        line->setGeometry(QRect(20, 50, 1001, 16));
         line->setFrameShape(QFrame::HLine);
         line->setFrameShadow(QFrame::Sunken);
+        label_4 = new QLabel(battlefield);
+        label_4->setObjectName(QStringLiteral("label_4"));
+        label_4->setGeometry(QRect(920, 500, 241, 61));
+        QFont font8;
+        font8.setFamily(QStringLiteral("Georgia"));
+        font8.setPointSize(36);
+        label_4->setFont(font8);
+        moveName = new QLabel(battlefield);
+        moveName->setObjectName(QStringLiteral("moveName"));
+        moveName->setGeometry(QRect(930, 560, 221, 171));
+        moveName->setFont(font4);
+        moveName->setFrameShape(QFrame::NoFrame);
+        moveName->setScaledContents(true);
+        moveName->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop);
+        moveName->setWordWrap(true);
+        gosling = new QLabel(battlefield);
+        gosling->setObjectName(QStringLiteral("gosling"));
+        gosling->setGeometry(QRect(750, 510, 171, 221));
+        gosling->setPixmap(QPixmap(QString::fromUtf8(":/images/ryanGosling.png")));
+        gosling->setScaledContents(true);
         battleTable = new QTableWidget(battlefield);
         if (battleTable->columnCount() < 18)
             battleTable->setColumnCount(18);
@@ -224,17 +235,6 @@ public:
         battleTable->verticalHeader()->setVisible(false);
         battleTable->verticalHeader()->setDefaultSectionSize(39);
         battleTable->verticalHeader()->setMinimumSectionSize(39);
-        label_4 = new QLabel(battlefield);
-        label_4->setObjectName(QStringLiteral("label_4"));
-        label_4->setGeometry(QRect(30, 820, 241, 61));
-        QFont font7;
-        font7.setFamily(QStringLiteral("Georgia"));
-        font7.setPointSize(36);
-        label_4->setFont(font7);
-        moveName = new QLabel(battlefield);
-        moveName->setObjectName(QStringLiteral("moveName"));
-        moveName->setGeometry(QRect(260, 830, 571, 41));
-        moveName->setFont(font2);
 
         retranslateUi(battlefield);
 
@@ -244,22 +244,21 @@ public:
     void retranslateUi(QWidget *battlefield)
     {
         battlefield->setWindowTitle(QApplication::translate("battlefield", "Halma Battlefield", 0));
-        label->setText(QApplication::translate("battlefield", "Halma 3.0", 0));
-        makeMove->setText(QApplication::translate("battlefield", "Make Next Move", 0));
-        suicideJumpNum->setText(QString());
+        label->setText(QApplication::translate("battlefield", "Halma 3.1 (v. Gentle Feedback from Ryan Gosling)", 0));
+        makeMove->setText(QApplication::translate("battlefield", "Have the AI Move", 0));
+        oneType->setText(QString());
+        moveNumTwo->setText(QString());
         moveNumOne->setText(QString());
         playerOne->setText(QApplication::translate("battlefield", "Player One", 0));
-        nameTwo->setText(QString());
-        oneType->setText(QString());
-        nameOne->setText(QString());
-        label_3->setText(QApplication::translate("battlefield", "Move Number", 0));
         playerTwo->setText(QApplication::translate("battlefield", "Player Two", 0));
-        label_2->setText(QApplication::translate("battlefield", "Move Number", 0));
-        moveNumTwo->setText(QString());
+        label_3->setText(QApplication::translate("battlefield", "Move Number", 0));
         twoType->setText(QString());
-        label_5->setText(QApplication::translate("battlefield", "Suicide Jumpers", 0));
-        label_4->setText(QApplication::translate("battlefield", "Make a move:", 0));
+        nameOne->setText(QString());
+        nameTwo->setText(QString());
+        label_2->setText(QApplication::translate("battlefield", "Move Number", 0));
+        label_4->setText(QApplication::translate("battlefield", "Oh hey,", 0));
         moveName->setText(QString());
+        gosling->setText(QString());
     } // retranslateUi
 
 };

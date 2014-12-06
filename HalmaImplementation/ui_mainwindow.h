@@ -237,13 +237,15 @@ public:
         playerOneAI->setText(QApplication::translate("MainWindow", "Artificial Intelligence", 0));
         playerOneHuman->setText(QApplication::translate("MainWindow", "Human", 0));
         label_3->setText(QApplication::translate("MainWindow", "URL:", 0));
+        playerOneURL->setText(QApplication::translate("MainWindow", "http://lyle.smu.edu/~tbgeorge/cse4345/a1/getMove.php", 0));
         label_2->setText(QApplication::translate("MainWindow", "Player Two", 0));
         label_6->setText(QApplication::translate("MainWindow", "Player Name", 0));
         playerTwoHuman->setText(QApplication::translate("MainWindow", "Human", 0));
         playerTwoAI->setText(QApplication::translate("MainWindow", "Artificial Intelligence", 0));
         label_4->setText(QApplication::translate("MainWindow", "URL:", 0));
+        playerTwoURL->setText(QApplication::translate("MainWindow", "http://lyle.smu.edu/~tbgeorge/cse4345/a1/getMove.php", 0));
         pushButton->setText(QApplication::translate("MainWindow", "Start Game", 0));
-        HalmaLabel->setText(QApplication::translate("MainWindow", "Halma 3.0", 0));
+        HalmaLabel->setText(QApplication::translate("MainWindow", "Halma 3.1", 0));
     } // retranslateUi
 
 };

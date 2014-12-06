@@ -525,7 +525,8 @@ qrc_images.cpp: images.qrc \
 		empty.png \
 		piece1Correct.png \
 		piece2Correct.png \
-		piece2Selected.png
+		piece2Selected.png \
+		ryanGosling.png
 	/Users/Johna/Qt/5.3/clang_64/bin/rcc -name images images.qrc -o qrc_images.cpp
 
 compiler_moc_header_make_all: moc_mainwindow.cpp moc_battlefield.cpp

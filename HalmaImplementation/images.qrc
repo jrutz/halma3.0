@@ -8,5 +8,6 @@
         <file>piece2Selected.png</file>
         <file>piece2.png</file>
         <file>empty</file>
+        <file>ryanGosling.png</file>
     </qresource>
 </RCC>
