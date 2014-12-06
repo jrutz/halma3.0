@@ -36,6 +36,7 @@ public:
     bool checkTeamValidity(int, QColor);
     void clickPieceAndMove(QTableWidgetItem* first,QTableWidgetItem* second);
     void clickFirstPiece(QTableWidgetItem* first);
+    int suicidal;
     void endTurn();
     QColor lightRed;
     QColor medRed;

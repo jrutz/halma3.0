@@ -31,6 +31,7 @@ public:
     QPushButton *makeMove;
     QWidget *gridLayoutWidget;
     QGridLayout *gridLayout;
+    QLabel *suicideJumpNum;
     QLabel *moveNumOne;
     QSpacerItem *verticalSpacer;
     QLabel *playerOne;
@@ -42,6 +43,7 @@ public:
     QLabel *label_2;
     QLabel *moveNumTwo;
     QLabel *twoType;
+    QLabel *label_5;
     QFrame *line;
     QTableWidget *battleTable;
     QLabel *label_4;
@@ -85,11 +87,17 @@ public:
         gridLayout = new QGridLayout(gridLayoutWidget);
         gridLayout->setObjectName(QStringLiteral("gridLayout"));
         gridLayout->setContentsMargins(0, 0, 0, 0);
-        moveNumOne = new QLabel(gridLayoutWidget);
-        moveNumOne->setObjectName(QStringLiteral("moveNumOne"));
+        suicideJumpNum = new QLabel(gridLayoutWidget);
+        suicideJumpNum->setObjectName(QStringLiteral("suicideJumpNum"));
         QFont font2;
         font2.setFamily(QStringLiteral("Georgia"));
         font2.setPointSize(24);
+        suicideJumpNum->setFont(font2);
+
+        gridLayout->addWidget(suicideJumpNum, 11, 1, 1, 1);
+
+        moveNumOne = new QLabel(gridLayoutWidget);
+        moveNumOne->setObjectName(QStringLiteral("moveNumOne"));
         moveNumOne->setFont(font2);
 
         gridLayout->addWidget(moveNumOne, 3, 1, 1, 1);
@@ -168,6 +176,12 @@ public:
 
         gridLayout->addWidget(twoType, 8, 0, 1, 1);
 
+        label_5 = new QLabel(gridLayoutWidget);
+        label_5->setObjectName(QStringLiteral("label_5"));
+        label_5->setFont(font);
+
+        gridLayout->addWidget(label_5, 11, 0, 1, 1);
+
         line = new QFrame(battlefield);
         line->setObjectName(QStringLiteral("line"));
         line->setGeometry(QRect(20, 50, 611, 16));
@@ -232,6 +246,7 @@ public:
         battlefield->setWindowTitle(QApplication::translate("battlefield", "Halma Battlefield", 0));
         label->setText(QApplication::translate("battlefield", "Halma 3.0", 0));
         makeMove->setText(QApplication::translate("battlefield", "Make Next Move", 0));
+        suicideJumpNum->setText(QString());
         moveNumOne->setText(QString());
         playerOne->setText(QApplication::translate("battlefield", "Player One", 0));
         nameTwo->setText(QString());
@@ -242,6 +257,7 @@ public:
         label_2->setText(QApplication::translate("battlefield", "Move Number", 0));
         moveNumTwo->setText(QString());
         twoType->setText(QString());
+        label_5->setText(QApplication::translate("battlefield", "Suicide Jumpers", 0));
         label_4->setText(QApplication::translate("battlefield", "Make a move:", 0));
         moveName->setText(QString());
     } // retranslateUi

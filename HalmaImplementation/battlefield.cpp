@@ -39,6 +39,7 @@ void battlefield :: initializeEverything()
     oneChecked = false;
     twoChecked = false;
     playerTurn = 1;
+    suicidal = 0;
 
     playerOneMoves = 0;
     playerTwoMoves = 0;
@@ -269,6 +270,13 @@ void battlefield :: endTurn() {
 
 void battlefield::on_battleTable_cellClicked(int row, int column)
 {
+
+   if(row < 0 || row > 17 || column < 0 || column > 17){
+       ui->moveName->setText("Dude you're off the board");
+       ui->suicideJumpNum->setText(QString::number(suicidal));
+       return;
+   }
+
    QTableWidgetItem* current = ui->battleTable->item(row,column);
 
    //Two things have already been checked, reset all values
@@ -335,16 +343,14 @@ void battlefield::on_makeMove_clicked()
     for(int i = 0; i < 70; i++) {
     //QString lol2 = "http://lyle.smu.edu/~tbgeorge/cse4345/a1/getMove.php";
 
-    //std::string fuck = teamTwoURL.toStdString();
-    //char* hopefully = new char[fuck.length()+1];
-    //std::strcpy(hopefully,fuck.c_str());
-    //char* whatTheFuck = std::strcpy(hopefully,fuck.c_str());
+
     if(!isOneHuman && playerTurn==1) {
         int* moves = boardManager.makeAIMove(1, teamOneURL);
         int fromX = moves[1];
         int fromY = moves[0];
         int toX = moves[3];
         int toY = moves[2];
+
 
         on_battleTable_cellClicked(fromX, fromY);
         on_battleTable_cellClicked(toX, toY);

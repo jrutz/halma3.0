@@ -92,6 +92,7 @@ int* RemoteAI::PostJsonData(int numPieces, int destSize, int piecesX[], int piec
     QJsonObject JsonObject = MakeJsonObject(numPieces, destSize, piecesX, piecesY,
                                             destX, destY, enemyX, enemyY, enemyDestX, enemyDestY);
 
+
     qDebug() << "JsonObject" << JsonObject["pieces"].toArray().at(0).toObject()["x"].toInt();
     QJsonDocument doc;
     doc.setObject(JsonObject);
@@ -141,6 +142,7 @@ int* RemoteAI::PostJsonData(int numPieces, int destSize, int piecesX[], int piec
             qDebug() << "to x:" << to_x;
             qDebug() << "to y:" << to_y;
 
+
             int* move = new int[4];
             move[0] = from_x;
             move[1] = from_y;
@@ -153,7 +155,14 @@ int* RemoteAI::PostJsonData(int numPieces, int destSize, int piecesX[], int piec
         else {
             //failure
             qDebug() << "Failure" <<reply->errorString();
+            int* move = new int[4];
+            move[0] = 20;
+            move[1] = 20;
+            move[2] = 20;
+            move[3] = 20;
+
             delete reply;
+              return move;
         }
 
         int* m = new int;
