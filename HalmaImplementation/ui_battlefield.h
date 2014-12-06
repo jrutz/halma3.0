@@ -31,26 +31,16 @@ public:
     QPushButton *makeMove;
     QWidget *gridLayoutWidget;
     QGridLayout *gridLayout;
-    QLabel *fromMoveTwo;
-    QLabel *nameOne;
-    QLabel *fromMoveOne;
-    QLabel *moveLabelOne;
-    QLabel *toMoveOne;
-    QLabel *fromLabTwo;
-    QSpacerItem *verticalSpacer;
-    QLabel *moveLabelTwo;
-    QLabel *toLabTwo;
-    QLabel *fromLabOne_2;
-    QLabel *playerTwo;
-    QLabel *playerOne;
-    QLabel *fromLabOne;
-    QLabel *nameTwo;
-    QLabel *toMoveTwo;
-    QLabel *label_2;
-    QLabel *label_3;
     QLabel *moveNumOne;
-    QLabel *moveNumTwo;
+    QSpacerItem *verticalSpacer;
+    QLabel *playerOne;
+    QLabel *nameTwo;
     QLabel *oneType;
+    QLabel *nameOne;
+    QLabel *label_3;
+    QLabel *playerTwo;
+    QLabel *label_2;
+    QLabel *moveNumTwo;
     QLabel *twoType;
     QFrame *line;
     QTableWidget *battleTable;
@@ -95,82 +85,27 @@ public:
         gridLayout = new QGridLayout(gridLayoutWidget);
         gridLayout->setObjectName(QStringLiteral("gridLayout"));
         gridLayout->setContentsMargins(0, 0, 0, 0);
-        fromMoveTwo = new QLabel(gridLayoutWidget);
-        fromMoveTwo->setObjectName(QStringLiteral("fromMoveTwo"));
-
-        gridLayout->addWidget(fromMoveTwo, 14, 1, 1, 1);
-
-        nameOne = new QLabel(gridLayoutWidget);
-        nameOne->setObjectName(QStringLiteral("nameOne"));
+        moveNumOne = new QLabel(gridLayoutWidget);
+        moveNumOne->setObjectName(QStringLiteral("moveNumOne"));
         QFont font2;
         font2.setFamily(QStringLiteral("Georgia"));
-        font2.setPointSize(18);
-        font2.setBold(true);
-        font2.setWeight(75);
-        font2.setKerning(false);
-        font2.setStyleStrategy(QFont::NoAntialias);
-        nameOne->setFont(font2);
+        font2.setPointSize(24);
+        moveNumOne->setFont(font2);
 
-        gridLayout->addWidget(nameOne, 1, 0, 1, 1);
-
-        fromMoveOne = new QLabel(gridLayoutWidget);
-        fromMoveOne->setObjectName(QStringLiteral("fromMoveOne"));
-
-        gridLayout->addWidget(fromMoveOne, 5, 1, 1, 1);
-
-        moveLabelOne = new QLabel(gridLayoutWidget);
-        moveLabelOne->setObjectName(QStringLiteral("moveLabelOne"));
-
-        gridLayout->addWidget(moveLabelOne, 4, 0, 1, 1);
-
-        toMoveOne = new QLabel(gridLayoutWidget);
-        toMoveOne->setObjectName(QStringLiteral("toMoveOne"));
-
-        gridLayout->addWidget(toMoveOne, 6, 1, 1, 1);
-
-        fromLabTwo = new QLabel(gridLayoutWidget);
-        fromLabTwo->setObjectName(QStringLiteral("fromLabTwo"));
-
-        gridLayout->addWidget(fromLabTwo, 14, 0, 1, 1);
+        gridLayout->addWidget(moveNumOne, 3, 1, 1, 1);
 
         verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
-        gridLayout->addItem(verticalSpacer, 8, 0, 1, 1);
-
-        moveLabelTwo = new QLabel(gridLayoutWidget);
-        moveLabelTwo->setObjectName(QStringLiteral("moveLabelTwo"));
-
-        gridLayout->addWidget(moveLabelTwo, 13, 0, 1, 1);
-
-        toLabTwo = new QLabel(gridLayoutWidget);
-        toLabTwo->setObjectName(QStringLiteral("toLabTwo"));
-
-        gridLayout->addWidget(toLabTwo, 15, 0, 1, 1);
-
-        fromLabOne_2 = new QLabel(gridLayoutWidget);
-        fromLabOne_2->setObjectName(QStringLiteral("fromLabOne_2"));
-
-        gridLayout->addWidget(fromLabOne_2, 6, 0, 1, 1);
-
-        playerTwo = new QLabel(gridLayoutWidget);
-        playerTwo->setObjectName(QStringLiteral("playerTwo"));
-        QFont font3;
-        font3.setFamily(QStringLiteral("Georgia"));
-        font3.setPointSize(18);
-        playerTwo->setFont(font3);
-
-        gridLayout->addWidget(playerTwo, 9, 0, 1, 1);
+        gridLayout->addItem(verticalSpacer, 5, 0, 1, 1);
 
         playerOne = new QLabel(gridLayoutWidget);
         playerOne->setObjectName(QStringLiteral("playerOne"));
+        QFont font3;
+        font3.setFamily(QStringLiteral("Georgia"));
+        font3.setPointSize(18);
         playerOne->setFont(font3);
 
         gridLayout->addWidget(playerOne, 0, 0, 1, 1);
-
-        fromLabOne = new QLabel(gridLayoutWidget);
-        fromLabOne->setObjectName(QStringLiteral("fromLabOne"));
-
-        gridLayout->addWidget(fromLabOne, 5, 0, 1, 1);
 
         nameTwo = new QLabel(gridLayoutWidget);
         nameTwo->setObjectName(QStringLiteral("nameTwo"));
@@ -181,32 +116,7 @@ public:
         font4.setWeight(75);
         nameTwo->setFont(font4);
 
-        gridLayout->addWidget(nameTwo, 10, 0, 1, 1);
-
-        toMoveTwo = new QLabel(gridLayoutWidget);
-        toMoveTwo->setObjectName(QStringLiteral("toMoveTwo"));
-
-        gridLayout->addWidget(toMoveTwo, 15, 1, 1, 1);
-
-        label_2 = new QLabel(gridLayoutWidget);
-        label_2->setObjectName(QStringLiteral("label_2"));
-
-        gridLayout->addWidget(label_2, 3, 0, 1, 1);
-
-        label_3 = new QLabel(gridLayoutWidget);
-        label_3->setObjectName(QStringLiteral("label_3"));
-
-        gridLayout->addWidget(label_3, 12, 0, 1, 1);
-
-        moveNumOne = new QLabel(gridLayoutWidget);
-        moveNumOne->setObjectName(QStringLiteral("moveNumOne"));
-
-        gridLayout->addWidget(moveNumOne, 3, 1, 1, 1);
-
-        moveNumTwo = new QLabel(gridLayoutWidget);
-        moveNumTwo->setObjectName(QStringLiteral("moveNumTwo"));
-
-        gridLayout->addWidget(moveNumTwo, 12, 1, 1, 1);
+        gridLayout->addWidget(nameTwo, 7, 0, 1, 1);
 
         oneType = new QLabel(gridLayoutWidget);
         oneType->setObjectName(QStringLiteral("oneType"));
@@ -217,11 +127,46 @@ public:
 
         gridLayout->addWidget(oneType, 2, 0, 1, 1);
 
+        nameOne = new QLabel(gridLayoutWidget);
+        nameOne->setObjectName(QStringLiteral("nameOne"));
+        QFont font6;
+        font6.setFamily(QStringLiteral("Georgia"));
+        font6.setPointSize(18);
+        font6.setBold(true);
+        font6.setWeight(75);
+        font6.setKerning(false);
+        font6.setStyleStrategy(QFont::NoAntialias);
+        nameOne->setFont(font6);
+
+        gridLayout->addWidget(nameOne, 1, 0, 1, 1);
+
+        label_3 = new QLabel(gridLayoutWidget);
+        label_3->setObjectName(QStringLiteral("label_3"));
+
+        gridLayout->addWidget(label_3, 9, 0, 1, 1);
+
+        playerTwo = new QLabel(gridLayoutWidget);
+        playerTwo->setObjectName(QStringLiteral("playerTwo"));
+        playerTwo->setFont(font3);
+
+        gridLayout->addWidget(playerTwo, 6, 0, 1, 1);
+
+        label_2 = new QLabel(gridLayoutWidget);
+        label_2->setObjectName(QStringLiteral("label_2"));
+
+        gridLayout->addWidget(label_2, 3, 0, 1, 1);
+
+        moveNumTwo = new QLabel(gridLayoutWidget);
+        moveNumTwo->setObjectName(QStringLiteral("moveNumTwo"));
+        moveNumTwo->setFont(font2);
+
+        gridLayout->addWidget(moveNumTwo, 9, 1, 1, 1);
+
         twoType = new QLabel(gridLayoutWidget);
         twoType->setObjectName(QStringLiteral("twoType"));
         twoType->setFont(font5);
 
-        gridLayout->addWidget(twoType, 11, 0, 1, 1);
+        gridLayout->addWidget(twoType, 8, 0, 1, 1);
 
         line = new QFrame(battlefield);
         line->setObjectName(QStringLiteral("line"));
@@ -268,17 +213,14 @@ public:
         label_4 = new QLabel(battlefield);
         label_4->setObjectName(QStringLiteral("label_4"));
         label_4->setGeometry(QRect(30, 820, 241, 61));
-        QFont font6;
-        font6.setFamily(QStringLiteral("Georgia"));
-        font6.setPointSize(36);
-        label_4->setFont(font6);
+        QFont font7;
+        font7.setFamily(QStringLiteral("Georgia"));
+        font7.setPointSize(36);
+        label_4->setFont(font7);
         moveName = new QLabel(battlefield);
         moveName->setObjectName(QStringLiteral("moveName"));
         moveName->setGeometry(QRect(260, 830, 571, 41));
-        QFont font7;
-        font7.setFamily(QStringLiteral("Georgia"));
-        font7.setPointSize(24);
-        moveName->setFont(font7);
+        moveName->setFont(font2);
 
         retranslateUi(battlefield);
 
@@ -290,25 +232,15 @@ public:
         battlefield->setWindowTitle(QApplication::translate("battlefield", "Halma Battlefield", 0));
         label->setText(QApplication::translate("battlefield", "Halma 3.0", 0));
         makeMove->setText(QApplication::translate("battlefield", "Make Next Move", 0));
-        fromMoveTwo->setText(QString());
-        nameOne->setText(QString());
-        fromMoveOne->setText(QString());
-        moveLabelOne->setText(QApplication::translate("battlefield", "Move", 0));
-        toMoveOne->setText(QString());
-        fromLabTwo->setText(QApplication::translate("battlefield", "From:", 0));
-        moveLabelTwo->setText(QApplication::translate("battlefield", "Move", 0));
-        toLabTwo->setText(QApplication::translate("battlefield", "To:", 0));
-        fromLabOne_2->setText(QApplication::translate("battlefield", "To:", 0));
-        playerTwo->setText(QApplication::translate("battlefield", "Player Two", 0));
-        playerOne->setText(QApplication::translate("battlefield", "Player One", 0));
-        fromLabOne->setText(QApplication::translate("battlefield", "From:", 0));
-        nameTwo->setText(QString());
-        toMoveTwo->setText(QString());
-        label_2->setText(QApplication::translate("battlefield", "Move Number", 0));
-        label_3->setText(QApplication::translate("battlefield", "Move Number", 0));
         moveNumOne->setText(QString());
-        moveNumTwo->setText(QString());
+        playerOne->setText(QApplication::translate("battlefield", "Player One", 0));
+        nameTwo->setText(QString());
         oneType->setText(QString());
+        nameOne->setText(QString());
+        label_3->setText(QApplication::translate("battlefield", "Move Number", 0));
+        playerTwo->setText(QApplication::translate("battlefield", "Player Two", 0));
+        label_2->setText(QApplication::translate("battlefield", "Move Number", 0));
+        moveNumTwo->setText(QString());
         twoType->setText(QString());
         label_4->setText(QApplication::translate("battlefield", "Make a move:", 0));
         moveName->setText(QString());
